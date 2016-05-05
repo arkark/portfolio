@@ -10,20 +10,6 @@
 
 ---
 
-![sobaya](pictures/sobaya.png)
-
-工学部5類情報工学科 学部2年
-
-そばや
-
-Twitter: @sobaya007
-
-[down]
-
-## 自己紹介
-
----
-
 ![ark](pictures/ark.png)
 
 理学部1類情報科学科 学部2年
@@ -32,6 +18,19 @@ Twitter: @sobaya007
 
 Twitter: @_arkark
 
+[down]
+
+## 自己紹介
+
+---
+
+![sobaya](pictures/sobaya.png)
+
+工学部5類情報工学科 学部2年
+
+そばや
+
+Twitter: @sobaya007
 
 [down]
 
