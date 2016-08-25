@@ -16,7 +16,7 @@
 
 アーク
 
-Twitter: @_arkark
+Twitter: @d_ark_d
 
 [down]
 
