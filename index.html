@@ -6,35 +6,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- BootstrapのCSS読み込み -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- jQuery読み込み -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- BootstrapのJS読み込み -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="marked/marked.min.js"></script>
         <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+        <script>
+            $(document).ready(function(){
+                var target = $("#markdown_content");
+                $.ajax({
+                    url: target[0].attributes["src"].value,
+                }).success(function(data){
+                    target.append(marked(data));
+                }).error(function(data){
+                    target.append("This content failed to load.");
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="container">
-            <h1>Ark's Works</h1>
-            <h3>games</h3>
-            <ul class="list-group">
-                <a class="list-group-item" href="https://github.com/ArkArk/15puzzle_brainfuck">Brainf*ck製15パズル</a>
-                <a class="list-group-item" href="https://trap.tokyotech.org/blog/2016/05/dark-ray/">Dark-ray | traP</a>
-                <a class="list-group-item" href="https://trap.tokyotech.org/blog/2016/06/hacku_icebreakers/">IceBreakers | traP</a>
-            </ul>
-            <h3>articles</h3>
-            <ul class="list-group">
-                <a class="list-group-item" href="http://titech-ssr.blog.jp/archives/1047616866.html">マウス操作によるカメラ移動 with Processing | rogy</a>
-                <a class="list-group-item" href="http://qiita.com/Ark/items/2564a565e077a4410c9e">Kotlin+Processing+GLSLでマンデルブロ集合の描画</a>
-            </ul>
-            <h3>slides</h3>
-            <ul class="list-group">
-                <a class="list-group-item" href="./shader/">traPシェーダ講習 | traP</a>
-            </ul>
-            <h3>others</h3>
-            <ul class="list-group">
-                <a class="list-group-item" href="https://twitter.com/search?f=tweets&vertical=default&q=%231day1gif%20from%3A_Ark_0&src=typd">#1day1gif</a>
-            </ul>
+            <div id="markdown_content" src="./contents.md"> </div>
         </div>
     </body>
 </html>
