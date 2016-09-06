@@ -7,6 +7,8 @@
 - Name: Ark (アーク)
 - Twitter: [@_Ark_0](https://twitter.com/_Ark_0)
 - github: [ArkArk](https://github.com/ArkArk)
+- [東京工業大学 ロボット技術研究会（CG-SQUARE）](https://www.rogiken.org/)
+- [東京工業大学 ゲーム制作サークル traP](https://trap.tokyotech.org/)
 
 - ゲ制作、競プロ、ProjectEuler、ドット絵など
 - D言語が好きです。
