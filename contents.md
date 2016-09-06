@@ -37,3 +37,10 @@
 ### Others
 
 - [#1day1gif](https://twitter.com/search?f=tweets&vertical=default&q=%231day1gif%20from%3A_Ark_0&src=typd)
+
+---
+
+## Events
+
+- [第3回ゲーム製作者交流会GAME^3を開催しました | rogy](http://titech-ssr.blog.jp/archives/1054880255.html)
+- [第4回ゲーム製作者交流会GAME^3を開催しました | rogy](http://titech-ssr.blog.jp/archives/1060795449.html)
