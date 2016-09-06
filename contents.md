@@ -9,11 +9,6 @@
 - github: [ArkArk](https://github.com/ArkArk)
 
 - ゲ制作、競プロ、ProjectEuler、ドット絵など
-
----
-
-## Languages
-
 - D言語が好きです。
 - その他C/C++/Java/Scala/Kotlin/Processing/JS/Brainf*ckなどが少々使えます。
 
