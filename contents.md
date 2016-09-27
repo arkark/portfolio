@@ -1,6 +1,7 @@
 # Ark
 
 ![icon](./pictures/dman.png)
+
 ---
 
 ## Introduction
@@ -8,10 +9,11 @@
 - Name: Ark (アーク)
 - Twitter: [@_Ark_0](https://twitter.com/_Ark_0)
 - github: [ArkArk](https://github.com/ArkArk)
-- [東京工業大学 ロボット技術研究会（CG-SQUARE）](https://www.rogiken.org/)
-- [東京工業大学 ゲーム制作サークル traP](https://trap.tokyotech.org/)
+- 東京工業大学 情報科学科
+    - [ロボット技術研究会（CG-SQUARE）](https://www.rogiken.org/)
+    - [ゲーム制作サークル traP](https://trap.tokyotech.org/)
 
-- ゲ制作、競プロ、ProjectEuler、ドット絵など
+- 趣味でゲーム制作、競プロ、ProjectEuler、ドット絵などやってます。
 - D言語が好きです。
 - その他C/C++/Java/Scala/Kotlin/Processing/JS/Brainf*ckなどが少々使えます。
 
