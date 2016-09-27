@@ -12,10 +12,9 @@
 - 東京工業大学 情報科学科
     - [ロボット技術研究会（CG-SQUARE）](https://www.rogiken.org/)
     - [ゲーム制作サークル traP](https://trap.tokyotech.org/)
-
-- 趣味でゲーム制作、競プロ、ProjectEuler、ドット絵などやってます。
+- 趣味でゲーム制作、競プロ、ProjectEuler、ドット絵などをやってます。
 - D言語が好きです。
-- その他C/C++/Java/Scala/Kotlin/Processing/JS/Brainf*ckなどが少々使えます。
+- その他C/C++/Java/Scala/Kotlin/Processing/JavaScript/Brainf*ckなどが少々使えます。
 
 ---
 
