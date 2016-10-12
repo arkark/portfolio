@@ -22,6 +22,7 @@
 
 ### Games
 
+- [Spin! Spin!](https://arkark.github.io/Spin_Spin_/)
 - [Brainf*ck製15パズル](https://github.com/ArkArk/15puzzle_brainfuck)
 - [Dark-ray | traP](https://trap.tokyotech.org/blog/2016/05/dark-ray/)
 - [IceBreakers | traP](https://trap.tokyotech.org/blog/2016/06/hacku_icebreakers/)
