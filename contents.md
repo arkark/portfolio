@@ -1,10 +1,10 @@
-# Ark
+# Ark's page
 
 ![icon](./pictures/dman.png)
 
 ---
 
-## Introduction
+## ■ Introduction ■
 
 - Name: Ark (アーク)
 - Twitter: [@_Ark_0](https://twitter.com/_Ark_0)
@@ -12,13 +12,13 @@
 - 東京工業大学 情報科学科
     - [ロボット技術研究会（CG-SQUARE）](https://www.rogiken.org/)
     - [ゲーム制作サークル traP](https://trap.tokyotech.org/)
-- 趣味でゲーム制作、競プロ、ProjectEuler、ドット絵などを趣味でやってます。
-- D言語が好きです。
+- ゲーム制作、競プロ、ProjectEuler、ドット絵などを趣味でやってます。
+- D言語が好きです。もっとD言語のユーザが増えてほしい。
 - その他C/C++/Java/Scala/Kotlin/Processing/JavaScript/Brainf*ckなどが少々使えます。
 
 ---
 
-## Works
+## ■ Works ■
 
 ### Games
 
@@ -27,7 +27,6 @@
 - [Dark-ray | traP](https://trap.tokyotech.org/blog/2016/05/dark-ray/)
 - [IceBreakers | traP](https://trap.tokyotech.org/blog/2016/06/hacku_icebreakers/)
 - [Puzzle](https://arkark.github.io/Puzzle/)
-
 
 
 - 2016工大祭で、Dark-rayとIceBreakersをtraPとして展示しました。→[link](https://trap.tokyotech.org/news/2016/10/tokyotechfes-2016/ )
@@ -50,7 +49,7 @@
 
 ---
 
-## Events
+## ■ Events ■
 
 - [第3回ゲーム製作者交流会GAME^3を開催しました | rogy](http://titech-ssr.blog.jp/archives/1054880255.html)
 - [第4回ゲーム製作者交流会GAME^3を開催しました | rogy](http://titech-ssr.blog.jp/archives/1060795449.html)
