@@ -34,8 +34,8 @@
 ### Articles
 
 - [マウス操作によるカメラ移動 with Processing | rogy](http://titech-ssr.blog.jp/archives/1047616866.html)
-- [「プログラムでシダを描画する」を Kotlin (+ Processing) で描画する](http://qiita.com/Ark/items/4e2c75242e34c2899a39)
-- [Kotlin+Processing+GLSLでマンデルブロ集合の描画](http://qiita.com/Ark/items/2564a565e077a4410c9e)
+- [「プログラムでシダを描画する」を Kotlin (+ Processing) で描画する | Qiita](http://qiita.com/Ark/items/4e2c75242e34c2899a39)
+- [Kotlin+Processing+GLSLでマンデルブロ集合の描画 | Qiita](http://qiita.com/Ark/items/2564a565e077a4410c9e)
 
 ### Slides
 
