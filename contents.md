@@ -25,6 +25,8 @@
 
 ## ■ Works ■
 
+それぞれの項目について下に行くほど新しいです。
+
 ### Games
 
 - [Spin! Spin!](https://arkark.github.io/Spin_Spin_/)
@@ -32,6 +34,7 @@
 - [Dark-ray | traP](https://trap.tokyotech.org/blog/2016/05/dark-ray/)
 - [IceBreakers | traP](https://trap.tokyotech.org/blog/2016/06/hacku_icebreakers/)
 - [Puzzle](https://arkark.github.io/Puzzle/)
+- [D言語くんライフゲーム](https://arkark.github.io/DLangManGameOfLife/)
 
 ### Articles
 
