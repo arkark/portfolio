@@ -52,7 +52,8 @@
 ### Others
 
 - [Polar Coordinates Motion | Shadertoy](https://www.shadertoy.com/view/ll3GWM)
-- [Magic Circle | Shadertoy](https://www.shadertoy.com/view/MlGGDt)
-- [Sphere to Plane Transition | Shadertoy](https://www.shadertoy.com/view/MtdXz7)
 - [A spline curve visualizer](https://github.com/ArkArk/SplineCurveVisualizer)
 - [#1day1gif](https://twitter.com/search?f=tweets&vertical=default&q=%231day1gif%20from%3A_Ark_0&src=typd)
+- [Magic Circle | Shadertoy](https://www.shadertoy.com/view/MlGGDt)
+- [Sphere to Plane Transition | Shadertoy](https://www.shadertoy.com/view/MtdXz7)
+- [Transformation Using Smin | Shadertoy](https://www.shadertoy.com/view/4tdSDS)
