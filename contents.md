@@ -16,7 +16,9 @@
 - ゲーム制作、競プロ、ProjectEuler、ドット絵などを趣味でやってます。
 - D言語が好きです。もっとD言語のユーザが増えてほしい。
 
-### Languages
+---
+
+## ■ Languages ■
 
 - メイン: D
 - 使ったことある: C/C++/Java/Scala/Kotlin/Processing/JavaScript/GLSL/Brainf*ck
@@ -24,6 +26,8 @@
 ---
 
 ## ■ Works ■
+
+今までに作ったものとか。
 
 それぞれの項目について下に行くほど新しいです。
 
