@@ -39,6 +39,7 @@
 - [IceBreakers | traP](https://trap.tokyotech.org/blog/2016/06/hacku_icebreakers/)
 - [Puzzle](https://arkark.github.io/Puzzle/)
 - [D言語くんライフゲーム](https://arkark.github.io/DLangManGameOfLife/)
+- [Just Shot](https://arkark.github.io/JustShot/)
 
 ### Articles
 
@@ -57,7 +58,6 @@
 
 - [Polar Coordinates Motion | Shadertoy](https://www.shadertoy.com/view/ll3GWM)
 - [A spline curve visualizer](https://github.com/ArkArk/SplineCurveVisualizer)
-- [#1day1gif](https://twitter.com/search?f=tweets&vertical=default&q=%231day1gif%20from%3A_Ark_0&src=typd)
 - [Magic Circle | Shadertoy](https://www.shadertoy.com/view/MlGGDt)
 - [Sphere to Plane Transition | Shadertoy](https://www.shadertoy.com/view/MtdXz7)
 - [Transformation Using Smin | Shadertoy](https://www.shadertoy.com/view/4tdSDS)
