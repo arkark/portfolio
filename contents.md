@@ -33,13 +33,13 @@
 
 ### Games
 
-- [Spin! Spin!](https://arkark.github.io/Spin_Spin_/)
+- [Spin! Spin!](https://arkark.github.io/Spin_Spin_/) - 2015年工大祭向けに作った3D障害物避けゲーム
 - [Brainf*ck製15パズル](https://github.com/ArkArk/15puzzle_brainfuck)
-- [Dark-ray | traP](https://trap.tokyotech.org/blog/2016/05/dark-ray/)
-- [IceBreakers | traP](https://trap.tokyotech.org/blog/2016/06/hacku_icebreakers/)
-- [Puzzle](https://arkark.github.io/Puzzle/)
-- [D言語くんライフゲーム](https://arkark.github.io/DLangManGameOfLife/)
-- [Just Shot](https://arkark.github.io/JustShot/)
+- [Dark-ray | traP](https://trap.tokyotech.org/blog/2016/05/dark-ray/) - 部内ハッカソンで作ったパズルゲーム
+- [IceBreakers | traP](https://trap.tokyotech.org/blog/2016/06/hacku_icebreakers/) - ハッカソンHack Uで制作した二人協力ゲーム
+- [Puzzle](https://arkark.github.io/Puzzle/) - 2016年工大祭向けに作ったパズルアクションゲーム
+- [D言語くんライフゲーム](https://arkark.github.io/DLangManGameOfLife/) - [D言語くん Advent Calendar 2016](http://qiita.com/advent-calendar/2016/d-man)でノリで作ったライフゲーム
+- [Just Shot](https://arkark.github.io/JustShot/) - 部内3時間ハッカソンで作ったシューティングゲーム
 
 ### Articles
 
