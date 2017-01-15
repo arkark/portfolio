@@ -1,31 +1,312 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>Ark's page</title>
-        <link rel="shortcut icon" href="./pictures/dman.ico" type="image/vnd.microsoft.icon">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="marked/marked.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                var target = $("#markdown_content");
-                $.ajax({
-                    url: target[0].attributes["src"].value,
-                }).success(function(data){
-                    target.append(marked(data));
-                }).error(function(data){
-                    target.append("This content failed to load.");
-                });
-            });
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <div id="markdown_content" src="./contents.md"> </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Ark's page</title>
+    <link rel="shortcut icon" href="./image/dman.ico">
+
+    <link rel="stylesheet" href="./css/foundation.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="pagespan container">
+        <div style="padding-top:10px;">
+            <h1>Ark's page</h1>
         </div>
-    </body>
+        <hr>
+        <img src="image/dman.png">
+        <hr>
+
+        <!-- Introduction -->
+        <div id="introduction">
+            <h2>Introduction</h2>
+
+            <div class="callout secondary">
+                <ul>
+                    <li>Name: Ark (アーク)</li>
+                    <li>Twitter: <a href="https://twitter.com/_Ark_0">@_Ark_0</a></li>
+                    <li>GitHub: <a href="https://github.com/ArkArk">ArkArk</a></li>
+                    <li>Shadertoy: <a href="https://www.shadertoy.com/user/Ark">Ark</a></li>
+                    <li>東京工業大学 情報科学科</li>
+                    <ul>
+                        <li><a href="https://www.rogiken.org/">ロボット技術研究会（CG-SQUARE）</a></li>
+                        <li><a href="https://trapti.tech/">デジタル創作同好会 traP</a></li>
+                    </ul>
+                    <li>ゲーム制作、競プロ、ドット絵などを趣味でやってます。</li>
+
+                    <li>Languages:</li>
+                    <ul>
+                        <li>Main: D</li>
+                        <li>C/C++/Java/Scala/Kotlin/Processing/JavaScript/GLSL/Prolog/Brainf*ck</li>
+                    </ul>
+
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Works -->
+        <div class="wrap" id="works">
+            <h2>Works</h2>
+
+            <div class="scrollbar">
+                <div class="handle">
+                    <div class="mousearea"></div>
+                </div>
+            </div>
+
+            <div class="frame" id="worksNavigation">
+                <ul class="clearfix">
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://arkark.github.io/JustShot/">Just Shot</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/game/just_shot.png" style="height: 100%;">
+                            </div>
+                            <p>部内3時間ハッカソンで作ったシューティングゲーム</p>
+                            <p>
+                                <span class="type label secondary">Game</span>
+                                <span class="date">2017/1/3</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://arkark.github.io/DLangManGameOfLife/">D言語くんライフゲーム</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/game/dlangman_game_of_life.png" style="height: 100%;">
+                            </div>
+                            <p><a href="http://qiita.com/advent-calendar/2016/d-man">D言語くん Advent Calendar 2016</a>でノリで作ったライフゲーム</p>
+                            <p>
+                                <span class="type label secondary">Game</span>
+                                <span class="date">2016/12/20</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://www.shadertoy.com/view/MtdXz7">Sphere to Plane Transition | Shadertoy</a>
+                            <div class="center" style="width:100%; height:40%;">
+                                <img src="./image/ss/design/sphere_to_plane_transition.png" style="height: 100%;">
+                            </div>
+                            <p>「球面上から一点を取り除いた集合」と「平面上の点全体」の間の同相写像による遷移</p>
+                            <p>
+                                <span class="type label secondary">Design</span>
+                                <span class="date">2016/11/12</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://www.shadertoy.com/view/MlGGDt">Magic Circle | Shadertoy</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/design/magic_circle.png" style="height: 100%;">
+                            </div>
+                            <p>魔法陣を作りたくなったのでShaderで作ってみました</p>
+                            <p>
+                                <span class="type label secondary">Design</span>
+                                <span class="date">2016/10/26</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://arkark.github.io/Puzzle/">Puzzle</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/game/puzzle.png" style="height: 100%;">
+                            </div>
+                            <p>2016年工大祭向けに作ったパズルアクションゲーム</p>
+                            <p>
+                                <span class="type label secondary">Game</span>
+                                <span class="date">2016/10</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://github.com/ArkArk/SplineCurveVisualizer">A spline curve visualizer</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/algorithm/spline_curve_visualizer.png" style="height: 100%;">
+                            </div>
+                            <p>スプライン曲線のビジュアライザ。<a href="http://marupeke296.com/DXG_No34_UnuniformSprine.html">ここ</a>を参考にしました</p>
+                            <p>
+                                <span class="type label secondary">Algorithm</span>
+                                <span class="date">2016/9/4</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://www.shadertoy.com/view/ll3GWM">Polar Coordinates Motion | Shadertoy</a>
+                            <div class="center" style="width:100%; height:40%;">
+                                <img src="./image/ss/design/polar_coordinates_motion.png" style="height: 100%;">
+                            </div>
+                            <p><a href="http://foxcodex.html.xdomain.jp/PolarCoordinates.html">これ</a>を実装したかったので作ってみた</p>
+                            <p>
+                                <span class="type label secondary">Design</span>
+                                <span class="date">2016/7/27</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://trap.tokyotech.org/blog/2016/06/hacku_icebreakers/">IceBreakers | traP</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/game/ice_breakers.png" style="height: 100%;">
+                            </div>
+                            <p>ハッカソンHack Uで制作した二人協力ゲーム</p>
+                            <p>
+                                <span class="type label secondary">Game</span>
+                                <span class="date">2016/6</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://trap.tokyotech.org/blog/2016/05/dark-ray/">Dark-ray | traP</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/game/dark_ray.png" style="height: 100%;">
+                            </div>
+                            <p>部内ハッカソンで作ったパズルゲーム</p>
+                            <p>
+                                <span class="type label secondary">Game</span>
+                                <span class="date">2016/5</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://arkark.github.io/Spin_Spin_/">Spin! Spin!</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/game/spin_spin_.png" style="height: 100%;">
+                            </div>
+                            <p>2015年工大祭向けに作った3D障害物避けゲーム</p>
+                            <p>
+                                <span class="type label secondary">Game</span>
+                                <span class="date">2015/10</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://github.com/ArkArk/15puzzle_brainfuck">Brainf*ck製15パズル</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/game/15puzzle.png" style="height: 100%;">
+                            </div>
+                            <p>友人にBrainf*ckでゲーム作ってと言われたので作った</p>
+                            <p>
+                                <span class="type label secondary">Game</span>
+                                <span class="date">2015/9</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="pages"></ul>
+        </div>
+
+        <!-- Articles -->
+        <div class="wrap" id="articles">
+            <h2>Articles</h2>
+
+            <div class="scrollbar">
+                <div class="handle">
+                    <div class="mousearea"></div>
+                </div>
+            </div>
+
+            <div class="frame" id="articlesNavigation">
+                <ul class="clearfix">
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="https://trapti.tech/blog/4273/">クリエイティブコーディングをしよう！【その１】GLSLで遊ぶ</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/article/trap_adc_2016.png" style="height: 100%;">
+                            </div>
+                            <p><a href="https://trapti.tech/tag/advent-calendar-2016/">traP Advent Calendar 2016</a>の22日目を担当しました</p>
+                            <p>
+                                <span class="type label secondary">Article</span>
+                                <span class="date">2016/12/22</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="http://qiita.com/Ark/items/d87e711d2a988d02de2e">今すぐBrainf*ckを始めるべき10の理由</a>
+                            <p><a href="http://qiita.com/advent-calendar/2016/esolang">Esolang(難解プログラミング言語) Advent Calendar 2016</a>の4日目を担当しました。（ネタ記事です）</p>
+                            <p>
+                                <span class="type label secondary">Article</span>
+                                <span class="date">2016/12/4</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="http://qiita.com/Ark/items/2564a565e077a4410c9e">Kotlin+Processing+GLSLでマンデルブロ集合の描画</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/article/mandelbrot_set.png" style="height: 100%;">
+                            </div>
+                            <p>
+                                <span class="type label secondary">Article</span>
+                                <span class="date">2016/9/4</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="http://qiita.com/Ark/items/4e2c75242e34c2899a39">「プログラムでシダを描画する」を Kotlin (+ Processing) で描画する</a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/article/shida.png" style="height: 100%;">
+                            </div>
+                            <p>Kotlinを勉強したきっかけとして書いた記事</p>
+                            <p>
+                                <span class="type label secondary">Article</span>
+                                <span class="date">2016/7/23</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href="http://titech-ssr.blog.jp/archives/1047616866.html">マウス操作によるカメラ移動 with Processing</a>
+                            <p><a href="http://www.adventar.org/calendars/885">rogy Advent Calendar 2015</a>の16日目を担当しました</p>
+                            <p>
+                                <span class="type label secondary">Article</span>
+                                <span class="date">2015/12/16</span>
+                            </p>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <div class="callout secondary">
+                            <a class="hollow button primary expanded" href=""></a>
+                            <div class="center" style="width:100%; height:50%;">
+                                <img src="./image/ss/.png" style="height: 100%;">
+                            </div>
+                            <p></p>
+                            <p>
+                                <span class="type label secondary">Game</span>
+                                <span class="date">2015/9</span>
+                            </p>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+
+            <ul class="pages"></ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./lib/plugins.js"></script>
+    <script src="./lib/sly.min.js"></script>
+    <script src="./js/horizontal.js"></script>
+    <script src="./js/foundation.min.js"></script>
+</body>
+
 </html>
