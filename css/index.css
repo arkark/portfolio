@@ -43,6 +43,10 @@ body {
     overflow: hidden;
 }
 
+#mainWorks .frame {
+    height: 350px;
+}
+
 #works .frame {
     height: 350px;
 }
@@ -65,6 +69,10 @@ body {
     background: #f5f5f5;
     border: 2px solid #b0b0b0;
     cursor: move;
+}
+
+#mainWorks .frame ul li {
+    width: 250px;
 }
 
 #works .frame ul li {
