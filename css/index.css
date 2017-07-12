@@ -104,7 +104,7 @@ body {
 
 .scrollbar {
     margin: 0 0 1em 0;
-    height: 4px;
+    height: 8px;
     background: #c0c0c0;
     line-height: 0;
 }
