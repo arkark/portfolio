@@ -20,6 +20,10 @@ export default new Router({
       path: "/about",
       name: "about",
       component: () => import("@/components/about/About.vue")
+    },
+    {
+      path: "*",
+      redirect: { name: "top" }
     }
   ]
 });
