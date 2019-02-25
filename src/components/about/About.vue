@@ -48,7 +48,7 @@ export default {
       mainItems: [
         {
           id: "1",
-          name: "名前：",
+          name: "名前",
           icon: "fas fa-user",
           children: [
             {
@@ -59,7 +59,7 @@ export default {
         },
         {
           id: "2",
-          name: "所属：",
+          name: "所属",
           icon: "fas fa-graduation-cap",
           children: [
             {
@@ -70,7 +70,7 @@ export default {
         },
         {
           id: "3",
-          name: "サークル：",
+          name: "サークル",
           icon: "fas fa-users",
           children: [
             {
@@ -82,7 +82,7 @@ export default {
         },
         {
           id: "4",
-          name: "趣味：",
+          name: "趣味",
           icon: "fas fa-gamepad",
           children: [
             {
@@ -93,7 +93,7 @@ export default {
         },
         {
           id: "5",
-          name: "興味分野：",
+          name: "興味分野",
           icon: "fas fa-flask",
           children: [
             {
@@ -105,7 +105,7 @@ export default {
         },
         {
           id: "6",
-          name: "興味技術：",
+          name: "興味技術",
           icon: "fas fa-cogs",
           children: [
             {
@@ -117,7 +117,7 @@ export default {
         },
         {
           id: "7",
-          name: "アカウント：",
+          name: "アカウント",
           icon: "fas fa-user-circle",
           children: [
             {
@@ -137,18 +137,33 @@ export default {
             },
             {
               id: "7-4",
+              name: "traP：Ark",
+              url: "https://trap.jp/author/ark/"
+            },
+            {
+              id: "7-5",
+              name: "Qiita：Ark",
+              url: "https://qiita.com/Ark"
+            },
+            {
+              id: "7-6",
               name: "AtCoder : ark012345",
               url: "https://atcoder.jp/user/ark012345"
             },
             {
-              id: "7-5",
+              id: "7-7",
               name: "Shadertoy : Ark",
               url: "https://www.shadertoy.com/user/Ark"
             },
             {
-              id: "7-6",
+              id: "7-8",
               name: "Project Euler : Ark__",
               src: "https://projecteuler.net/profile/Ark__.png"
+            },
+            {
+              id: "7-9",
+              name: "Docker Hub：arkark",
+              url: "https://hub.docker.com/u/arkark"
             }
           ]
         },

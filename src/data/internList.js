@@ -12,9 +12,9 @@ export default {
           name: "株式会社ハル研究所：INTERNSHIP 2017 PROGRAMMER COURSE"
         },
         {
-          id: "1-2017-3",
+          id: "1-2017-1",
           name:
-            "株式会社ディー・エヌ・エー：2017 SUMMER INTERNSHIP ゲームエンジニアリングコース"
+            "株式会社コロプラ：MASH UP エンターテインメントを追求する合宿型インターンシップ in 箱根"
         },
         {
           id: "1-2017-2",
@@ -22,9 +22,9 @@ export default {
           url: "https://ark4rk.hatenablog.com/entry/2017/09/03/173836"
         },
         {
-          id: "1-2017-1",
+          id: "1-2017-3",
           name:
-            "株式会社コロプラ：MASH UP エンターテインメントを追求する合宿型インターンシップ in 箱根"
+            "株式会社ディー・エヌ・エー：2017 SUMMER INTERNSHIP ゲームエンジニアリングコース"
         }
       ]
     }
