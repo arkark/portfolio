@@ -12,26 +12,28 @@ export default {
       shouldMove: true,
       moveSpeed: 0.6,
       intervalDelay: 100,
-      numAtOnce: 40,
-      nodeNum: 200
+      numAtOnce: 30,
+      nodeNum: 150
     };
   },
   mounted() {
     this.ctx = this.$refs["background"].getContext("2d");
     this.resizeCanvas();
 
-    const manager = new Manager(this.ctx);
-    for (let i = 0; i < this.nodeNum; i++) {
-      manager.addNode();
-    }
-    manager.nodes.forEach(node => (node.shouldMove = this.shouldMove));
-    manager.nodes.forEach(
-      node => (node.moveSpeed = this.moveSpeed * (1.0 + Math.random()))
-    );
-    manager.intervalDelay = this.intervalDelay;
-    manager.numAtOnce = this.numAtOnce;
+    setTimeout(() => {
+      const manager = new Manager(this.ctx);
+      for (let i = 0; i < this.nodeNum; i++) {
+        manager.addNode();
+      }
+      manager.nodes.forEach(node => (node.shouldMove = this.shouldMove));
+      manager.nodes.forEach(
+        node => (node.moveSpeed = this.moveSpeed * (1.0 + Math.random()))
+      );
+      manager.intervalDelay = this.intervalDelay;
+      manager.numAtOnce = this.numAtOnce;
 
-    manager.run(1000);
+      manager.run(1000);
+    }, 100);
   },
   methods: {
     onResize() {

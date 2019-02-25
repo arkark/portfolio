@@ -25,11 +25,11 @@ export default class Manager2d {
     const move = () => {
       this.nodes.forEach(node => node.move());
     };
-    setInterval(move, 33);
+    setInterval(move, 50);
 
     let i = 0;
     let calculatingNodes = [];
-    const f = () => {
+    const constructDelaunay = () => {
       if (this.nodes.length == 0) return;
       calculatingNodes.length = this.numAtOnce;
       for (let j = 0; j < this.numAtOnce; j++) {
@@ -37,12 +37,14 @@ export default class Manager2d {
       }
       calculatingNodes.forEach(node => node.constructDelaunay());
     };
-    for (let i = 0; i < preCount; i++) f();
-    const constructDelaunay = () => {
-      f();
-      setTimeout(constructDelaunay, this.intervalDelay);
+    for (let i = 0; i < preCount; i++) {
+      constructDelaunay();
+    }
+    const f = () => {
+      constructDelaunay();
+      setTimeout(f, this.intervalDelay);
     };
-    constructDelaunay();
+    f();
   }
 
   addNode() {
