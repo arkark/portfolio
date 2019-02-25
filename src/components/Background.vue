@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import isMobile from "ismobilejs";
 import Manager from "@/js/Manager.js";
 
 export default {
@@ -12,8 +13,8 @@ export default {
       shouldMove: true,
       moveSpeed: 0.6,
       intervalDelay: 100,
-      numAtOnce: 30,
-      nodeNum: 150
+      numAtOnce: this.isPhone() ? 20 : 40,
+      nodeNum: this.isPhone() ? 100 : 200
     };
   },
   mounted() {
@@ -32,7 +33,7 @@ export default {
       manager.intervalDelay = this.intervalDelay;
       manager.numAtOnce = this.numAtOnce;
 
-      manager.run(1000);
+      manager.run(200);
     }, 100);
   },
   methods: {
@@ -43,6 +44,9 @@ export default {
     resizeCanvas() {
       this.ctx.canvas.width = window.innerWidth;
       this.ctx.canvas.height = window.innerHeight;
+    },
+    isPhone() {
+      return isMobile.phone;
     }
   }
 };

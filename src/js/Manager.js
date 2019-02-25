@@ -48,7 +48,7 @@ export default class Manager2d {
   }
 
   addNode() {
-    const padding = 30;
+    const padding = 10;
     const width = this.ctx.canvas.clientWidth;
     const height = this.ctx.canvas.clientHeight;
 
