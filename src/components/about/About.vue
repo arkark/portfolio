@@ -99,7 +99,7 @@ export default {
             {
               id: "5-1",
               name:
-                "アルゴリズム、データ構造、グラフ理論、代数、圏論、論理学、組合せ最適化、ゲーム理論"
+                "アルゴリズム、データ構造、グラフ理論、代数、圏論、論理学、組合せ最適化、分散システム、ゲーム理論"
             }
           ]
         },
@@ -111,7 +111,7 @@ export default {
             {
               id: "6-1",
               name:
-                "CG、シェーダ、ビジュアライゼーション、サイバーセキュリティ、コンテナ"
+                "シェーダ、ビジュアライゼーション、サイバーセキュリティ、コンテナ"
             }
           ]
         },
@@ -192,12 +192,12 @@ export default {
         },
         {
           id: "9",
-          name: "スキル",
+          name: "スキル（ツール・ライブラリ等）",
           icon: "fas fa-code-branch",
           children: [
             {
               id: "9-1",
-              name: "Git、Docker、Vue.js、Qt"
+              name: "Git、Docker、Vue.js、p5.js、Qt、libGDX"
             }
           ]
         }
