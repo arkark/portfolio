@@ -147,8 +147,8 @@ export default {
             },
             {
               id: "7-6",
-              name: "AtCoder : ark012345",
-              url: "https://atcoder.jp/user/ark012345"
+              name: "AtCoder : arkark",
+              url: "https://atcoder.jp/user/arkark"
             },
             {
               id: "7-7",
