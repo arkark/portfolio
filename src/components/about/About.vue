@@ -87,7 +87,7 @@ export default {
           children: [
             {
               id: "4-1",
-              name: "ゲーム制作、競プロ、創作全般、ゲーム、アニメ"
+              name: "ゲーム制作、競技プログラミング、創作全般、ゲーム、アニメ"
             }
           ]
         },
@@ -99,7 +99,7 @@ export default {
             {
               id: "5-1",
               name:
-                "アルゴリズム、データ構造、グラフ理論、代数、圏論、論理学、組合せ最適化、分散システム、ゲーム理論"
+                "アルゴリズム、データ構造、グラフ理論、代数、圏論、論理学、組合せ最適化、分散システム、ゲーム理論、計算機科学"
             }
           ]
         },
@@ -111,7 +111,7 @@ export default {
             {
               id: "6-1",
               name:
-                "シェーダ、ビジュアライゼーション、サイバーセキュリティ、コンテナ"
+                "シェーダ、ビジュアライゼーション、ジェネラティブデザイン、サイバーセキュリティ、コンテナ"
             }
           ]
         },
@@ -135,16 +135,16 @@ export default {
               name: "Hatena Blog : ark4rk",
               url: "http://ark4rk.hatenablog.com/"
             },
-            {
-              id: "7-4",
-              name: "traP：Ark",
-              url: "https://trap.jp/author/ark/"
-            },
-            {
-              id: "7-5",
-              name: "Qiita：Ark",
-              url: "https://qiita.com/Ark"
-            },
+            // {
+            //   id: "7-4",
+            //   name: "traP：Ark",
+            //   url: "https://trap.jp/author/ark/"
+            // },
+            // {
+            //   id: "7-5",
+            //   name: "Qiita：Ark",
+            //   url: "https://qiita.com/Ark"
+            // },
             {
               id: "7-6",
               name: "AtCoder : arkark",
@@ -159,12 +159,12 @@ export default {
               id: "7-8",
               name: "Project Euler : Ark__",
               src: "https://projecteuler.net/profile/Ark__.png"
-            },
-            {
-              id: "7-9",
-              name: "Docker Hub：arkark",
-              url: "https://hub.docker.com/u/arkark"
             }
+            // {
+            //   id: "7-9",
+            //   name: "Docker Hub：arkark",
+            //   url: "https://hub.docker.com/u/arkark"
+            // }
           ]
         },
         {
