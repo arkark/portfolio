@@ -18,7 +18,7 @@ export default {
     };
   },
   mounted() {
-    this.ctx = this.$refs["background"].getContext("2d");
+    this.ctx = this.$el.getContext("2d");
     this.resizeCanvas();
 
     setTimeout(() => {
@@ -57,7 +57,6 @@ export default {
   position: fixed;
   left: 0;
   top: 0;
-  /* z-index: -1; */
   background: #202530;
 }
 </style>
