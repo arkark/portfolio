@@ -64,7 +64,7 @@ export default {
           children: [
             {
               id: "2-1",
-              name: "東京工業大学 理学部 情報科学科"
+              name: "東京工業大学 情報理工学院 数理・計算科学系"
             }
           ]
         },
