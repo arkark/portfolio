@@ -53,12 +53,23 @@ export default {
           children: [
             {
               id: "1-1",
-              name: "Ark / アーク"
+              name: "Takeshi Kaneko"
             }
           ]
         },
         {
           id: "2",
+          name: "ハンドルネーム",
+          icon: "fas fa-user-tag",
+          children: [
+            {
+              id: "1-1",
+              name: "Ark / アーク"
+            }
+          ]
+        },
+        {
+          id: "3",
           name: "所属",
           icon: "fas fa-graduation-cap",
           children: [
@@ -69,7 +80,7 @@ export default {
           ]
         },
         {
-          id: "3",
+          id: "4",
           name: "サークル",
           icon: "fas fa-users",
           children: [
@@ -81,30 +92,31 @@ export default {
           ]
         },
         {
-          id: "4",
+          id: "5",
           name: "趣味",
           icon: "fas fa-gamepad",
           children: [
             {
               id: "4-1",
-              name: "ゲーム制作、競技プログラミング、創作全般、ゲーム、アニメ"
+              name:
+                "ゲーム制作、競技プログラミング、CTF、創作全般、ゲーム、アニメ"
             }
           ]
         },
         {
-          id: "5",
+          id: "6",
           name: "興味分野",
           icon: "fas fa-flask",
           children: [
             {
               id: "5-1",
               name:
-                "アルゴリズム、データ構造、グラフ理論、代数、圏論、論理学、組合せ最適化、分散システム、ゲーム理論、計算機科学"
+                "アルゴリズム、データ構造、グラフ理論、代数、圏論、論理学、組合せ最適化、分散システム、ゲーム理論、プログラム意味論"
             }
           ]
         },
         {
-          id: "6",
+          id: "7",
           name: "興味技術",
           icon: "fas fa-cogs",
           children: [
@@ -116,88 +128,88 @@ export default {
           ]
         },
         {
-          id: "7",
+          id: "8",
           name: "アカウント",
           icon: "fas fa-user-circle",
           children: [
             {
-              id: "7-1",
+              id: "8-1",
               name: "GitHub : ArkArk",
               url: "https://github.com/ArkArk"
             },
             {
-              id: "7-2",
+              id: "8-2",
               name: "Twitter : @arkark_",
               url: "https://twitter.com/arkark_"
             },
             {
-              id: "7-3",
+              id: "8-3",
               name: "Hatena Blog : ark4rk",
               url: "http://ark4rk.hatenablog.com/"
             },
             // {
-            //   id: "7-4",
+            //   id: "8-4",
             //   name: "traP：Ark",
             //   url: "https://trap.jp/author/ark/"
             // },
             // {
-            //   id: "7-5",
+            //   id: "8-5",
             //   name: "Qiita：Ark",
             //   url: "https://qiita.com/Ark"
             // },
             {
-              id: "7-6",
+              id: "8-6",
               name: "AtCoder : arkark",
               url: "https://atcoder.jp/user/arkark"
             },
             {
-              id: "7-7",
+              id: "8-7",
               name: "Shadertoy : Ark",
               url: "https://www.shadertoy.com/user/Ark"
             },
             {
-              id: "7-8",
+              id: "8-8",
               name: "Project Euler : Ark__",
               src: "https://projecteuler.net/profile/Ark__.png"
             }
             // {
-            //   id: "7-9",
+            //   id: "8-9",
             //   name: "Docker Hub：arkark",
             //   url: "https://hub.docker.com/u/arkark"
             // }
           ]
         },
         {
-          id: "8",
+          id: "9",
           name: "言語",
           icon: "fas fa-laptop-code",
           children: [
             {
-              id: "8-1",
+              id: "9-1",
               name: "常用：D"
             },
             {
-              id: "8-2",
+              id: "9-2",
               name: "使う：Kotlin、C、C++、JavaScript、Java、Processing、GLSL"
             },
             {
-              id: "8-3",
+              id: "9-3",
               name: "少し：Scala、PHP、Prolog、Python"
             },
             {
-              id: "8-4",
+              id: "9-4",
               name: "勉強中：Rust、Haskell、Go"
             }
           ]
         },
         {
-          id: "9",
+          id: "10",
           name: "スキル（ツール・ライブラリ等）",
           icon: "fas fa-code-branch",
           children: [
             {
-              id: "9-1",
-              name: "Git、Docker、Vue.js、p5.js、Qt、libGDX"
+              id: "10-1",
+              name: "Git、Docker、Vue.js、Qt、libGDX"
             }
           ]
         }
