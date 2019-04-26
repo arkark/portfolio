@@ -7,7 +7,6 @@
     transition="scale-transition"
     fixed
     class="mr-2"
-    open-on-hover
   >
     <v-hover slot="activator">
       <v-btn
