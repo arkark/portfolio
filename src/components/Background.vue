@@ -42,8 +42,14 @@ export default {
       this.resizeCanvas();
     },
     resizeCanvas() {
-      this.ctx.canvas.width = window.innerWidth;
-      this.ctx.canvas.height = window.innerHeight;
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const ratio = window.devicePixelRatio;
+      this.ctx.canvas.style.width = width + "px";
+      this.ctx.canvas.style.height = height + "px";
+      this.ctx.canvas.width = width * ratio;
+      this.ctx.canvas.height = height * ratio;
+      this.ctx.scale(ratio, ratio);
     },
     isPhone() {
       return isMobile.phone;
