@@ -88,7 +88,13 @@
                       </v-card-title>
                       <v-divider inset></v-divider>
                       <v-card-text class="px-3 py-2">
-                        <span v-html="work.description"></span>
+                        <span
+                          v-if="work.rawHtml === true"
+                          v-html="work.description"
+                        ></span>
+                        <span v-else>
+                          {{ work.description }}
+                        </span>
                       </v-card-text>
                     </v-card>
                   </v-hover>

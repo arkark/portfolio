@@ -8,10 +8,7 @@
         {{ item.icon }}
       </v-icon>
     </span>
-    <span
-      v-if="item.hasOwnProperty('rawHtml') && item.rawHtml === true"
-      v-html="item.label"
-    ></span>
+    <span v-if="item.rawHtml === true" v-html="item.label"></span>
     <span v-else>
       {{ item.label }}
     </span>

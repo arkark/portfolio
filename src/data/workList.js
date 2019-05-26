@@ -108,7 +108,8 @@ export default [
     group: "Game",
     description:
       '<a href="https://qiita.com/advent-calendar/2016/d-man">D言語くん Advent Calendar 2016</a>で作ったライフゲーム',
-    date: "2016/12/20"
+    date: "2016/12/20",
+    rawHtml: true
   },
   {
     title: "Sphere to Plane Transition",
@@ -141,7 +142,8 @@ export default [
     group: "Algorithm",
     description:
       'スプライン曲線のビジュアライザ。<a href="http://marupeke296.com/DXG_No34_UnuniformSprine.html">ここ</a>を参考にしました',
-    date: "2016/9/4"
+    date: "2016/9/4",
+    rawHtml: true
   },
   {
     title: "One Day One Gif",
@@ -158,7 +160,8 @@ export default [
     group: "Design",
     description:
       '<a href="http://foxcodex.html.xdomain.jp/PolarCoordinates.html">これ</a>を実装したかったので作ってみた',
-    date: "2016/7/27"
+    date: "2016/7/27",
+    rawHtml: true
   },
   {
     title: "フシギダネ",
