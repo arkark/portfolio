@@ -10,10 +10,10 @@
     </span>
     <span
       v-if="item.hasOwnProperty('rawHtml') && item.rawHtml === true"
-      v-html="item.name"
+      v-html="item.label"
     ></span>
     <span v-else>
-      {{ item.name }}
+      {{ item.label }}
     </span>
     <span v-if="item.hasOwnProperty('url')">
       <v-btn
