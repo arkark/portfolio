@@ -100,6 +100,12 @@ export default {
               id: "4-1",
               name:
                 "ゲーム制作、競技プログラミング、CTF、創作全般、ゲーム、アニメ"
+            },
+            {
+              id: "4-2",
+              name:
+                '好きなゲーム：<a href="https://store.steampowered.com/app/210970/The_Witness/">The Witness</a>、<a href="https://store.steampowered.com/app/381890/Induction/">Induction</a>、スマブラ',
+              rawHtml: true
             }
           ]
         },
