@@ -42,8 +42,8 @@ export default {
       this.resizeCanvas();
     },
     resizeCanvas() {
-      const width = window.innerWidth;
-      const height = window.innerHeight;
+      const width = document.body.clientWidth;
+      const height = document.body.clientHeight;
       const ratio = window.devicePixelRatio;
       this.ctx.canvas.style.width = width + "px";
       this.ctx.canvas.style.height = height + "px";
