@@ -117,7 +117,7 @@ export default {
             {
               id: "5-1",
               label:
-                "アルゴリズム、データ構造、グラフ理論、代数、圏論、論理学、組合せ最適化、分散システム、ゲーム理論、プログラム意味論"
+                "アルゴリズム、データ構造、グラフ理論、代数、圏論、論理学、分散システム、組合せ最適化"
             }
           ]
         },
@@ -200,11 +200,7 @@ export default {
             },
             {
               id: "9-3",
-              label: "少し：Scala、PHP、Prolog、Python"
-            },
-            {
-              id: "9-4",
-              label: "勉強中：Rust、Haskell、Go"
+              label: "少し：Rust、Scala、Go、PHP、Prolog、Python"
             }
           ]
         },
