@@ -15,6 +15,8 @@
     <span v-if="item.hasOwnProperty('url')">
       <v-btn
         :href="item.url"
+        target="_blank"
+        rel="noopener noreferrer"
         color="primary"
         icon
         flat

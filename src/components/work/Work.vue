@@ -23,7 +23,7 @@
                       :width="cardWidth"
                       :height="cardHeight"
                       slot-scope="{ hover }"
-                      :class="`elevation-${hover ? 12 : 2}`"
+                      :class="`elevation-${hover ? 8 : 2}`"
                     >
                       <v-container
                         fill-height
@@ -64,25 +64,39 @@
                         :height="imageHeight"
                         color="rgba(0,0,0,0)"
                         absolute
+                        style="pointer-events: none;"
                       >
                         <v-hover>
                           <v-btn
                             slot-scope="{ hover }"
                             :href="work.url"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             color="primary"
-                            :small="!hover"
+                            small
                             absolute
                             bottom
                             right
                             fab
-                            :class="`elevation-${hover ? 12 : 2}`"
+                            :class="`elevation-${hover ? 8 : 2}`"
+                            style="pointer-events: auto;"
                           >
                             <v-icon>fas fa-external-link-alt</v-icon>
                           </v-btn>
                         </v-hover>
                       </v-toolbar>
-                      <v-img :src="work.src" width="100%" :height="imageHeight">
-                      </v-img>
+                      <a
+                        :href="work.url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <v-img
+                          :src="work.src"
+                          width="100%"
+                          :height="imageHeight"
+                        >
+                        </v-img>
+                      </a>
                       <v-card-title primary-title class="px-3 py-2">
                         <h3 class="mb-0 pr-5">{{ work.title }}</h3>
                       </v-card-title>
