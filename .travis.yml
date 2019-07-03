@@ -6,6 +6,10 @@ node_js:
 script:
   - yarn lint
   - yarn build
+cache:
+  yarn: true
+  directories:
+    - node_modules
 
 deploy:
   provider: pages
