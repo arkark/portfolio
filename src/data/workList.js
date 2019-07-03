@@ -13,7 +13,7 @@ export default [
     title: "latexmk-docker",
     url: "https://github.com/ArkArk/latexmk-docker",
     src:
-      "https://github.com/ArkArk/latexmk-docker/blob/master/img/demo.png?raw=true",
+      "https://github.com/ArkArk/latexmk-docker/blob/master/screenshot.png?raw=true",
     group: "Tool",
     description: "Docker上で動く快適なLatex環境",
     date: "2019/1"
