@@ -25,12 +25,6 @@
         <v-card-text class="pt-2">
           <treeview :items="internItems"></treeview>
         </v-card-text>
-        <!-- <v-card-text>
-          <v-divider></v-divider>
-        </v-card-text>
-        <v-card-text class="py-2">
-          <treeview :items="articleItems"></treeview>
-        </v-card-text> -->
       </v-card>
     </v-layout>
   </v-container>
@@ -40,7 +34,6 @@
 import Treeview from "@/components/about/Treeview";
 import awardList from "@/data/awardList";
 import internList from "@/data/internList";
-import articleList from "@/data/articleList";
 
 export default {
   data: function() {
@@ -217,8 +210,7 @@ export default {
         }
       ],
       awardItems: [awardList],
-      internItems: [internList],
-      articleItems: [articleList]
+      internItems: [internList]
     };
   },
   components: {
