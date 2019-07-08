@@ -8,6 +8,11 @@ export default {
       label: "2019",
       children: [
         {
+          id: "1-2019-2",
+          label: "Battle Conference U30 #2019 PROGRAMMING BATTLE：本戦3位",
+          url: "https://ark4rk.hatenablog.com/entry/2019/07/06/224103"
+        },
+        {
           id: "1-2019-1",
           label:
             "DISCO presents ディスカバリーチャンネル コードコンテスト2019：本戦出場",
