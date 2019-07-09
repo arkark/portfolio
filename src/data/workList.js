@@ -146,16 +146,6 @@ export default [
     date: "2016/10"
   },
   {
-    title: "A spline curve visualizer",
-    url: "https://github.com/ArkArk/SplineCurveVisualizer",
-    src: require("@/assets/ss/algorithm/spline_curve_visualizer.png"),
-    group: "Algorithm",
-    description:
-      'スプライン曲線のビジュアライザ。<a href="http://marupeke296.com/DXG_No34_UnuniformSprine.html">ここ</a>を参考にしました',
-    date: "2016/9/4",
-    rawHtml: true
-  },
-  {
     title: "One Day One Gif",
     url: "https://github.com/ArkArk/OneDayOneGif",
     src: require("@/assets/ss/design/one_day_one_gif.png"),
