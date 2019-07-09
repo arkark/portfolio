@@ -1,6 +1,6 @@
 export default {
   id: "1",
-  label: "インターン等（新しい順）",
+  label: "インターン等",
   icon: "fas fa-briefcase",
   children: [
     {

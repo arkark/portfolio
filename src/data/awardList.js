@@ -1,6 +1,6 @@
 export default {
   id: "1",
-  label: "大会等（新しい順）",
+  label: "大会等",
   icon: "fas fa-award",
   children: [
     {
