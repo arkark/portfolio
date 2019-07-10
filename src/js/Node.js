@@ -56,20 +56,67 @@ export default class Node {
     this.adjNodes.length = 0;
     const nonAdjNodes = [];
 
-    this.sortAsClockWise(nodes);
-    this.triangulate(nodes, this.adjNodes, nonAdjNodes);
-    this.delegate(this.adjNodes, nonAdjNodes);
-    this.notifyTriangulation(this.adjNodes);
+    this._sortAsClockWise(nodes);
+    this._triangulate(nodes, this.adjNodes, nonAdjNodes);
+    this._delegate(this.adjNodes, nonAdjNodes);
+    this._notifyTriangulation(this.adjNodes);
+  }
+
+  move() {
+    if (!this.shouldMove) return;
+    let x = this.x + this.moveDir.x * this.moveSpeed;
+    let y = this.y + this.moveDir.y * this.moveSpeed;
+    let w = this.ctx.canvas.clientWidth;
+    let h = this.ctx.canvas.clientHeight;
+    if (x < 0 || x > w) {
+      this.moveDir.x *= -1;
+      x = Math.max(0, Math.min(w, x));
+    }
+    if (y < 0 || y > h) {
+      this.moveDir.y *= -1;
+      y = Math.max(0, Math.min(h, y));
+    }
+    this.x = x;
+    this.y = y;
+  }
+
+  get nodeColor() {
+    return "rgba(90, 220, 250, 0.3)";
+  }
+
+  get edgeColor() {
+    return "rgba(80, 200, 230, 0.2)";
+  }
+
+  drawNode() {
+    this.ctx.beginPath();
+    this.ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+    this.ctx.fillStyle = this.nodeColor;
+    this.ctx.fill();
+    this.ctx.closePath();
+  }
+
+  drawEdge() {
+    this.adjNodes.forEach(node => {
+      const v1 = this.pos;
+      const v2 = node.pos;
+      this.ctx.beginPath();
+      this.ctx.moveTo(v1.x, v1.y);
+      this.ctx.lineTo(v2.x, v2.y);
+      this.ctx.lineWidth = 1.5;
+      this.ctx.strokeStyle = this.edgeColor;
+      this.ctx.stroke();
+    });
   }
 
   // 偏角ソート
-  sortAsClockWise(nodes) {
+  _sortAsClockWise(nodes) {
     nodes.forEach(n => (n.__arg = Math.atan2(n.y - this.y, n.x - this.x)));
     nodes.sort((a, b) => a.__arg - b.__arg);
   }
 
   // 局所ドロネー化
-  triangulate(nodes, adjNodes, nonAdjNodes) {
+  _triangulate(nodes, adjNodes, nonAdjNodes) {
     // 点v0, v1, v2が同一直線状にあるか?
     const onLine = (v0, v1, v2) => {
       return Math.abs(v1.sub(v0).cross(v2.sub(v0))) < Const.EPS;
@@ -140,7 +187,7 @@ export default class Node {
   }
 
   // 移譲
-  delegate(adjNodes, nonAdjNodes) {
+  _delegate(adjNodes, nonAdjNodes) {
     nonAdjNodes.forEach(n1 => {
       let minD = Infinity;
       let minN = null;
@@ -156,7 +203,7 @@ export default class Node {
   }
 
   // 三角化通知
-  notifyTriangulation(adjNodes) {
+  _notifyTriangulation(adjNodes) {
     for (let i = 0; i < adjNodes.length; i++) {
       const n1 = adjNodes[(i + 0) % adjNodes.length];
       const n2 = adjNodes[(i + 1) % adjNodes.length];
@@ -164,44 +211,5 @@ export default class Node {
       n1.receive(n2);
       n2.receive(n1);
     }
-  }
-
-  move() {
-    if (!this.shouldMove) return;
-    let x = this.x + this.moveDir.x * this.moveSpeed;
-    let y = this.y + this.moveDir.y * this.moveSpeed;
-    let w = this.ctx.canvas.clientWidth;
-    let h = this.ctx.canvas.clientHeight;
-    if (x < 0 || x > w) {
-      this.moveDir.x *= -1;
-      x = Math.max(0, Math.min(w, x));
-    }
-    if (y < 0 || y > h) {
-      this.moveDir.y *= -1;
-      y = Math.max(0, Math.min(h, y));
-    }
-    this.x = x;
-    this.y = y;
-  }
-
-  drawNode() {
-    this.ctx.beginPath();
-    this.ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    this.ctx.fillStyle = "rgba(90, 220, 250, 0.3)";
-    this.ctx.fill();
-    this.ctx.closePath();
-  }
-
-  drawEdge() {
-    this.adjNodes.forEach(node => {
-      const v1 = this.pos;
-      const v2 = node.pos;
-      this.ctx.beginPath();
-      this.ctx.moveTo(v1.x, v1.y);
-      this.ctx.lineTo(v2.x, v2.y);
-      this.ctx.lineWidth = 1.5;
-      this.ctx.strokeStyle = "rgba(80, 200, 230, 0.2)";
-      this.ctx.stroke();
-    });
   }
 }

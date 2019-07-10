@@ -1,4 +1,6 @@
+import Vec2 from "@/js/math/Vec2.js";
 import Node from "@/js/Node.js";
+import CursorNode from "@/js/CursorNode.js";
 
 export default class Manager2d {
   constructor(ctx) {
@@ -6,6 +8,8 @@ export default class Manager2d {
     this.numAtOnce = 1;
     this.ctx = ctx;
     this.nodes = [];
+    const cursorNode = new CursorNode(this.ctx, this._getRandomPosition());
+    this.nodes.push(cursorNode);
   }
 
   run(preCount) {
@@ -48,15 +52,8 @@ export default class Manager2d {
   }
 
   addNode() {
-    const padding = 10;
-    const width = this.ctx.canvas.clientWidth;
-    const height = this.ctx.canvas.clientHeight;
-
     const node = new Node(this.ctx);
-    node.x = Math.random() * (width - 2 * padding) + padding;
-    node.y = Math.random() * (height - 2 * padding) + padding;
-    node.x = Math.round(node.x * 100) / 100;
-    node.y = Math.round(node.y * 100) / 100;
+    node.pos = this._getRandomPosition();
     this.nodes.push(node);
 
     if (this.nodes.length >= 2) {
@@ -69,5 +66,17 @@ export default class Manager2d {
 
   clear() {
     this.nodes.length = 0;
+  }
+
+  _getRandomPosition() {
+    const padding = 10;
+    const width = this.ctx.canvas.clientWidth;
+    const height = this.ctx.canvas.clientHeight;
+
+    let x = Math.random() * (width - 2 * padding) + padding;
+    let y = Math.random() * (height - 2 * padding) + padding;
+    x = Math.round(x * 100) / 100;
+    y = Math.round(y * 100) / 100;
+    return new Vec2(x, y);
   }
 }
