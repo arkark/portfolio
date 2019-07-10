@@ -55,8 +55,14 @@
 export default {
   name: "TreeviewNode",
   props: {
-    item: Object,
-    depth: Number
+    item: {
+      type: Object,
+      required: true
+    },
+    depth: {
+      type: Number,
+      required: true
+    }
   },
   components: {
     Treeview: () => import("@/components/about/Treeview")

@@ -93,7 +93,10 @@ export default {
     };
   },
   props: {
-    work: Object
+    work: {
+      type: Object,
+      required: true
+    }
   },
   methods: {
     formatDate(date) {

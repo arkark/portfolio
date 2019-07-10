@@ -12,7 +12,10 @@ import TreeviewNode from "@/components/about/TreeviewNode";
 export default {
   name: "Treeview",
   props: {
-    items: Array,
+    items: {
+      type: Array,
+      required: true
+    },
     depth: {
       type: Number,
       default: 0
