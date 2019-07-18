@@ -204,7 +204,9 @@ export default {
           children: [
             {
               id: "10-1",
-              label: "Git、Docker、Vue.js、Qt、libGDX"
+              label:
+                '<a href="https://github.com/ArkArk/dotfiles/blob/master/.gitconfig">Git</a>、Docker、Vue.js、Qt、libGDX',
+              rawHtml: true
             }
           ]
         }
