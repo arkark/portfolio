@@ -205,7 +205,7 @@ export default {
             {
               id: "10-1",
               label:
-                '<a href="https://github.com/ArkArk/dotfiles/blob/master/.gitconfig">Git</a>、Docker、Vue.js、Qt、libGDX',
+                '<a href="https://github.com/ArkArk/dotfiles/blob/master/files/.gitconfig">Git</a>、Docker、Vue.js、Qt、libGDX',
               rawHtml: true
             }
           ]
