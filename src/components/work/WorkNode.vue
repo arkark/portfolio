@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-2">
+  <v-container class="mx-3">
     <v-layout justify-center>
       <v-hover>
         <v-card
@@ -15,8 +15,8 @@
           >
             <v-layout fill-height column>
               <v-spacer></v-spacer>
-              <v-flex class="text-xs-right pa-0" shrink>
-                <v-chip small label disabled text-color="black">{{
+              <v-flex class="text-right pa-0" shrink>
+                <v-chip small label text-color="black">{{
                   formatDate(work.date)
                 }}</v-chip>
               </v-flex>
@@ -29,18 +29,20 @@
           >
             <v-layout fill-height column>
               <v-spacer></v-spacer>
-              <v-flex class="text-xs-left" pa-0 shrink>
-                <v-chip small outline label disabled text-color="black">
-                  {{ work.group }}</v-chip
-                >
+              <v-flex class="text-left" pa-0 shrink>
+                <v-chip small outlined label text-color="black">
+                  {{ work.group }}
+                </v-chip>
               </v-flex>
             </v-layout>
           </v-container>
           <v-toolbar
-            flat
+            text
+            :width="cardWidth"
             :height="imageHeight"
             color="rgba(0,0,0,0)"
             absolute
+            :elevation="0"
             style="pointer-events: none;"
           >
             <v-hover>
@@ -58,18 +60,18 @@
                 :class="`elevation-${hover ? 8 : 2}`"
                 style="pointer-events: auto;"
               >
-                <v-icon>fas fa-external-link-alt</v-icon>
+                <v-icon small>fas fa-external-link-alt</v-icon>
               </v-btn>
             </v-hover>
           </v-toolbar>
           <a :href="work.url" target="_blank" rel="noopener noreferrer">
             <v-img :src="work.src" width="100%" :height="imageHeight"> </v-img>
           </a>
-          <v-card-title primary-title class="px-3 py-2">
-            <h3 class="mb-0 pr-5">{{ work.title }}</h3>
+          <v-card-title class="subtitle-1 font-weight-medium px-3 pt-1 pb-0">
+            <span class="pr-12">{{ work.title }}</span>
           </v-card-title>
           <v-divider inset></v-divider>
-          <v-card-text class="px-3 py-2">
+          <v-card-text class="body-2 px-3 py-2">
             <span v-if="work.rawHtml === true" v-html="work.description"></span>
             <span v-else>
               {{ work.description }}

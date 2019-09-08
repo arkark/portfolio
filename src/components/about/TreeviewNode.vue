@@ -19,7 +19,7 @@
         rel="noopener noreferrer"
         color="primary"
         icon
-        flat
+        text
         small
         class="mx-1 my-0"
         style="position: absolute;"
@@ -28,21 +28,16 @@
       </v-btn>
     </span>
     <v-dialog v-if="item.hasOwnProperty('src')" width="500">
-      <v-btn
-        slot="activator"
-        :href="item.url"
-        color="primary"
-        icon
-        flat
-        small
-        class="mx-1 my-0"
-      >
-        <v-icon size="16px">fas fa-expand</v-icon>
-      </v-btn>
+      <template v-slot:activator="{ on }">
+        <v-btn color="primary" icon text small class="mx-1 my-0" v-on="on">
+          <v-icon size="16px">fas fa-expand</v-icon>
+        </v-btn>
+      </template>
       <v-card>
         <v-img :src="item.src"></v-img>
       </v-card>
     </v-dialog>
+    <v-img v-show="false" :src="item.src"></v-img>
     <treeview
       v-if="item.hasOwnProperty('children')"
       :items="item.children"

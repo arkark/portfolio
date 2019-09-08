@@ -1,7 +1,7 @@
 <template>
   <v-layout>
-    <v-flex align-center justify-center text-xs-center>
-      <v-avatar size="96">
+    <v-flex align-center justify-center text-center>
+      <v-avatar size="112">
         <img
           :src="require('@/assets/ark.png')"
           class="spinner"

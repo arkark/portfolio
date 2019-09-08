@@ -27,5 +27,6 @@ export default {
 <style>
 * {
   text-transform: none !important;
+  word-break: normal !important;
 }
 </style>

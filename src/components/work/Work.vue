@@ -13,12 +13,16 @@
         <v-card-text>
           <v-divider></v-divider>
         </v-card-text>
-        <v-container class="pa-2">
-          <v-layout wrap justify-start>
-            <v-flex v-for="(work, key) in workList" :key="key" row>
-              <work-node :work="work"></work-node>
-            </v-flex>
-          </v-layout>
+        <v-container class="pa-3">
+          <v-row>
+            <v-col cols="12">
+              <v-row justify="center">
+                <v-flex v-for="(work, key) in workList" :key="key" row>
+                  <work-node :work="work"></work-node>
+                </v-flex>
+              </v-row>
+            </v-col>
+          </v-row>
         </v-container>
       </v-card>
     </v-layout>
