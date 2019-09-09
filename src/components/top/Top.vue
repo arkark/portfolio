@@ -7,7 +7,7 @@
             Ark's page
           </p>
           <p class="text-center mb-2">
-            I <v-icon small>favorite</v-icon> creating something!
+            I <v-icon small>fas fa-heart</v-icon> creating something!
           </p>
           <v-divider class="py-1"></v-divider>
           <v-layout class="ma-1 pa-0">
