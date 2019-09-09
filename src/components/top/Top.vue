@@ -3,12 +3,14 @@
     <v-layout align-center justify-center>
       <v-card width="420" color="rgba(255, 255, 255, 0.9)" class="elevation-6">
         <v-container class="pa-6" align-center justify-center>
-          <h2 class="text-center">Ark's page</h2>
+          <p class="text-center display-1 font-weight-medium mb-1">
+            Ark's page
+          </p>
           <p class="text-center mb-2">
             I <v-icon small>favorite</v-icon> creating something!
           </p>
           <v-divider></v-divider>
-          <v-layout class="ma-2 pa-0">
+          <v-layout class="ma-3 pa-0">
             <ark-icon></ark-icon>
           </v-layout>
           <p class="text-center mb-1">

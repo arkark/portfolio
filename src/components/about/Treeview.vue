@@ -1,9 +1,21 @@
 <template>
-  <ul>
-    <li v-for="item in items" :key="item.id" class="py-1">
-      <treeview-node :item="item" :depth="depth"></treeview-node>
-    </li>
-  </ul>
+  <div>
+    <template v-if="depth === 0">
+      <p v-for="item in items" :key="item.id">
+        <treeview-node :item="item" :depth="depth"></treeview-node>
+      </p>
+    </template>
+    <template v-else-if="depth === 1">
+      <p v-for="item in items" :key="item.id" class="pl-6 ma-0">
+        <treeview-node :item="item" :depth="depth"></treeview-node>
+      </p>
+    </template>
+    <ul v-else>
+      <li v-for="item in items" :key="item.id">
+        <treeview-node :item="item" :depth="depth"></treeview-node>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>

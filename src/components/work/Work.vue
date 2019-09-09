@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import workList from "@/data/workList.js";
+import workList from "@/data/work.js";
 import WorkNode from "@/components/work/WorkNode.vue";
 
 export default {

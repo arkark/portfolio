@@ -1,5 +1,5 @@
 <template>
-  <div class="subheading">
+  <span :class="depth === 0 ? 'title mt-2' : 'subtitle-1'">
     <span
       v-if="item.hasOwnProperty('icon')"
       style="display: inline-block; text-align: center; width: 1.4em;"
@@ -43,7 +43,7 @@
       :items="item.children"
       :depth="depth + 1"
     ></treeview>
-  </div>
+  </span>
 </template>
 
 <script>

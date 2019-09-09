@@ -71,7 +71,7 @@
             <span class="pr-12">{{ work.title }}</span>
           </v-card-title>
           <v-divider inset></v-divider>
-          <v-card-text class="body-2 px-3 py-2">
+          <v-card-text class="body-2 font-weight-medium px-3 py-2">
             <span v-if="work.rawHtml === true" v-html="work.description"></span>
             <span v-else>
               {{ work.description }}

@@ -32,8 +32,8 @@
 
 <script>
 import Treeview from "@/components/about/Treeview";
-import awardList from "@/data/awardList";
-import internList from "@/data/internList";
+import awardList from "@/data/award";
+import internList from "@/data/intern";
 
 export default {
   data: function() {
@@ -92,7 +92,7 @@ export default {
             {
               id: "4-1",
               label:
-                "ゲーム制作、競技プログラミング、CTF、創作全般、ゲーム、アニメ"
+                "競技プログラミング、CTF、ゲーム制作、創作全般、ゲーム、アニメ"
             },
             {
               id: "4-2",
