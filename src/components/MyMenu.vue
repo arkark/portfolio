@@ -6,66 +6,29 @@
     direction="bottom"
     transition="scale-transition"
     fixed
-    class="mr-2"
+    class="mr-5"
+    :open-on-hover="hover"
   >
-    <v-hover slot="activator">
-      <v-btn
-        slot-scope="{ hover }"
-        v-model="fab"
-        color="blue darken-2"
-        dark
-        fab
-        :class="`elevation-${hover ? 12 : 2}`"
-        class="mb-2"
-      >
-        <v-icon>fas fa-bars</v-icon>
-        <v-icon>fas fa-times</v-icon>
+    <template v-slot:activator>
+      <v-btn v-model="fab" color="blue darken-2" dark fab class="mb-2">
+        <v-icon v-if="fab">fas fa-times</v-icon>
+        <v-icon v-else>fas fa-bars</v-icon>
       </v-btn>
-    </v-hover>
+    </template>
 
-    <v-hover>
-      <v-btn
-        slot-scope="{ hover }"
-        dark
-        :small="!hover"
-        color="green"
-        to="/"
-        :class="`elevation-${hover ? 12 : 2}`"
-        round
-      >
-        <v-icon size="18px">fas fa-home</v-icon><span>&nbsp;&nbsp;Top</span>
-      </v-btn>
-    </v-hover>
+    <v-btn dark color="green" to="/" rounded>
+      <v-icon size="18px">fas fa-home</v-icon><span>&nbsp;&nbsp;Top</span>
+    </v-btn>
 
-    <v-hover>
-      <v-btn
-        slot-scope="{ hover }"
-        dark
-        :small="!hover"
-        color="indigo"
-        to="/works"
-        :class="`elevation-${hover ? 12 : 2}`"
-        round
-      >
-        <v-icon size="18px">fas fa-lightbulb</v-icon
-        ><span>&nbsp;&nbsp;Works</span>
-      </v-btn>
-    </v-hover>
+    <v-btn dark color="indigo" to="/works" rounded>
+      <v-icon size="18px">fas fa-lightbulb</v-icon
+      ><span>&nbsp;&nbsp;Works</span>
+    </v-btn>
 
-    <v-hover>
-      <v-btn
-        slot-scope="{ hover }"
-        dark
-        :small="!hover"
-        color="red"
-        to="/about"
-        :class="`elevation-${hover ? 12 : 2}`"
-        round
-      >
-        <v-icon size="18px">fas fa-address-card</v-icon
-        ><span>&nbsp;&nbsp;About</span>
-      </v-btn>
-    </v-hover>
+    <v-btn dark color="red" to="/about" rounded>
+      <v-icon size="18px">fas fa-address-card</v-icon
+      ><span>&nbsp;&nbsp;About</span>
+    </v-btn>
   </v-speed-dial>
 </template>
 
@@ -73,22 +36,9 @@
 export default {
   data: function() {
     return {
-      fab: false,
-      tooltips: false,
-      tooltipsDisabled: true
+      hover: false,
+      fab: false
     };
-  },
-  watch: {
-    fab(val) {
-      this.tooltips = false;
-      this.tooltipsDisabled = false;
-      if (val) {
-        setTimeout(() => {
-          this.tooltips = true;
-          this.$nextTick(() => (this.tooltipsDisabled = true));
-        }, 250);
-      }
-    }
   }
 };
 </script>
