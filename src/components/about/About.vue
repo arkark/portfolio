@@ -189,11 +189,12 @@ export default {
             },
             {
               id: "9-2",
-              label: "使う：Kotlin、C、C++、JavaScript、Java、Processing、GLSL"
+              label:
+                "使う：Kotlin、Go、C、C++、JavaScript、Java、Processing、GLSL"
             },
             {
               id: "9-3",
-              label: "少し：Rust、Scala、Go、PHP、Prolog、Python"
+              label: "少し：Rust、Scala、PHP、Prolog、Ruby、Python"
             }
           ]
         },
