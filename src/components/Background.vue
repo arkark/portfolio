@@ -52,7 +52,7 @@ export default {
       this.ctx.scale(ratio, ratio);
     },
     isPhone() {
-      return isMobile.phone;
+      return isMobile().phone;
     }
   }
 };
