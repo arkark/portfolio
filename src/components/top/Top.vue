@@ -9,11 +9,11 @@
           <p class="text-center mb-2">
             I <v-icon small>favorite</v-icon> creating something!
           </p>
-          <v-divider></v-divider>
-          <v-layout class="ma-3 pa-0">
+          <v-divider class="py-1"></v-divider>
+          <v-layout class="ma-1 pa-0">
             <ark-icon></ark-icon>
           </v-layout>
-          <p class="text-center mb-1">
+          <p class="text-center font-weight-medium text--secondary mb-1">
             Mathematics / Computer Science / Programming
           </p>
           <v-layout align-center justify-center>

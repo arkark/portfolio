@@ -10,19 +10,19 @@
         <v-card-text class="py-2">
           <v-divider></v-divider>
         </v-card-text>
-        <v-card-text class="py-2">
+        <v-card-text class="text--primary">
           <treeview :items="mainItems"></treeview>
         </v-card-text>
         <v-card-text>
           <v-divider></v-divider>
         </v-card-text>
-        <v-card-text class="py-2">
+        <v-card-text class="text--primary">
           <treeview :items="awardItems"></treeview>
         </v-card-text>
         <v-card-text>
           <v-divider></v-divider>
         </v-card-text>
-        <v-card-text class="pt-2">
+        <v-card-text class="text--primary">
           <treeview :items="internItems"></treeview>
         </v-card-text>
       </v-card>
