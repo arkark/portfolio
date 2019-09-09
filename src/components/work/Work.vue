@@ -10,16 +10,20 @@
         <v-card-text class="px-3 py-0">
           <div class="pl-2">今までつくってきたものとか（新しい順）</div>
         </v-card-text>
-        <v-card-text>
+        <v-card-text class="py-2">
           <v-divider></v-divider>
         </v-card-text>
-        <v-container class="pa-3">
+        <v-container class="px-3 py-0">
           <v-row>
             <v-col cols="12">
               <v-row justify="center">
-                <v-flex v-for="(work, key) in workList" :key="key" row>
-                  <work-node :work="work"></work-node>
-                </v-flex>
+                <work-node
+                  v-for="(work, key) in workList"
+                  :key="key"
+                  :work="work"
+                  class="ma-2"
+                >
+                </work-node>
               </v-row>
             </v-col>
           </v-row>

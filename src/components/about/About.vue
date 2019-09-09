@@ -7,7 +7,7 @@
             <v-icon large>fas fa-address-card</v-icon>&nbsp;&nbsp;About
           </p>
         </v-card-title>
-        <v-card-text>
+        <v-card-text class="py-2">
           <v-divider></v-divider>
         </v-card-text>
         <v-card-text class="py-2">
