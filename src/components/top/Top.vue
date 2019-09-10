@@ -3,11 +3,12 @@
     :width="screenWidth"
     :height="screenHeight"
     color="#fff0"
+    flat
     v-resize="onResize"
   >
     <v-container fill-height>
       <v-layout align-center justify-center>
-        <v-card width="480" color="rgba(0, 0, 0, 0.3)" dark>
+        <v-card width="480" color="rgba(0, 0, 0, 0)" flat dark>
           <v-container class="pa-6" align-center justify-center>
             <p class="text-center display-1 font-weight-medium mb-1">
               Ark's page
@@ -15,7 +16,10 @@
             <p class="text-center mb-2">
               I <v-icon small>fas fa-heart</v-icon> creating something!
             </p>
-            <v-divider class="py-1"></v-divider>
+            <v-divider
+              class="pt-0 pb-4 mx-2"
+              style="border-color: rgba(255, 255, 255, 0.6);"
+            ></v-divider>
             <v-layout class="ma-1 pa-0">
               <ark-icon></ark-icon>
             </v-layout>
@@ -58,7 +62,7 @@ export default {
           iconName: "fab fa-twitter"
         },
         {
-          url: "http://ark4rk.hatenablog.com/",
+          url: "http://ark4rk.hatenablog.com",
           iconName: "fas fa-rss"
         }
       ],

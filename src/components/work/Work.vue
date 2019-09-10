@@ -8,7 +8,7 @@
           </p>
         </v-card-title>
         <v-card-text class="px-3 py-0">
-          <div class="pl-2">今までつくってきたものとか（新しい順）</div>
+          <div class="pl-2">今までつくってきたものとか （新しい順）</div>
         </v-card-text>
         <v-card-text class="py-2">
           <v-divider></v-divider>
