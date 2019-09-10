@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-layout align-center justify-center>
-      <v-card color="rgba(255, 255, 255, 0.9)" class="elevation-6 pa-2">
+      <v-card color="#fff0" flat class="ma-10">
         <v-card-title primary-title class="px-3 pt-2 pb-0">
           <p class="display-1 mb-0 pl-2">
             <v-icon large>fas fa-address-card</v-icon>&nbsp;&nbsp;About

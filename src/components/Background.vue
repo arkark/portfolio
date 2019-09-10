@@ -14,7 +14,7 @@ export default {
       moveSpeed: 0.6,
       intervalDelay: 100,
       numAtOnce: this.isPhone() ? 20 : 40,
-      nodeNum: this.isPhone() ? 100 : 200
+      nodeNum: this.isPhone() ? 75 : 150
     };
   },
   mounted() {
@@ -42,8 +42,8 @@ export default {
       this.resizeCanvas();
     },
     resizeCanvas() {
-      const width = document.body.clientWidth;
-      const height = document.body.clientHeight;
+      const width = document.documentElement.clientWidth;
+      const height = document.documentElement.clientHeight;
       const ratio = window.devicePixelRatio;
       this.ctx.canvas.style.width = width + "px";
       this.ctx.canvas.style.height = height + "px";
@@ -60,7 +60,7 @@ export default {
 
 <style>
 #background {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   background: #030e29;

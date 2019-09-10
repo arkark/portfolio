@@ -1,14 +1,14 @@
 <template>
   <v-container fill-height>
     <v-layout align-center justify-center>
-      <v-card color="rgba(255, 255, 255, 0.9)" class="elevation-6 pa-2">
+      <v-card color="#fff0" flat class="ma-10">
         <v-card-title primary-title class="px-3 py-2">
           <p class="display-1 mb-0 pl-2">
             <v-icon large>fas fa-lightbulb</v-icon>&nbsp;&nbsp;Works
           </p>
         </v-card-title>
         <v-card-text class="px-3 py-0">
-          <div class="pl-2">今までつくってきたものとか（新しい順）</div>
+          <div class="pl-2">今までつくってきたものとか （新しい順）</div>
         </v-card-text>
         <v-card-text class="py-2">
           <v-divider></v-divider>
