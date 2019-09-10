@@ -1,38 +1,45 @@
 <template>
-  <v-container fill-height>
-    <v-layout align-center justify-center>
-      <v-card width="420" color="rgba(255, 255, 255, 0.9)" class="elevation-6">
-        <v-container class="pa-6" align-center justify-center>
-          <p class="text-center display-1 font-weight-medium mb-1">
-            Ark's page
-          </p>
-          <p class="text-center mb-2">
-            I <v-icon small>fas fa-heart</v-icon> creating something!
-          </p>
-          <v-divider class="py-1"></v-divider>
-          <v-layout class="ma-1 pa-0">
-            <ark-icon></ark-icon>
-          </v-layout>
-          <p class="text-center font-weight-medium text--secondary mb-1">
-            Mathematics / Computer Science / Programming
-          </p>
-          <v-layout align-center justify-center>
-            <v-btn
-              v-for="(account, key) in accountList"
-              :key="key"
-              fab
-              text
-              small
-              class="mx-2 my-1"
-              :href="account.url"
-            >
-              <v-icon large>{{ account.iconName }}</v-icon>
-            </v-btn>
-          </v-layout>
-        </v-container>
-      </v-card>
-    </v-layout>
-  </v-container>
+  <v-card
+    :width="screenWidth"
+    :height="screenHeight"
+    color="#fff0"
+    v-resize="onResize"
+  >
+    <v-container fill-height>
+      <v-layout align-center justify-center>
+        <v-card width="480" color="rgba(0, 0, 0, 0.3)" dark>
+          <v-container class="pa-6" align-center justify-center>
+            <p class="text-center display-1 font-weight-medium mb-1">
+              Ark's page
+            </p>
+            <p class="text-center mb-2">
+              I <v-icon small>fas fa-heart</v-icon> creating something!
+            </p>
+            <v-divider class="py-1"></v-divider>
+            <v-layout class="ma-1 pa-0">
+              <ark-icon></ark-icon>
+            </v-layout>
+            <p class="text-center font-weight-medium mb-1">
+              Mathematics / Computer Science / Programming
+            </p>
+            <v-layout align-center justify-center>
+              <v-btn
+                v-for="(account, key) in accountList"
+                :key="key"
+                fab
+                text
+                small
+                class="mx-2 my-1"
+                :href="account.url"
+              >
+                <v-icon large>{{ account.iconName }}</v-icon>
+              </v-btn>
+            </v-layout>
+          </v-container>
+        </v-card>
+      </v-layout>
+    </v-container>
+  </v-card>
 </template>
 
 <script>
@@ -54,8 +61,16 @@ export default {
           url: "http://ark4rk.hatenablog.com/",
           iconName: "fas fa-rss"
         }
-      ]
+      ],
+      screenWidth: document.documentElement.clientWidth,
+      screenHeight: document.documentElement.clientHeight
     };
+  },
+  methods: {
+    onResize: function() {
+      this.screenWidth = document.documentElement.clientWidth;
+      this.screenHeight = document.documentElement.clientHeight;
+    }
   },
   components: {
     ArkIcon
