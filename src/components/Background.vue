@@ -14,7 +14,7 @@ export default {
       moveSpeed: 0.6,
       intervalDelay: 100,
       numAtOnce: this.isPhone() ? 20 : 40,
-      nodeNum: this.isPhone() ? 100 : 200
+      nodeNum: this.isPhone() ? 75 : 150
     };
   },
   mounted() {
