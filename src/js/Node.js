@@ -81,11 +81,11 @@ export default class Node {
   }
 
   get nodeColor() {
-    return "rgba(90, 220, 250, 0.3)";
+    return "rgba(130, 240, 250, 0.3)";
   }
 
   get edgeColor() {
-    return "rgba(80, 200, 230, 0.2)";
+    return "rgba(100, 210, 250, 0.2)";
   }
 
   drawNode() {

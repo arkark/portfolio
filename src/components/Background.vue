@@ -63,6 +63,6 @@ export default {
   position: fixed;
   left: 0;
   top: 0;
-  background: #202530;
+  background: #030e29;
 }
 </style>
