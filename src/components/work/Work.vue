@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-layout align-center justify-center>
-      <v-card color="#fff0" flat class="ma-10">
+      <v-card color="#fff0" flat class="ma-3">
         <v-card-title primary-title class="px-3 py-2">
           <p class="display-1 mb-0 pl-2">
             <v-icon large>fas fa-lightbulb</v-icon>&nbsp;&nbsp;Works
