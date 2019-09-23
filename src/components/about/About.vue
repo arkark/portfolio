@@ -168,6 +168,7 @@ export default {
                 >
                   <img
                     src="${atcoder.badgeUrl}"
+                    style="vertical-align: middle;"
                   >
                 </a>
                 `,
