@@ -21,16 +21,14 @@
         icon
         text
         small
-        class="mx-1 my-0"
-        style="position: absolute;"
       >
-        <v-icon size="16px">fas fa-external-link-alt</v-icon>
+        <v-icon size="12px">fas fa-external-link-alt</v-icon>
       </v-btn>
     </span>
     <v-dialog v-if="item.hasOwnProperty('src')" width="500">
       <template v-slot:activator="{ on }">
-        <v-btn color="primary" icon text small class="mx-1 my-0" v-on="on">
-          <v-icon size="16px">fas fa-expand</v-icon>
+        <v-btn color="primary" icon text small v-on="on">
+          <v-icon size="12px">fas fa-expand</v-icon>
         </v-btn>
       </template>
       <v-card>
