@@ -3,18 +3,10 @@
     <div class="flex-grow-1"></div>
 
     <v-toolbar-items class="hidden-md-and-down">
-      <v-btn
-        text
-        class="font-weight-bold"
-        @click="$vuetify.goTo(parentRefs.work, options)"
-      >
+      <v-btn text class="font-weight-bold" @click="scroll(parentRefs.work)">
         Works
       </v-btn>
-      <v-btn
-        text
-        class="font-weight-bold"
-        @click="$vuetify.goTo(parentRefs.about, options)"
-      >
+      <v-btn text class="font-weight-bold" @click="scroll(parentRefs.about)">
         About
       </v-btn>
       <v-btn text class="font-weight-bold" href="https://github.com/ArkArk">
@@ -36,10 +28,10 @@
           </v-btn>
         </template>
         <v-list>
-          <v-list-item @click="$vuetify.goTo(parentRefs.work, options)">
+          <v-list-item @click="scroll(parentRefs.work)">
             <v-list-item-title>Works</v-list-item-title>
           </v-list-item>
-          <v-list-item @click="$vuetify.goTo(parentRefs.about, options)">
+          <v-list-item @click="scroll(parentRefs.about)">
             <v-list-item-title>About</v-list-item-title>
           </v-list-item>
           <v-list-item href="https://github.com/ArkArk">
@@ -75,6 +67,18 @@ export default {
         offset: 0,
         easing: "easeInOutCubic"
       };
+    }
+  },
+  methods: {
+    scroll: function(target) {
+      const hash = "#" + target.$el.id;
+      this.$vuetify.goTo(target, this.options);
+      if (hash !== window.location.hash) {
+        this.$router.push({
+          path: this.$route.path,
+          hash: hash
+        });
+      }
     }
   }
 };

@@ -15,5 +15,9 @@ export default new Router({
       path: "*",
       redirect: { name: "top" }
     }
-  ]
+  ],
+  scrollBehavior(_to, _from, _savedPosition) {
+    const selector = window.location.hash;
+    return selector !== "" ? { selector } : { x: 0, y: 0 };
+  }
 });
