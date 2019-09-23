@@ -1,7 +1,7 @@
 <template>
   <v-footer padless absolute color="#fff0" class="py-2">
     <div class="flex-grow-1"></div>
-    <v-btn class="mx-4" icon @click="$vuetify.goTo(0, options)">
+    <v-btn class="mx-4" icon @click="gotoTop">
       <v-icon>fas fa-chevron-up</v-icon>
     </v-btn>
   </v-footer>
@@ -19,6 +19,11 @@ export default {
         offset: 0,
         easing: "easeInOutCubic"
       };
+    }
+  },
+  methods: {
+    gotoTop: function() {
+      this.$vuetify.goTo(0, this.options);
     }
   }
 };

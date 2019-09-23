@@ -6,19 +6,19 @@
       <top ref="top"></top>
     </v-content>
     <v-content>
-      <work ref="work"></work>
+      <work id="work" ref="work"></work>
     </v-content>
     <v-content>
-      <about ref="about"></about>
+      <about id="about" ref="about"></about>
     </v-content>
-    <scroller></scroller>
+    <scroller-to-top></scroller-to-top>
   </v-app>
 </template>
 
 <script>
 import Background from "@/components/Background.vue";
 import ToolBar from "@/components/ToolBar.vue";
-import Scroller from "@/components/Scroller.vue";
+import ScrollerToTop from "@/components/ScrollerToTop.vue";
 import Top from "@/components/top/Top.vue";
 import Work from "@/components/work/Work.vue";
 import About from "@/components/about/About.vue";
@@ -28,13 +28,10 @@ export default {
   components: {
     Background,
     ToolBar,
-    Scroller,
+    ScrollerToTop,
     Top,
     Work,
     About
-  },
-  data() {
-    return {};
   }
 };
 </script>

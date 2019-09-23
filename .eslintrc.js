@@ -1,3 +1,5 @@
+const level = process.env.NODE_ENV === "production" ? "error" : "warn";
+
 module.exports = {
   root: true,
   env: {
@@ -9,7 +11,8 @@ module.exports = {
     "eslint:recommended"
   ],
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "error" : "warn"
+    "no-console": level,
+    "no-unused-vars": [level, { argsIgnorePattern: "^_" }]
   },
   parserOptions: {
     parser: "babel-eslint"
