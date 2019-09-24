@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "node"
   - "12"
+before_script:
+  - curl -L https://atcoder.jp/users/arkark/history/json -o src/data/atcoder-history.json
 script:
   - yarn lint
   - yarn build
