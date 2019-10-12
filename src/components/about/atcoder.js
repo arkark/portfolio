@@ -1,9 +1,7 @@
-const atcoderHistory = require("@/data/atcoder-history.json");
+const atcoderLastContest = require("@/data/atcoder-last-contest.json");
 
 const rating = (() => {
-  if (!Array.isArray(atcoderHistory)) return null;
-  if (atcoderHistory.length === 0) return null;
-  return atcoderHistory[atcoderHistory.length - 1].NewRating;
+  return atcoderLastContest.NewRating;
 })();
 
 const colors = {
