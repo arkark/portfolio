@@ -15,7 +15,11 @@
       <v-btn text class="font-weight-bold" href="https://twitter.com/arkark_">
         Twitter
       </v-btn>
-      <v-btn text class="font-weight-bold" href="http://ark4rk.hatenablog.com">
+      <v-btn
+        text
+        class="font-weight-bold"
+        href="https://ark4rk.hatenablog.com/archive"
+      >
         Blog
       </v-btn>
     </v-toolbar-items>

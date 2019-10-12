@@ -145,7 +145,7 @@ export default {
             {
               id: "8-3",
               label: "Hatena Blog : ark4rk",
-              url: "http://ark4rk.hatenablog.com/"
+              url: "https://ark4rk.hatenablog.com/archive"
             },
             // {
             //   id: "8-4",

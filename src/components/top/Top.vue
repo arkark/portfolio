@@ -62,7 +62,7 @@ export default {
           iconName: "fab fa-twitter"
         },
         {
-          url: "http://ark4rk.hatenablog.com",
+          url: "https://ark4rk.hatenablog.com/archive",
           iconName: "fas fa-rss"
         }
       ],
