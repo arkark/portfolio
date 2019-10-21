@@ -10,7 +10,8 @@ export default {
         {
           id: "1-2019-5",
           label:
-            "ウォンテッドリー株式会社：Wantedly Summer Intern, Infrastructure"
+            "ウォンテッドリー株式会社：Wantedly Summer Intern, Infrastructure",
+          url: "https://ark4rk.hatenablog.com/entry/2019/10/21/155106"
         },
         {
           id: "1-2019-4",
