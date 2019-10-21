@@ -1,6 +1,6 @@
 export default {
   id: "1",
-  label: "大会等",
+  label: "戦歴",
   icon: "fas fa-award",
   children: [
     {
@@ -8,9 +8,26 @@ export default {
       label: "2019",
       children: [
         {
+          id: "1-2019-5",
+          label: "SECCON 2019 CTF：予選37位（チーム：./Vespiary）"
+        },
+        {
+          id: "1-2019-4",
+          label:
+            "<b>ハル研究所 プログラミングコンテスト2019：暫定9位（学生8位）</b>",
+          url: "https://ark4rk.hatenablog.com/entry/2019/10/17/170907",
+          rawHtml: true
+        },
+        {
+          id: "1-2019-3",
+          label: "第一回日本最強プログラマー学生選手権：本戦出場"
+        },
+        {
           id: "1-2019-2",
-          label: "Battle Conference U30 #2019 PROGRAMMING BATTLE：本戦3位",
-          url: "https://ark4rk.hatenablog.com/entry/2019/07/06/224103"
+          label:
+            "<b>Battle Conference U30 #2019 PROGRAMMING BATTLE：本戦3位</b>",
+          url: "https://ark4rk.hatenablog.com/entry/2019/07/06/224103",
+          rawHtml: true
         },
         {
           id: "1-2019-1",
@@ -31,8 +48,10 @@ export default {
         },
         {
           id: "1-2018-3",
-          label: "ハル研究所 プログラミングコンテスト2018：23位（学生18位）",
-          url: "https://ark4rk.hatenablog.com/entry/2018/11/18/003654"
+          label:
+            "<b>ハル研究所 プログラミングコンテスト2018：23位（学生18位）</b>",
+          url: "https://ark4rk.hatenablog.com/entry/2018/11/18/003654",
+          rawHtml: true
         },
         {
           id: "1-2018-2",
@@ -57,8 +76,10 @@ export default {
         },
         {
           id: "1-2017-1",
-          label: "ハル研究所プログラミングコンテスト2017：7位（学生5位）",
-          url: "https://ark4rk.hatenablog.com/entry/2017/11/21/182044"
+          label:
+            "<b>ハル研究所プログラミングコンテスト2017：7位（学生5位）</b>",
+          url: "https://ark4rk.hatenablog.com/entry/2017/11/21/182044",
+          rawHtml: true
         }
       ]
     },

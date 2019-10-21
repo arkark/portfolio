@@ -203,7 +203,7 @@ export default {
             {
               id: "9-2",
               label:
-                "使う：Kotlin、Go、C、C++、JavaScript、Java、Processing、GLSL"
+                "使う：Kotlin、Go、C、C++、JavaScript、Java、Processing、GLSL、Shell Script"
             },
             {
               id: "9-3",
