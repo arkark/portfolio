@@ -8,6 +8,10 @@ export default {
       label: "2019",
       children: [
         {
+          id: "1-2019-6",
+          label: "株式会社VOYAGE GROUP：Sunrise 大規模サービス構築プログラム"
+        },
+        {
           id: "1-2019-5",
           label:
             "ウォンテッドリー株式会社：Wantedly Summer Intern, Infrastructure",
