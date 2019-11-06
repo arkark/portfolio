@@ -81,7 +81,7 @@ export default {
       children: [
         {
           id: "1-1-1",
-          label: "SECCON 2019 CTF：予選37位（チーム：./Vespiary）"
+          label: "SECCON 2019 CTF：予選37位、国内決勝進出（チーム：./Vespiary）"
         }
       ]
     }
