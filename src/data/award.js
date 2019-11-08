@@ -53,7 +53,7 @@ export default {
       children: [
         {
           id: "1-2-4",
-          label: "ハル研究所 プログラミングコンテスト2019：暫定9位（学生8位）",
+          label: "ハル研究所 プログラミングコンテスト2019：9位（学生8位）",
           url: "https://ark4rk.hatenablog.com/entry/2019/10/17/170907"
         },
         {
