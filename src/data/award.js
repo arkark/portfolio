@@ -1,3 +1,5 @@
+import atcoder from "@/components/about/atcoder.js";
+
 export default {
   id: "1",
   label: "コンテスト",
@@ -5,7 +7,19 @@ export default {
   children: [
     {
       id: "1-3",
-      label: " <b style='font-size: 1.05em;'>競技プログラミング</b>",
+      label: `
+        <b style='font-size: 1.05em;'>競技プログラミング</b>
+        <a
+          href="https://atcoder.jp/user/arkark"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="${atcoder.badgeUrl}"
+            style="vertical-align: middle;"
+          >
+        </a>
+      `,
       rawHtml: true,
       icon: "fas fa-code",
       children: [

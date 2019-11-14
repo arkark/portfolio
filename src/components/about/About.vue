@@ -34,7 +34,6 @@
 import Treeview from "@/components/about/Treeview";
 import awardList from "@/data/award";
 import internList from "@/data/intern";
-import atcoder from "@/components/about/atcoder.js";
 
 export default {
   data: function() {
@@ -169,20 +168,8 @@ export default {
             // },
             {
               id: "8-6",
-              label: `
-                <span>AtCoder : arkark</span>
-                <a
-                  href="https://atcoder.jp/user/arkark"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="${atcoder.badgeUrl}"
-                    style="vertical-align: middle;"
-                  >
-                </a>
-                `,
-              rawHtml: true
+              label: "AtCoder : arkark",
+              url: "https://atcoder.jp/user/arkark"
             },
             {
               id: "8-7",
