@@ -94,8 +94,14 @@ export default {
       icon: "fas fa-shield-alt",
       children: [
         {
-          id: "1-1-1",
+          id: "1-1-2",
           label: "SECCON 2019 CTF：予選37位、国内決勝進出（チーム：./Vespiary）"
+        },
+        {
+          id: "1-1-1",
+          label:
+            '<a href="https://ark4rk.hatenablog.com/archive/category/CTF">writeup</a>',
+          rawHtml: true
         }
       ]
     }

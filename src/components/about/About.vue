@@ -18,11 +18,7 @@
         </v-card-text>
         <v-card-text class="text--primary">
           <treeview :items="awardItems"></treeview>
-        </v-card-text>
-        <v-card-text>
-          <v-divider></v-divider>
-        </v-card-text>
-        <v-card-text class="text--primary">
+          <treeview :items="activityItems"></treeview>
           <treeview :items="internItems"></treeview>
         </v-card-text>
       </v-card>
@@ -33,6 +29,7 @@
 <script>
 import Treeview from "@/components/about/Treeview";
 import awardList from "@/data/award";
+import activityList from "@/data/activity";
 import internList from "@/data/intern";
 
 export default {
@@ -79,7 +76,7 @@ export default {
           children: [
             {
               id: "3-1",
-              label: "デジタル創作同好会 traP",
+              label: "東京工業大学デジタル創作同好会 traP",
               url: "https://trap.jp/"
             }
           ]
@@ -223,6 +220,7 @@ export default {
         }
       ],
       awardItems: [awardList],
+      activityItems: [activityList],
       internItems: [internList]
     };
   },
