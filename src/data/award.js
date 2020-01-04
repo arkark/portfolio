@@ -24,16 +24,16 @@ export default {
       icon: "fas fa-code",
       children: [
         {
-          id: "1-3-3",
+          id: "1-3-7",
           label: "第一回日本最強プログラマー学生選手権：本戦出場"
         },
         {
-          id: "1-3-2",
+          id: "1-3-6",
           label: "Battle Conference U30 #2019 PROGRAMMING BATTLE：本戦3位",
           url: "https://ark4rk.hatenablog.com/entry/2019/07/06/224103"
         },
         {
-          id: "1-3-1",
+          id: "1-3-5",
           label:
             "DISCO presents ディスカバリーチャンネル コードコンテスト2019：本戦出場",
           url: "https://ark4rk.hatenablog.com/entry/2019/01/19/212955"
@@ -44,7 +44,7 @@ export default {
           url: "https://ark4rk.hatenablog.com/entry/2018/11/27/234808"
         },
         {
-          id: "1-3-1",
+          id: "1-3-3",
           label: "第4回 ドワンゴからの挑戦状：本戦出場",
           url: "https://ark4rk.hatenablog.com/entry/2018/02/04/024943"
         },
