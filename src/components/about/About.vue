@@ -88,13 +88,12 @@ export default {
           children: [
             {
               id: "4-1",
-              label:
-                "競技プログラミング、CTF、ゲーム制作、創作全般、ゲーム、アニメ"
+              label: "競技プログラミング、CTF、ゲーム制作、創作、ゲーム、アニメ"
             },
             {
               id: "4-2",
               label:
-                '好きなゲーム：<a href="https://store.steampowered.com/app/210970/The_Witness/">The Witness</a>、<a href="https://store.steampowered.com/app/381890/Induction/">Induction</a>、スマブラ',
+                '好きなゲーム : <a href="https://store.steampowered.com/app/210970/The_Witness/">The Witness</a>、<a href="https://store.steampowered.com/app/381890/Induction/">Induction</a>、スマブラ',
               rawHtml: true
             }
           ]
@@ -111,11 +110,11 @@ export default {
               children: [
                 {
                   id: "5-1-1",
-                  label: "好きなアルゴリズム：imos法"
+                  label: "好きなアルゴリズム : imos法"
                 },
                 {
                   id: "5-1-2",
-                  label: "好きなデータ構造：Segment Tree"
+                  label: "好きなデータ構造 : Segment Tree"
                 }
               ]
             }
@@ -140,38 +139,42 @@ export default {
           children: [
             {
               id: "8-1",
-              label: "GitHub : ArkArk",
-              url: "https://github.com/ArkArk"
+              label: 'GitHub : <a href="https://github.com/ArkArk">ArkArk</a>',
+              rawHtml: true
             },
             {
               id: "8-2",
-              label: "Twitter : @arkark_",
-              url: "https://twitter.com/arkark_"
+              label:
+                'Twitter : <a href="https://twitter.com/arkark_">@arkark_</a>',
+              rawHtml: true
             },
             {
               id: "8-3",
-              label: "Hatena Blog : ark4rk",
-              url: "https://ark4rk.hatenablog.com/archive"
+              label:
+                'Hatena Blog : <a href="https://ark4rk.hatenablog.com/archive">ark4rk</a>',
+              rawHtml: true
             },
             // {
             //   id: "8-4",
-            //   label: "traP：Ark",
-            //   url: "https://trap.jp/author/ark/"
+            //   label: 'traP : <a href="https://trap.jp/author/ark/">Ark</a>',
+            //   rawHtml: true
             // },
             // {
             //   id: "8-5",
-            //   label: "Qiita：Ark",
-            //   url: "https://qiita.com/Ark"
+            //   label: 'Qiita : <a href="https://qiita.com/Ark">Ark</a>',
+            //   rawHtml: true
             // },
             {
               id: "8-6",
-              label: "AtCoder : arkark",
-              url: "https://atcoder.jp/user/arkark"
+              label:
+                'AtCoder : <a href="https://atcoder.jp/user/arkark">arkark</a>',
+              rawHtml: true
             },
             {
               id: "8-7",
-              label: "Shadertoy : Ark",
-              url: "https://www.shadertoy.com/user/Ark"
+              label:
+                'Shadertoy : <a href="https://www.shadertoy.com/user/Ark">Ark</a>',
+              rawHtml: true
             },
             {
               id: "8-8",
@@ -180,8 +183,9 @@ export default {
             }
             // {
             //   id: "8-9",
-            //   label: "Docker Hub：arkark",
-            //   url: "https://hub.docker.com/u/arkark"
+            //   label:
+            //     'Docker Hub : <a href="https://hub.docker.com/u/arkark">arkark</a>',
+            //   rawHtml: true
             // }
           ]
         },
@@ -192,16 +196,20 @@ export default {
           children: [
             {
               id: "9-1",
-              label: "常用：D"
+              label: "メイン : D"
             },
             {
               id: "9-2",
-              label:
-                "使う：Kotlin、Go、C、C++、JavaScript、Java、Processing、GLSL、Shell Script"
+              label: "よく使う : Kotlin、JavaScript"
             },
             {
               id: "9-3",
-              label: "少し：Rust、Scala、PHP、Prolog、Ruby、Python"
+              label:
+                "使う : Rust、C、C++、Go、Python、Java、Processing、GLSL、Shell Script"
+            },
+            {
+              id: "9-4",
+              label: "少し : Scala、PHP、Prolog、Ruby"
             }
           ]
         },
