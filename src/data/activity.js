@@ -19,19 +19,19 @@ export default {
       id: "1-1",
       label: "GAME<sup>3</sup>",
       rawHtml: true,
-      url: "https://game3.trapti.tech/",
+      url: "https://game3.trap.jp/",
       children: [
         {
           id: "1-1-2",
           label: "第4回ゲーム製作者交流会GAME<sup>3</sup>",
           rawHtml: true,
-          url: "https://game3.trapti.tech/report/4th/"
+          url: "https://game3.trap.jp/report/4th/"
         },
         {
           id: "1-1-1",
           label: "第3回ゲーム製作者交流会GAME<sup>3</sup>",
           rawHtml: true,
-          url: "https://game3.trapti.tech/report/3rd/"
+          url: "https://game3.trap.jp/report/3rd/"
         }
       ]
     }
