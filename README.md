@@ -1,6 +1,6 @@
 My Portfolio Website
 ===
 
-[![Build Status](https://travis-ci.com/ArkArk/ArkArk.github.io.svg?branch=develop)](https://travis-ci.com/ArkArk/ArkArk.github.io)
+[![Build Status](https://travis-ci.com/arkark/arkark.github.io.svg?branch=develop)](https://travis-ci.com/arkark/arkark.github.io)
 
 - [Ark's page](https://arkark.github.io/)

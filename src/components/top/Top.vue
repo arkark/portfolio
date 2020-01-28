@@ -54,7 +54,7 @@ export default {
     return {
       accountList: [
         {
-          url: "https://github.com/ArkArk",
+          url: "https://github.com/arkark",
           iconName: "fab fa-github"
         },
         {

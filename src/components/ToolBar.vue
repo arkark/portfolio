@@ -9,7 +9,7 @@
       <v-btn text class="font-weight-bold" @click="scroll(parentRefs.about)">
         About
       </v-btn>
-      <v-btn text class="font-weight-bold" href="https://github.com/ArkArk">
+      <v-btn text class="font-weight-bold" href="https://github.com/arkark">
         GitHub
       </v-btn>
       <v-btn text class="font-weight-bold" href="https://twitter.com/arkark_">
@@ -38,7 +38,7 @@
           <v-list-item @click="scroll(parentRefs.about)">
             <v-list-item-title>About</v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://github.com/ArkArk">
+          <v-list-item href="https://github.com/arkark">
             <v-list-item-title>GitHub</v-list-item-title>
           </v-list-item>
           <v-list-item href="https://twitter.com/arkark_">

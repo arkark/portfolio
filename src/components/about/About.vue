@@ -139,7 +139,7 @@ export default {
           children: [
             {
               id: "8-1",
-              label: 'GitHub : <a href="https://github.com/ArkArk">ArkArk</a>',
+              label: 'GitHub : <a href="https://github.com/arkark">arkark</a>',
               rawHtml: true
             },
             {
@@ -221,7 +221,7 @@ export default {
             {
               id: "10-1",
               label:
-                '<a href="https://github.com/ArkArk/dotfiles/blob/master/files/.gitconfig">Git</a>、Docker、Vue.js、Qt、libGDX',
+                '<a href="https://github.com/arkark/dotfiles/blob/master/files/.gitconfig">Git</a>、Docker、Vue.js、Qt、libGDX',
               rawHtml: true
             }
           ]

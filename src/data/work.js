@@ -1,7 +1,7 @@
 export default [
   {
     title: "dcp",
-    url: "https://github.com/ArkArk/dcp",
+    url: "https://github.com/arkark/dcp",
     src: require("@/assets/ss/tool/dcp.png"),
     group: "Tool",
     description:
@@ -10,9 +10,9 @@ export default [
   },
   {
     title: "DistortionCamera",
-    url: "https://github.com/ArkArk/DistortionCamera",
+    url: "https://github.com/arkark/DistortionCamera",
     src:
-      "https://github.com/ArkArk/DistortionCamera/blob/master/screenshot.png?raw=true",
+      "https://github.com/arkark/DistortionCamera/blob/master/screenshot.png?raw=true",
     group: "App",
     description:
       "センサに反応して空間を歪ませながら撮影できるカメラのAndroidアプリ",
@@ -30,18 +30,18 @@ export default [
   },
   {
     title: "latexmk-docker",
-    url: "https://github.com/ArkArk/latexmk-docker",
+    url: "https://github.com/arkark/latexmk-docker",
     src:
-      "https://github.com/ArkArk/latexmk-docker/blob/master/screenshot.png?raw=true",
+      "https://github.com/arkark/latexmk-docker/blob/master/screenshot.png?raw=true",
     group: "Tool",
     description: "Docker上で動く快適なLatex環境",
     date: "2019/1"
   },
   {
     title: "D-Prolog",
-    url: "https://github.com/ArkArk/d-prolog",
+    url: "https://github.com/arkark/d-prolog",
     src:
-      "https://raw.githubusercontent.com/ArkArk/d-prolog/master/demo/demo.gif",
+      "https://raw.githubusercontent.com/arkark/d-prolog/master/demo/demo.gif",
     group: "Language",
     description: "D言語でつくったProlog処理系",
     date: "2018/11"
@@ -158,7 +158,7 @@ export default [
   },
   {
     title: "Teleport Puzzle",
-    url: "https://github.com/ArkArk/TeleportPuzzle",
+    url: "https://github.com/arkark/TeleportPuzzle",
     src: require("@/assets/ss/game/teleport_puzzle.png"),
     group: "Game",
     description: "2016年工大祭向けに作ったパズルアクションゲーム",
@@ -166,7 +166,7 @@ export default [
   },
   {
     title: "One Day One Gif",
-    url: "https://github.com/ArkArk/OneDayOneGif",
+    url: "https://github.com/arkark/OneDayOneGif",
     src: require("@/assets/ss/design/one_day_one_gif.png"),
     group: "Design",
     description: "「毎日一枚gifを作る」という謎企画",
@@ -209,7 +209,7 @@ export default [
   },
   {
     title: "Spin! Spin!",
-    url: "https://github.com/ArkArk/Spin_Spin_",
+    url: "https://github.com/arkark/Spin_Spin_",
     src: require("@/assets/ss/game/spin_spin_.png"),
     group: "Game",
     description: "2015年工大祭向けに作った3D障害物避けゲーム",
@@ -217,7 +217,7 @@ export default [
   },
   {
     title: "Brainfuck製15パズル",
-    url: "https://github.com/ArkArk/15puzzle_brainfuck",
+    url: "https://github.com/arkark/15puzzle_brainfuck",
     src: require("@/assets/ss/game/15puzzle.png"),
     group: "Game",
     description: "brainfuckで制作したコンソールゲームです。",
