@@ -5,7 +5,7 @@ node_js:
 before_script:
   - curl -L https://atcoder.jp/users/arkark/history/json | jq '.[-1]' > src/data/atcoder-last-contest.json
 script:
-  - yarn lint
+  - yarn lint --max-warnings=0
   - yarn build
 cache:
   yarn: true
