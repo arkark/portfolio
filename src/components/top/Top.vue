@@ -7,26 +7,24 @@
     v-resize="onResize"
   >
     <v-container fill-height>
-      <v-layout align-center justify-center>
-        <v-card width="480" color="rgba(0, 0, 0, 0)" flat dark>
-          <v-container class="pa-6" align-center justify-center>
-            <p class="text-center display-1 font-weight-medium mb-1">
-              Ark's page
-            </p>
-            <p class="text-center mb-2">
-              I <v-icon small>fas fa-heart</v-icon> creating something!
-            </p>
-            <v-divider
-              class="pt-0 pb-4 mx-2"
-              style="border-color: rgba(255, 255, 255, 0.6);"
-            ></v-divider>
-            <v-layout class="ma-1 pa-0">
-              <ark-icon></ark-icon>
-            </v-layout>
-            <p class="text-center font-weight-medium mb-1">
-              Mathematics / Computer Science / Programming
-            </p>
-            <v-layout align-center justify-center>
+      <v-row align="center">
+        <v-col align="center">
+          <v-card width="480" color="rgba(0, 0, 0, 0)" flat dark>
+            <v-container class="pa-6">
+              <p class="display-1 font-weight-medium mb-1">
+                Ark's page
+              </p>
+              <p class="body-2 mb-2">
+                I <v-icon small>fas fa-heart</v-icon> creating something!
+              </p>
+              <v-divider
+                class="py-0 mx-2"
+                style="border-color: rgba(255, 255, 255, 0.6);"
+              ></v-divider>
+              <ark-icon class="my-2"></ark-icon>
+              <p class="subtitle-2 mb-1">
+                Mathematics / Computer Science / Programming
+              </p>
               <v-btn
                 v-for="(account, key) in accountList"
                 :key="key"
@@ -38,10 +36,10 @@
               >
                 <v-icon large>{{ account.iconName }}</v-icon>
               </v-btn>
-            </v-layout>
-          </v-container>
-        </v-card>
-      </v-layout>
+            </v-container>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>
   </v-card>
 </template>

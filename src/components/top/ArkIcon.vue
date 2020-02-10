@@ -1,16 +1,12 @@
 <template>
-  <v-layout>
-    <v-flex align-center justify-center text-center>
-      <v-avatar size="112">
-        <img
-          :src="require('@/assets/ark.png')"
-          class="spinner"
-          :class="{ paused: isPaused }"
-          @click="flip"
-        />
-      </v-avatar>
-    </v-flex>
-  </v-layout>
+  <v-avatar size="112">
+    <img
+      :src="require('@/assets/ark.png')"
+      class="spinner"
+      :class="{ paused: isPaused }"
+      @click="flip"
+    />
+  </v-avatar>
 </template>
 
 <script>
