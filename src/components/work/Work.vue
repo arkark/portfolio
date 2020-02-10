@@ -1,15 +1,12 @@
 <template>
   <v-container>
-    <v-row align="center">
-      <v-card color="#fff0" flat class="ma-3">
+    <v-row align="center" justify="center">
+      <v-card flat :max-width="1024">
         <v-card-title primary-title class="px-3 py-2">
           <p class="display-1 mb-0 pl-2">
             <v-icon large>fas fa-lightbulb</v-icon>&nbsp;&nbsp;Works
           </p>
         </v-card-title>
-        <v-card-text class="px-3 py-0">
-          <div class="pl-2">今までつくってきたものとか （新しい順）</div>
-        </v-card-text>
         <v-card-text class="py-2">
           <v-divider></v-divider>
         </v-card-text>

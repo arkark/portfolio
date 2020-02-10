@@ -1,28 +1,26 @@
 <template>
   <v-container>
-    <v-row align="center">
-      <v-card color="#fff0" flat class="ma-3">
-        <v-row align="start">
-          <v-card-title primary-title class="px-3 pt-2 pb-0">
-            <p class="display-1 mb-0 pl-2">
-              <v-icon large>fas fa-address-card</v-icon>&nbsp;&nbsp;About
-            </p>
-          </v-card-title>
-          <v-card-text class="py-2">
-            <v-divider></v-divider>
-          </v-card-text>
-          <v-card-text class="text--primary">
-            <treeview :items="mainItems"></treeview>
-          </v-card-text>
-          <v-card-text>
-            <v-divider></v-divider>
-          </v-card-text>
-          <v-card-text class="text--primary">
-            <treeview :items="awardItems"></treeview>
-            <treeview :items="activityItems"></treeview>
-            <treeview :items="internItems"></treeview>
-          </v-card-text>
-        </v-row>
+    <v-row align="center" justify="center">
+      <v-card flat :max-width="1024">
+        <v-card-title primary-title class="px-3 pt-2 pb-0">
+          <p class="display-1 mb-0 pl-2">
+            <v-icon large>fas fa-address-card</v-icon>&nbsp;&nbsp;About
+          </p>
+        </v-card-title>
+        <v-card-text class="py-2">
+          <v-divider></v-divider>
+        </v-card-text>
+        <v-card-text class="text--primary">
+          <treeview :items="mainItems"></treeview>
+        </v-card-text>
+        <v-card-text>
+          <v-divider></v-divider>
+        </v-card-text>
+        <v-card-text class="text--primary">
+          <treeview :items="awardItems"></treeview>
+          <treeview :items="activityItems"></treeview>
+          <treeview :items="internItems"></treeview>
+        </v-card-text>
       </v-card>
     </v-row>
   </v-container>
