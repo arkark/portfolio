@@ -12,7 +12,8 @@ module.exports = {
   ],
   rules: {
     "no-console": level,
-    "no-unused-vars": [level, { argsIgnorePattern: "^_" }]
+    "no-unused-vars": [level, { argsIgnorePattern: "^_" }],
+    "vue/no-unused-components": level
   },
   parserOptions: {
     parser: "babel-eslint"
