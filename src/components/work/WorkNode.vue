@@ -6,23 +6,6 @@
       slot-scope="{ hover }"
       :class="`elevation-${hover ? 8 : 2}`"
     >
-      <v-container
-        fill-height
-        class="px-2 py-2"
-        style="position: absolute; pointer-events: none;"
-      >
-        <v-layout fill-height column>
-          <v-spacer></v-spacer>
-          <v-flex class="justify-space-between">
-            <v-chip small outlined label text-color="black">
-              {{ work.group }}
-            </v-chip>
-            <v-chip small label text-color="black">{{
-              formatDate(work.date)
-            }}</v-chip>
-          </v-flex>
-        </v-layout>
-      </v-container>
       <v-toolbar
         text
         :width="cardWidth"
@@ -39,12 +22,12 @@
             target="_blank"
             rel="noopener noreferrer"
             color="primary"
-            small
+            x-small
             absolute
             bottom
             right
             fab
-            :class="`elevation-${hover ? 8 : 2}`"
+            :class="`elevation-${hover ? 5 : 2}`"
             style="pointer-events: auto;"
           >
             <v-icon small>fas fa-external-link-alt</v-icon>
@@ -57,13 +40,22 @@
       <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
         <span class="pr-12">{{ work.title }}</span>
       </v-card-title>
-      <v-divider inset></v-divider>
-      <v-card-text class="caption font-weight-medium px-3 py-2">
+      <v-divider class="ml-2 mr-12"></v-divider>
+      <v-card-text class="caption px-3 py-1">
         <span v-if="work.rawHtml === true" v-html="work.description"></span>
         <span v-else>
           {{ work.description }}
         </span>
       </v-card-text>
+      <v-footer absolute :color="'#0000'" class="px-3 py-2 caption">
+        <v-chip small outlined label text-color="black">
+          {{ work.group }}
+        </v-chip>
+        <v-spacer></v-spacer>
+        <v-chip small outlined label text-color="black">{{
+          formatDate(work.date)
+        }}</v-chip>
+      </v-footer>
     </v-card>
   </v-hover>
 </template>
