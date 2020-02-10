@@ -7,9 +7,9 @@
     v-resize="onResize"
   >
     <v-container fill-height>
-      <v-row align="center">
-        <v-col align="center">
-          <v-card width="480" color="rgba(0, 0, 0, 0)" flat dark>
+      <v-col align="center">
+        <v-row align="center" justify="center">
+          <v-card :width="480" color="rgba(0, 0, 0, 0)" flat dark>
             <v-container class="pa-6">
               <p class="display-1 font-weight-medium mb-1">
                 Ark's page
@@ -38,8 +38,8 @@
               </v-btn>
             </v-container>
           </v-card>
-        </v-col>
-      </v-row>
+        </v-row>
+      </v-col>
     </v-container>
   </v-card>
 </template>
