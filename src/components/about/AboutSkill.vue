@@ -1,7 +1,7 @@
 <template>
   <v-timeline-item :color="'#555'" fill-dot>
     <template v-slot:icon>
-      <v-icon small dark>fas fa-code</v-icon>
+      <v-icon small dark>fas fa-code-branch</v-icon>
     </template>
     <v-card class="elevation-4">
       <v-card-title class="pb-0">プログラミング</v-card-title>
