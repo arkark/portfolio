@@ -41,7 +41,8 @@ const getColor = rating => {
 const pairs = [
   ["label", "AtCoder"],
   ["message", `Rating: ${rating}`],
-  ["color", getColor(rating)]
+  ["color", getColor(rating)],
+  ["style", "flat-square"]
 ];
 
 const encode = str => window.encodeURIComponent(str);
