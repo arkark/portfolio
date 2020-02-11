@@ -3,9 +3,13 @@
     <template v-slot:icon>
       <v-icon small dark>fas fa-user</v-icon>
     </template>
-    <v-card>
-      <v-card-title>プロフィール</v-card-title>
-      <v-card-text class="subtitle-1 text--primary">
+    <v-card class="elevation-4">
+      <v-card-title class="pb-0">プロフィール</v-card-title>
+      <v-divider
+        class="py-0 mx-3"
+        style="border-width: 1px; border-color: #555;"
+      ></v-divider>
+      <v-card-text class="pt-3 subtitle-1 text--primary">
         <p v-for="(item, index) in items" :key="index" class="mb-0">
           <span
             :style="{
