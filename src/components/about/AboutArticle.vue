@@ -34,7 +34,7 @@
         <p class="mb-0">
           <span>その他の記事</span>
           <v-icon x-small class="mx-2">fas fa-arrow-right</v-icon>
-          <a href="https://ark4rk.hatenablog.com/archive/category/CTF">
+          <a href="https://ark4rk.hatenablog.com/archive">
             はてなブログ
           </a>
         </p>
