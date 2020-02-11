@@ -2,7 +2,7 @@
   <v-app-bar dark color="#fff0" flat absolute>
     <div class="flex-grow-1"></div>
 
-    <v-toolbar-items class="hidden-md-and-down">
+    <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
       <v-btn text class="font-weight-bold" @click="scroll(parentRefs.work)">
         Works
       </v-btn>
@@ -24,7 +24,7 @@
       </v-btn>
     </v-toolbar-items>
 
-    <v-toolbar-items class="hidden-md-and-up">
+    <v-toolbar-items v-else>
       <v-menu>
         <template v-slot:activator="{ on }">
           <v-btn dark icon v-on="on">
