@@ -17,6 +17,7 @@
           <about-compro></about-compro>
           <about-marathon></about-marathon>
           <about-ctf></about-ctf>
+          <about-article></about-article>
           <about-activity></about-activity>
           <about-intern></about-intern>
         </v-timeline>
@@ -32,6 +33,7 @@ import AboutSkill from "@/components/about/AboutSkill";
 import AboutCompro from "@/components/about/AboutCompro";
 import AboutMarathon from "@/components/about/AboutMarathon";
 import AboutCtf from "@/components/about/AboutCtf";
+import AboutArticle from "@/components/about/AboutArticle";
 import AboutActivity from "@/components/about/AboutActivity";
 import AboutIntern from "@/components/about/AboutIntern";
 
@@ -43,6 +45,7 @@ export default {
     AboutCompro,
     AboutMarathon,
     AboutCtf,
+    AboutArticle,
     AboutActivity,
     AboutIntern
   }
