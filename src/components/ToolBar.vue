@@ -3,11 +3,11 @@
     <div class="flex-grow-1"></div>
 
     <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
-      <v-btn text class="font-weight-bold" @click="scroll(parentRefs.work)">
-        Works
-      </v-btn>
       <v-btn text class="font-weight-bold" @click="scroll(parentRefs.about)">
         About
+      </v-btn>
+      <v-btn text class="font-weight-bold" @click="scroll(parentRefs.work)">
+        Works
       </v-btn>
       <v-btn text class="font-weight-bold" href="https://github.com/arkark">
         GitHub
@@ -32,11 +32,11 @@
           </v-btn>
         </template>
         <v-list>
-          <v-list-item @click="scroll(parentRefs.work)">
-            <v-list-item-title>Works</v-list-item-title>
-          </v-list-item>
           <v-list-item @click="scroll(parentRefs.about)">
             <v-list-item-title>About</v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="scroll(parentRefs.work)">
+            <v-list-item-title>Works</v-list-item-title>
           </v-list-item>
           <v-list-item href="https://github.com/arkark">
             <v-list-item-title>GitHub</v-list-item-title>

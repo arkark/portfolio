@@ -6,10 +6,10 @@
       <top ref="top"></top>
     </v-content>
     <v-content>
-      <work id="work" ref="work"></work>
+      <about id="about" ref="about"></about>
     </v-content>
     <v-content>
-      <about id="about" ref="about"></about>
+      <work id="work" ref="work"></work>
     </v-content>
     <scroller-to-top></scroller-to-top>
   </v-app>
@@ -20,8 +20,8 @@ import Background from "@/components/Background.vue";
 import ToolBar from "@/components/ToolBar.vue";
 import ScrollerToTop from "@/components/ScrollerToTop.vue";
 import Top from "@/components/top/Top.vue";
-import Work from "@/components/work/Work.vue";
 import About from "@/components/about/About.vue";
+import Work from "@/components/work/Work.vue";
 
 export default {
   name: "App",
@@ -30,8 +30,8 @@ export default {
     ToolBar,
     ScrollerToTop,
     Top,
-    Work,
-    About
+    About,
+    Work
   }
 };
 </script>
