@@ -34,9 +34,11 @@
         <p class="mb-0">
           <span>その他の記事</span>
           <v-icon x-small class="mx-2">fas fa-arrow-right</v-icon>
-          <a href="https://ark4rk.hatenablog.com/archive">
-            はてなブログ
-          </a>
+          <a href="https://ark4rk.hatenablog.com/archive">はてなブログ</a>
+          /
+          <a href="https://qiita.com/Ark">Qiita</a>
+          /
+          <a href="https://trap.jp/author/ark/">traP</a>
         </p>
       </v-card-text>
     </v-card>
