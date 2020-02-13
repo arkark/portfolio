@@ -80,13 +80,13 @@ export default {
             { image: require("@/assets/icons/file_type_cpp.svg") },
             { image: require("@/assets/icons/file_type_go.svg") },
             { image: require("@/assets/icons/file_type_java.svg") },
-            { image: require("@/assets/icons/file_type_processinglang.svg") },
             { image: require("@/assets/icons/file_type_scala.svg") },
-            { image: require("@/assets/icons/file_type_glsl.svg") },
-            { image: require("@/assets/icons/file_type_shell.svg") },
+            { image: require("@/assets/icons/file_type_processinglang.svg") },
             { image: require("@/assets/icons/file_type_ruby.svg") },
             { image: require("@/assets/icons/file_type_php.svg") },
-            { image: require("@/assets/icons/file_type_prolog.svg") }
+            { image: require("@/assets/icons/file_type_prolog.svg") },
+            { image: require("@/assets/icons/file_type_glsl.svg") },
+            { image: require("@/assets/icons/file_type_shell.svg") }
           ]
         },
         {

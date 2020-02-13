@@ -41,7 +41,7 @@
           DとRustと回転が好きです。
         </p>
         <p class="mb-0">
-          <span class="mr-2">
+          <span v-if="$vuetify.breakpoint.width > 780" class="mr-2">
             <v-icon small>fas fa-angle-right</v-icon>
             <v-icon small>fas fa-angle-right</v-icon>
           </span>
@@ -50,7 +50,7 @@
               <img :src="badge.image" style="vertical-align: middle;" />
             </a>
           </span>
-          <span class="ml-2">
+          <span v-if="$vuetify.breakpoint.width > 780" class="ml-2">
             <v-icon small>fas fa-angle-left</v-icon>
             <v-icon small>fas fa-angle-left</v-icon>
           </span>
