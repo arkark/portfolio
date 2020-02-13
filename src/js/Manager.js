@@ -58,7 +58,7 @@ export default class Manager2d {
       ) {
         return;
       }
-      if (event.target.tagName === "DIV") {
+      if (event.target.tagName === "DIV" || event.target.tagName === "P") {
         this.shuffle();
       }
     });
