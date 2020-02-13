@@ -6,7 +6,7 @@
     flat
     v-resize="onResize"
   >
-    <v-container fill-height>
+    <v-container fill-height style="cursor: crosshair;">
       <v-col align="center">
         <v-row align="center" justify="center">
           <v-card :width="480" color="rgba(0, 0, 0, 0)" flat dark>
