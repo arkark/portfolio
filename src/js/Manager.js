@@ -24,7 +24,7 @@ export default class Manager2d {
       this.nodes.forEach(node => node.drawNode());
       this.nodes.forEach(node => node.drawEdge());
     };
-    setInterval(draw, 33);
+    setInterval(draw, 50);
 
     const move = () => {
       this.nodes.forEach(node => node.move());
@@ -44,11 +44,24 @@ export default class Manager2d {
     for (let i = 0; i < preCount; i++) {
       constructDelaunay();
     }
-    const f = () => {
-      constructDelaunay();
-      setTimeout(f, this.intervalDelay);
-    };
-    f();
+    setInterval(() => constructDelaunay(), this.intervalDelay);
+
+    window.addEventListener("click", event => {
+      const rect = this.ctx.canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      if (
+        x < rect.left ||
+        x >= rect.width ||
+        y < rect.top ||
+        y >= rect.height
+      ) {
+        return;
+      }
+      if (event.target.tagName === "DIV") {
+        this.shuffle();
+      }
+    });
   }
 
   addNode() {
@@ -66,6 +79,12 @@ export default class Manager2d {
 
   clear() {
     this.nodes.length = 0;
+  }
+
+  shuffle() {
+    this.nodes.forEach(node => {
+      node.targetPos = this._getRandomPosition();
+    });
   }
 
   _getRandomPosition() {

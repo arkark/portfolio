@@ -10,6 +10,7 @@ export default class Node {
 
     this.ctx = ctx;
     this.pos = pos;
+    this.targetPos = null;
 
     this._shouldMove = false;
     this.moveDir = new Vec2(0, 0);
@@ -39,8 +40,7 @@ export default class Node {
   }
   set shouldMove(val) {
     this._shouldMove = val;
-    const arg = 2 * Math.PI * Math.random();
-    this.moveDir = new Vec2(Math.cos(arg), Math.sin(arg));
+    this._randomizeDirection();
   }
 
   receive(node) {
@@ -64,20 +64,30 @@ export default class Node {
 
   move() {
     if (!this.shouldMove) return;
-    let x = this.x + this.moveDir.x * this.moveSpeed;
-    let y = this.y + this.moveDir.y * this.moveSpeed;
-    let w = this.ctx.canvas.clientWidth;
-    let h = this.ctx.canvas.clientHeight;
-    if (x < 0 || x > w) {
-      this.moveDir.x *= -1;
-      x = Math.max(0, Math.min(w, x));
+
+    if (this.targetPos === null) {
+      let x = this.x + this.moveDir.x * this.moveSpeed;
+      let y = this.y + this.moveDir.y * this.moveSpeed;
+      let w = this.ctx.canvas.clientWidth;
+      let h = this.ctx.canvas.clientHeight;
+      if (x < 0 || x > w) {
+        this.moveDir.x *= -1;
+        x = Math.max(0, Math.min(w, x));
+      }
+      if (y < 0 || y > h) {
+        this.moveDir.y *= -1;
+        y = Math.max(0, Math.min(h, y));
+      }
+      this.x = x;
+      this.y = y;
+    } else {
+      const t = 0.4;
+      this.pos = this.pos.scale(1 - t).add(this.targetPos.scale(t));
+      if (this.pos.distance(this.targetPos) < 1) {
+        this.targetPos = null;
+        this._randomizeDirection(true);
+      }
     }
-    if (y < 0 || y > h) {
-      this.moveDir.y *= -1;
-      y = Math.max(0, Math.min(h, y));
-    }
-    this.x = x;
-    this.y = y;
   }
 
   get nodeColor() {
@@ -211,5 +221,10 @@ export default class Node {
       n1.receive(n2);
       n2.receive(n1);
     }
+  }
+
+  _randomizeDirection() {
+    const arg = 2 * Math.PI * Math.random();
+    this.moveDir = new Vec2(Math.cos(arg), Math.sin(arg));
   }
 }
