@@ -10,47 +10,29 @@
         style="border-width: 1px; border-color: #555;"
       ></v-divider>
       <v-card-text class="pt-3 subtitle-1 text--primary">
-        <p class="mb-0">
+        <p class="mb-1">
           <span>TTPC</span>
         </p>
-        <p class="ml-1 mb-0 body-2">
+        <p class="ml-1 mb-1 body-2">
           <itemize-icon></itemize-icon>
           <span>東京工業大学プログラミングコンテスト2019：運営・作問</span>
           <span>
-            <v-btn
-              href="https://atcoder.jp/contests/ttpc2019"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="primary"
-              icon
-              text
-              small
-            >
-              <v-icon size="12px">fas fa-external-link-alt</v-icon>
-            </v-btn>
+            <link-icon
+              :url="'https://atcoder.jp/contests/ttpc2019'"
+            ></link-icon>
           </span>
         </p>
-        <p class="mb-0">
+        <p class="mb-1">
           <span>GAME<sup>3</sup></span>
           <span>
-            <v-btn
-              href="https://game3.trap.jp"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="primary"
-              icon
-              text
-              small
-            >
-              <v-icon size="12px">fas fa-external-link-alt</v-icon>
-            </v-btn>
+            <link-icon :url="'https://game3.trap.jp'"></link-icon>
           </span>
         </p>
-        <p class="ml-1 mb-0 body-2">
+        <p class="ml-1 mb-1 body-2">
           <itemize-icon></itemize-icon>
           <span>第4回ゲーム製作者交流会GAME<sup>3</sup>：運営</span>
         </p>
-        <p class="ml-1 mb-0 body-2">
+        <p class="ml-1 mb-1 body-2">
           <itemize-icon></itemize-icon>
           <span>第3回ゲーム製作者交流会GAME<sup>3</sup>：運営</span>
         </p>
@@ -60,9 +42,13 @@
 </template>
 
 <script>
-import ItemizeIcon from "@/components/about/ItemizeIcon";
+import ItemizeIcon from "@/components/about/icon/ItemizeIcon";
+import LinkIcon from "@/components/about/icon/LinkIcon";
 
 export default {
-  components: { ItemizeIcon }
+  components: {
+    ItemizeIcon,
+    LinkIcon
+  }
 };
 </script>

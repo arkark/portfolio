@@ -22,25 +22,15 @@
           </span>
           ：<span>{{ item.value }}</span>
           <span v-if="'url' in item">
-            <v-btn
-              :href="item.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="primary"
-              icon
-              text
-              small
-            >
-              <v-icon size="12px">fas fa-external-link-alt</v-icon>
-            </v-btn>
+            <link-icon :url="item.url"></link-icon>
           </span>
         </p>
         <v-divider class="my-1"></v-divider>
-        <p class="mb-0">
+        <p class="mb-1">
           Math, CS, Game, Web / 競プロ, CTF (misc, web) /
           DとRustと回転が好きです。
         </p>
-        <p class="mb-0">
+        <p class="mb-1">
           <span v-if="$vuetify.breakpoint.width > 780" class="mr-2">
             <v-icon small>fas fa-angle-right</v-icon>
             <v-icon small>fas fa-angle-right</v-icon>
@@ -61,6 +51,8 @@
 </template>
 
 <script>
+import LinkIcon from "@/components/about/icon/LinkIcon";
+
 export default {
   data: function() {
     return {
@@ -110,6 +102,9 @@ export default {
         }
       ]
     };
+  },
+  components: {
+    LinkIcon
   }
 };
 </script>

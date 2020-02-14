@@ -10,24 +10,17 @@
         style="border-width: 1px; border-color: #555;"
       ></v-divider>
       <v-card-text class="pt-3 subtitle-1 text--primary">
-        <p v-for="(item, index) in items" :key="index" class="mb-0 body-2">
+        <p v-for="(item, index) in items" :key="index" class="mb-1 body-2">
           <itemize-icon></itemize-icon>
           <span>{{ item.label }}</span>
+          <span v-if="'blog' in item">
+            <blog-link-icon :url="item.blog"></blog-link-icon>
+          </span>
           <span v-if="'url' in item">
-            <v-btn
-              :href="item.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="primary"
-              icon
-              text
-              small
-            >
-              <v-icon size="12px">fas fa-external-link-alt</v-icon>
-            </v-btn>
+            <link-icon :url="item.url"></link-icon>
           </span>
         </p>
-        <p class="mb-0">
+        <p class="mb-1">
           過去の
           <a href="https://ark4rk.hatenablog.com/archive/category/CTF">
             writeup
@@ -39,7 +32,9 @@
 </template>
 
 <script>
-import ItemizeIcon from "@/components/about/ItemizeIcon";
+import ItemizeIcon from "@/components/about/icon/ItemizeIcon";
+import LinkIcon from "@/components/about/icon/LinkIcon";
+import BlogLinkIcon from "@/components/about/icon/BlogLinkIcon";
 import ctfList from "@/data/ctf";
 
 export default {
@@ -48,6 +43,10 @@ export default {
       items: ctfList
     };
   },
-  components: { ItemizeIcon }
+  components: {
+    ItemizeIcon,
+    LinkIcon,
+    BlogLinkIcon
+  }
 };
 </script>

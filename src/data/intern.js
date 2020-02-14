@@ -8,7 +8,7 @@ export default [
       {
         label:
           "ウォンテッドリー株式会社 : Wantedly Summer Intern, Infrastructure",
-        url: "https://ark4rk.hatenablog.com/entry/2019/10/21/155106"
+        blog: "https://ark4rk.hatenablog.com/entry/2019/10/21/155106"
       },
       {
         label: "株式会社ミクシィ : 2Days Challenge"
@@ -16,7 +16,7 @@ export default [
       {
         label:
           "クックパッド株式会社 : Cookpad Summer Internship 2019 10 Day Tech",
-        url: "https://ark4rk.hatenablog.com/entry/2019/09/03/202429"
+        blog: "https://ark4rk.hatenablog.com/entry/2019/09/03/202429"
       },
       {
         label: "グリー株式会社 : GREE Camp"
@@ -24,7 +24,7 @@ export default [
       {
         label:
           "クックパッド株式会社 : Cookpad Spring 1day Internship 2019 コンテナコース",
-        url: "https://ark4rk.hatenablog.com/entry/2019/03/20/220442"
+        blog: "https://ark4rk.hatenablog.com/entry/2019/03/20/220442"
       }
     ]
   },
@@ -40,7 +40,7 @@ export default [
       },
       {
         label: "株式会社ミクシィ : 第6回 git challenge",
-        url: "https://ark4rk.hatenablog.com/entry/2017/09/03/173836"
+        blog: "https://ark4rk.hatenablog.com/entry/2017/09/03/173836"
       },
       {
         label:

@@ -11,28 +11,21 @@
       ></v-divider>
       <v-card-text class="pt-3 subtitle-1 text--primary">
         <template v-for="(item, index) in items">
-          <p class="mb-0" :key="index">
+          <p class="mb-1" :key="index">
             <span>{{ item.label }}</span>
           </p>
           <p
             v-for="(subItem, subIndex) in item.children"
             :key="index + '-' + subIndex"
-            class="ml-1 mb-0 body-2"
+            class="ml-1 mb-1 body-2"
           >
             <itemize-icon></itemize-icon>
             <span>{{ subItem.label }}</span>
+            <span v-if="'blog' in subItem">
+              <blog-link-icon :url="subItem.blog"></blog-link-icon>
+            </span>
             <span v-if="'url' in subItem">
-              <v-btn
-                :href="subItem.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="primary"
-                icon
-                text
-                small
-              >
-                <v-icon size="12px">fas fa-external-link-alt</v-icon>
-              </v-btn>
+              <link-icon :url="subItem.url"></link-icon>
             </span>
           </p>
         </template>
@@ -42,7 +35,9 @@
 </template>
 
 <script>
-import ItemizeIcon from "@/components/about/ItemizeIcon";
+import ItemizeIcon from "@/components/about/icon/ItemizeIcon";
+import LinkIcon from "@/components/about/icon/LinkIcon";
+import BlogLinkIcon from "@/components/about/icon/BlogLinkIcon";
 import internList from "@/data/intern";
 
 export default {
@@ -51,6 +46,10 @@ export default {
       items: internList
     };
   },
-  components: { ItemizeIcon }
+  components: {
+    ItemizeIcon,
+    LinkIcon,
+    BlogLinkIcon
+  }
 };
 </script>

@@ -10,7 +10,7 @@
         style="border-width: 1px; border-color: #555;"
       ></v-divider>
       <v-card-text class="pt-3 subtitle-1 text--primary">
-        <p v-for="(item, index) in items" :key="index" class="mb-1">
+        <p v-for="(item, index) in items" :key="index" class="mb-0">
           <span class="font-weight-bold mr-1">{{ item.key }}:</span>
           <span v-for="(value, i) in item.values" :key="index + '-' + i">
             <a

@@ -61,7 +61,7 @@ export default {
         },
         {
           url: "https://ark4rk.hatenablog.com/archive",
-          iconName: "fas fa-rss"
+          iconName: "fas fa-pen-nib"
         }
       ],
       screenWidth: document.documentElement.clientWidth,
