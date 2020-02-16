@@ -68,7 +68,7 @@ export default {
           key: "Often",
           values: [
             { image: require("@/assets/icons/file_type_kotlin.svg") },
-            { image: require("@/assets/icons/file_type_js.svg") },
+            { image: require("@/assets/icons/file_type_js_official.svg") },
             { image: require("@/assets/icons/file_type_vue.svg") },
             { image: require("@/assets/icons/file_type_python.svg") }
           ]
@@ -76,10 +76,10 @@ export default {
         {
           key: "Sometimes",
           values: [
-            { image: require("@/assets/icons/file_type_c.svg") },
-            { image: require("@/assets/icons/file_type_cpp.svg") },
+            { image: require("@/assets/icons/file_type_c3.svg") },
+            { image: require("@/assets/icons/file_type_cpp3.svg") },
             { image: require("@/assets/icons/file_type_go.svg") },
-            { image: require("@/assets/icons/file_type_java.svg") },
+            { image: require("@/assets/icons/file_type_jar.svg") },
             { image: require("@/assets/icons/file_type_scala.svg") },
             { image: require("@/assets/icons/file_type_processinglang.svg") },
             { image: require("@/assets/icons/file_type_ruby.svg") },
@@ -98,8 +98,10 @@ export default {
                 "https://github.com/arkark/dotfiles/blob/master/files/.gitconfig"
             },
             { image: require("@/assets/icons/file_type_docker.svg") },
+            { image: require("@/assets/icons/file_type_mysql.svg") },
             { image: require("@/assets/icons/file_type_aws.svg") },
-            { image: require("@/assets/icons/file_type_tex.svg") }
+            { image: require("@/assets/icons/file_type_tex.svg") },
+            { image: require("@/assets/icons/file_type_vscode.svg") }
           ]
         }
       ]
