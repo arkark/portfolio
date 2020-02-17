@@ -1,5 +1,10 @@
 export default [
   {
+    date: "2020/02/18",
+    label: "線形空間𝔽₂^V上の問題に対する連結グラフから全域木への帰着",
+    blog: "https://ark4rk.hatenablog.com/entry/2020/02/18/044707"
+  },
+  {
     date: "2019/12/09",
     label: "半環上の最大部分配列問題とKadane's algorithm",
     blog: "https://ark4rk.hatenablog.com/entry/2019/12/09/004518"
