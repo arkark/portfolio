@@ -33,7 +33,9 @@ items.push({
 });
 
 for (const item of items) {
-  request(item.url).pipe(
-    fs.createWriteStream("src/assets/shields/" + item.filename)
-  );
+  const path = "src/assets/shields/" + item.filename;
+  request(item.url).pipe(fs.createWriteStream(path));
+
+  // eslint-disable-next-line no-console
+  console.log(`* Download '${item.url}' => '${path}'`);
 }
