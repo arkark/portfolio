@@ -3,7 +3,8 @@ node_js:
   - "node"
   - "12"
 before_script:
-  - curl -L https://atcoder.jp/users/arkark/history/json | jq '.[-1]' > src/data/atcoder-last-contest.json
+  - curl -L https://atcoder.jp/users/arkark/history/json | jq '.[-1]' > src/scripts/atcoder-last-contest.json
+  - yarn shields
 script:
   - yarn lint --max-warnings=0
   - yarn build

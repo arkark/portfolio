@@ -44,13 +44,12 @@
 import ItemizeIcon from "@/components/about/icon/ItemizeIcon";
 import LinkIcon from "@/components/about/icon/LinkIcon";
 import BlogLinkIcon from "@/components/about/icon/BlogLinkIcon";
-import atcoder from "@/components/about/atcoder.js";
 import comproList from "@/data/compro";
 
 export default {
   data: function() {
     return {
-      atcoderBadge: atcoder.badgeUrl,
+      atcoderBadge: require("@/assets/shields/atcoder_rating.svg"),
       items: comproList
     };
   },

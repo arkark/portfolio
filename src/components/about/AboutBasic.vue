@@ -81,23 +81,23 @@ export default {
       ],
       badges: [
         {
-          image: "https://img.shields.io/badge/GitHub-arkark-brightgreen",
+          image: require("@/assets/shields/github_link.svg"),
           url: "https://github.com/arkark"
         },
         {
-          image: "https://img.shields.io/badge/Twitter-@arkark__-blue",
+          image: require("@/assets/shields/twitter_link.svg"),
           url: "https://twitter.com/arkark_"
         },
         {
-          image: "https://img.shields.io/badge/HatenaBlog-ark4rk-orange",
+          image: require("@/assets/shields/hatenablog_link.svg"),
           url: "https://ark4rk.hatenablog.com/archive"
         },
         {
-          image: "https://img.shields.io/badge/AtCoder-arkark-yellow",
+          image: require("@/assets/shields/atcoder_link.svg"),
           url: "https://atcoder.jp/user/arkark"
         },
         {
-          image: "https://img.shields.io/badge/Shadertoy-Ark-green",
+          image: require("@/assets/shields/shadertoy_link.svg"),
           url: "https://www.shadertoy.com/user/Ark"
         }
       ]
