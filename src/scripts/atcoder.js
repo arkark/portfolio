@@ -1,4 +1,4 @@
-const atcoderLastContest = require("@/data/atcoder-last-contest.json");
+const atcoderLastContest = require("./atcoder-last-contest.json");
 
 const rating = (() => {
   return atcoderLastContest.NewRating;
@@ -44,11 +44,9 @@ const pairs = [
   ["color", getColor(rating)]
 ];
 
-const encode = str => window.encodeURIComponent(str);
+const encode = str => encodeURIComponent(str);
 const queryString = pairs
   .map(pair => `${pair[0]}=${encode(pair[1])}`)
   .join("&");
 
-export default {
-  badgeUrl: `https://img.shields.io/static/v1?${queryString}`
-};
+exports.badgeUrl = `https://img.shields.io/static/v1?${queryString}`;
