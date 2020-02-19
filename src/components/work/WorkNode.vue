@@ -64,16 +64,21 @@
 import moment from "moment";
 
 export default {
-  data: function() {
-    return {
-      cardWidth: 225,
-      cardHeight: 280,
-      imageHeight: 150
-    };
-  },
   props: {
     work: {
       type: Object,
+      required: true
+    },
+    cardWidth: {
+      type: Number,
+      required: true
+    },
+    cardHeight: {
+      type: Number,
+      required: true
+    },
+    imageHeight: {
+      type: Number,
       required: true
     }
   },

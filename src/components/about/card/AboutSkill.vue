@@ -1,58 +1,50 @@
 <template>
-  <v-timeline-item :color="'#555'" fill-dot>
-    <template v-slot:icon>
-      <v-icon small dark>fas fa-code-branch</v-icon>
+  <about-card :title="'プログラミング'" :icon="'fas fa-code-branch'">
+    <template v-slot:under-card>
+      <v-row
+        align="end"
+        class="mr-2 caption font-weight-medium text--secondary"
+        style="font-size: 0.2rem !important;"
+      >
+        <v-spacer></v-spacer>
+        <span>
+          <span>Resource:&copy;</span>
+          <a href="https://github.com/vscode-icons/vscode-icons">
+            vscode-icons
+          </a>
+          <span>contributors</span>
+        </span>
+      </v-row>
     </template>
-    <v-card class="elevation-4">
-      <v-card-title class="pb-0">プログラミング</v-card-title>
-      <v-divider
-        class="py-0 mx-3"
-        style="border-width: 1px; border-color: #555;"
-      ></v-divider>
-      <v-card-text class="pt-3 subtitle-1 text--primary">
-        <p v-for="(item, index) in items" :key="index" class="mb-0">
-          <span class="font-weight-bold mr-1">{{ item.key }}:</span>
-          <span v-for="(value, i) in item.values" :key="index + '-' + i">
-            <a
-              v-if="'url' in value"
-              :href="value.url"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                :src="value.image"
-                width="32px"
-                style="vertical-align: middle;"
-              />
-            </a>
-            <img
-              v-else
-              :src="value.image"
-              width="32px"
-              style="vertical-align: middle;"
-            />
-          </span>
-        </p>
-      </v-card-text>
-    </v-card>
-    <v-row
-      align="end"
-      class="mr-2 caption font-weight-medium text--secondary"
-      style="font-size: 0.2rem !important;"
-    >
-      <v-spacer></v-spacer>
-      <span>
-        <span>Resource:&copy;</span>
-        <a href="https://github.com/vscode-icons/vscode-icons">
-          vscode-icons
+    <p v-for="(item, index) in items" :key="index" class="mb-0">
+      <span class="font-weight-bold mr-1">{{ item.key }}:</span>
+      <span v-for="(value, i) in item.values" :key="index + '-' + i">
+        <a
+          v-if="'url' in value"
+          :href="value.url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            :src="value.image"
+            width="32px"
+            style="vertical-align: middle;"
+          />
         </a>
-        <span>contributors</span>
+        <img
+          v-else
+          :src="value.image"
+          width="32px"
+          style="vertical-align: middle;"
+        />
       </span>
-    </v-row>
-  </v-timeline-item>
+    </p>
+  </about-card>
 </template>
 
 <script>
+import AboutCard from "@/components/about/card/AboutCard";
+
 export default {
   data: function() {
     return {
@@ -106,6 +98,9 @@ export default {
         }
       ]
     };
+  },
+  components: {
+    AboutCard
   }
 };
 </script>

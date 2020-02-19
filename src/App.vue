@@ -2,15 +2,15 @@
   <v-app>
     <background></background>
     <tool-bar :parentRefs="this.$refs"></tool-bar>
-    <v-content class="mb-10">
-      <top ref="top"></top>
-    </v-content>
-    <v-content>
-      <about id="about" ref="about"></about>
-    </v-content>
-    <v-content>
-      <work id="work" ref="work"></work>
-    </v-content>
+    <top ref="top"></top>
+    <v-container>
+      <v-row align="center" justify="center">
+        <v-card flat :max-width="980">
+          <about id="about" ref="about"></about>
+          <work id="work" ref="work"></work>
+        </v-card>
+      </v-row>
+    </v-container>
     <scroller-to-top></scroller-to-top>
   </v-app>
 </template>

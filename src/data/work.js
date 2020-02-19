@@ -38,15 +38,6 @@ export default [
     date: "2019/1"
   },
   {
-    title: "D-Prolog",
-    url: "https://github.com/arkark/d-prolog",
-    src:
-      "https://raw.githubusercontent.com/arkark/d-prolog/master/demo/demo.gif",
-    group: "Language",
-    description: "D言語でつくったProlog処理系",
-    date: "2018/11"
-  },
-  {
     title: "Brainfuck Online Simulator",
     url: "https://arkark.github.io/brainfuck-online-simulator/",
     src: require("@/assets/screenshots/tool/brainfuck_online_simulator.png"),
@@ -157,14 +148,6 @@ export default [
     date: "2016/10/26"
   },
   {
-    title: "Teleport Puzzle",
-    url: "https://github.com/arkark/TeleportPuzzle",
-    src: require("@/assets/screenshots/game/teleport_puzzle.png"),
-    group: "Game",
-    description: "2016年工大祭向けに作ったパズルアクションゲーム",
-    date: "2016/10"
-  },
-  {
     title: "One Day One Gif",
     url: "https://github.com/arkark/OneDayOneGif",
     src: require("@/assets/screenshots/design/one_day_one_gif.png"),
@@ -214,13 +197,5 @@ export default [
     group: "Game",
     description: "2015年工大祭向けに作った3D障害物避けゲーム",
     date: "2015/10"
-  },
-  {
-    title: "Brainfuck製15パズル",
-    url: "https://github.com/arkark/15puzzle_brainfuck",
-    src: require("@/assets/screenshots/game/15puzzle.png"),
-    group: "Game",
-    description: "brainfuckで制作したコンソールゲームです。",
-    date: "2015/9"
   }
 ];
