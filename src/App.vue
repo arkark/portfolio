@@ -11,14 +11,14 @@
         </v-card>
       </v-row>
     </v-container>
-    <scroller-to-top></scroller-to-top>
+    <app-footer></app-footer>
   </v-app>
 </template>
 
 <script>
-import Background from "@/components/Background.vue";
-import ToolBar from "@/components/ToolBar.vue";
-import ScrollerToTop from "@/components/ScrollerToTop.vue";
+import Background from "@/components/global/Background.vue";
+import ToolBar from "@/components/global/ToolBar.vue";
+import AppFooter from "@/components/global/AppFooter.vue";
 import Top from "@/components/top/Top.vue";
 import About from "@/components/about/About.vue";
 import Work from "@/components/work/Work.vue";
@@ -28,7 +28,7 @@ export default {
   components: {
     Background,
     ToolBar,
-    ScrollerToTop,
+    AppFooter,
     Top,
     About,
     Work

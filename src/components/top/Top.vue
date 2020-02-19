@@ -41,11 +41,13 @@
         </v-row>
       </v-col>
     </v-container>
+    <top-footer></top-footer>
   </v-card>
 </template>
 
 <script>
 import ArkIcon from "@/components/top/ArkIcon.vue";
+import TopFooter from "@/components/top/TopFooter.vue";
 
 export default {
   data: function() {
@@ -75,7 +77,8 @@ export default {
     }
   },
   components: {
-    ArkIcon
+    ArkIcon,
+    TopFooter
   }
 };
 </script>

@@ -1,10 +1,7 @@
 <template>
-  <v-footer padless absolute color="#fff0" class="py-2">
-    <div class="flex-grow-1"></div>
-    <v-btn class="mx-4" icon @click="gotoTop">
-      <v-icon>fas fa-chevron-up</v-icon>
-    </v-btn>
-  </v-footer>
+  <v-btn class="mx-4" icon @click="gotoTop">
+    <v-icon>fas fa-chevron-up</v-icon>
+  </v-btn>
 </template>
 
 <script>
@@ -28,5 +25,3 @@ export default {
   }
 };
 </script>
-
-<style scoped></style>
