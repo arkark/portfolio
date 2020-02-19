@@ -4,7 +4,7 @@
       :width="cardWidth"
       :height="cardHeight"
       slot-scope="{ hover }"
-      :class="`elevation-${hover ? 8 : 2}`"
+      :class="`elevation-${hover ? 5 : 3}`"
     >
       <v-toolbar
         text
@@ -27,7 +27,7 @@
             bottom
             right
             fab
-            :class="`elevation-${hover ? 5 : 2}`"
+            :class="`elevation-${hover ? 4 : 2}`"
             style="pointer-events: auto;"
           >
             <v-icon small>fas fa-external-link-alt</v-icon>
@@ -38,9 +38,12 @@
         <v-img :src="work.src" width="100%" :height="imageHeight"> </v-img>
       </a>
       <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
-        <span class="pr-12">{{ work.title }}</span>
+        <span class="pr-10">{{ work.title }}</span>
       </v-card-title>
-      <v-divider class="ml-2 mr-12"></v-divider>
+      <v-divider
+        class="ml-2 mr-12"
+        style="border-width: thin 0 0 0;"
+      ></v-divider>
       <v-card-text class="caption px-3 py-1">
         <span v-if="work.rawHtml === true" v-html="work.description"></span>
         <span v-else>
@@ -93,5 +96,3 @@ export default {
   }
 };
 </script>
-
-<style></style>

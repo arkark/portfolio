@@ -24,8 +24,7 @@ export default [
     src:
       "https://github.com/dsg-titech/simblock-visualizer/raw/master/public/screenshot.png",
     group: "Tool",
-    description:
-      "ブロックチェーンネットワークシミュレータ「SimBlock」のビジュアライザ",
+    description: "ブロックチェーンネットワークシミュレータのビジュアライザ",
     date: "2019/6/27"
   },
   {
@@ -42,7 +41,7 @@ export default [
     url: "https://arkark.github.io/brainfuck-online-simulator/",
     src: require("@/assets/screenshots/tool/brainfuck_online_simulator.png"),
     group: "Tool",
-    description: "Vue.jsの勉強にBrainfuckのオンライン実行環境を作りました。",
+    description: "Vue.jsの勉強にBrainfuckのオンライン実行環境",
     date: "2018/6/10"
   },
   {

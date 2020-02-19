@@ -17,7 +17,7 @@
     </p>
     <v-divider
       class="my-1"
-      style="border-width: 0.8px; border-color: rgba(0,0,0,0.12);"
+      style="border-width: thin 0 0 0; border-color: rgba(0,0,0,0.12);"
     ></v-divider>
     <p class="mb-1">
       Math, CS, Game, Web / 競プロ, CTF (misc, web) / DとRustと回転が好きです。

@@ -12,3 +12,7 @@ $heading-font-family: "Inter", sans-serif;
   border-width: thin;
   border-color: rgba(0,0,0,0.4);
 }
+
+.theme--light.v-timeline:before {
+  background: rgba(0,0,0,0.2);
+}
