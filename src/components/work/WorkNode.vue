@@ -51,13 +51,16 @@
         </span>
       </v-card-text>
       <v-footer absolute :color="'#0000'" class="px-3 py-2 caption">
-        <v-chip small outlined label text-color="black">
-          {{ work.group }}
-        </v-chip>
+        <genre-chip :genre="work.genre"></genre-chip>
         <v-spacer></v-spacer>
-        <v-chip small outlined label text-color="black">{{
-          formatDate(work.date)
-        }}</v-chip>
+        <v-chip
+          small
+          outlined
+          label
+          text-color="black"
+          class="font-weight-reguler px-2"
+          >{{ formatDate(work.date) }}</v-chip
+        >
       </v-footer>
     </v-card>
   </v-hover>
@@ -65,6 +68,7 @@
 
 <script>
 import moment from "moment";
+import GenreChip from "@/components/work/GenreChip";
 
 export default {
   props: {
@@ -93,6 +97,9 @@ export default {
         return moment(date, "Y/M").format("MMM, Y");
       }
     }
+  },
+  components: {
+    GenreChip
   }
 };
 </script>

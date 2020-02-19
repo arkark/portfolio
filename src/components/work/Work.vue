@@ -62,7 +62,8 @@ export default {
   data: function() {
     return {
       mainWorkList,
-      workList
+      workList,
+      genres: ["Game", "Tool", "Design", "PixelArt"]
     };
   },
   components: {
