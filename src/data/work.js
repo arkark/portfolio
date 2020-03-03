@@ -1,5 +1,14 @@
 export default [
   {
+    title: "atcoder-auto-tester",
+    url: "https://github.com/arkark/atcoder-auto-tester",
+    src: require("@/assets/screenshots/tool/atcoder-auto-tester.png"),
+    genre: "Tool",
+    description:
+      "ファイルの変更を検出して、サンプルケースのダウンロードとテストを自動化するツール",
+    date: "2020/3/2"
+  },
+  {
     title: "dcp",
     url: "https://github.com/arkark/dcp",
     src: require("@/assets/screenshots/tool/dcp.png"),
