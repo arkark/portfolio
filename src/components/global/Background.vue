@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import isMobile from "ismobilejs";
 import Manager from "@/js/Manager.js";
 
 export default {
@@ -12,9 +11,7 @@ export default {
       ctx: null,
       shouldMove: true,
       moveSpeed: 0.6,
-      intervalDelay: 100,
-      numAtOnce: this.isPhone() ? 20 : 40,
-      nodeNum: this.isPhone() ? 75 : 150
+      intervalDelay: 100
     };
   },
   mounted() {
@@ -22,8 +19,15 @@ export default {
     this.resizeCanvas();
 
     const run = () => {
+      const width = document.documentElement.clientWidth;
+      const height = document.documentElement.clientHeight;
+      const area = width * height;
+      const nodeNum = Math.max(30, Math.ceil(area / 8500));
+      const numAtOnce = Math.ceil(3 * Math.sqrt(nodeNum));
+      const preCount = Math.ceil((Math.sqrt(nodeNum) * nodeNum) / numAtOnce);
+
       const manager = new Manager(this.ctx);
-      for (let i = 0; i < this.nodeNum; i++) {
+      for (let i = 0; i < nodeNum; i++) {
         manager.addNode();
       }
       manager.nodes.forEach(node => (node.shouldMove = this.shouldMove));
@@ -31,11 +35,8 @@ export default {
         node => (node.moveSpeed = this.moveSpeed * (1.0 + Math.random()))
       );
       manager.intervalDelay = this.intervalDelay;
-      manager.numAtOnce = this.numAtOnce;
+      manager.numAtOnce = numAtOnce;
 
-      const preCount = Math.ceil(
-        (Math.sqrt(this.nodeNum) * this.nodeNum) / this.numAtOnce
-      );
       manager.run(preCount);
     };
 
@@ -59,9 +60,6 @@ export default {
       this.ctx.canvas.width = width * ratio;
       this.ctx.canvas.height = height * ratio;
       this.ctx.scale(ratio, ratio);
-    },
-    isPhone() {
-      return isMobile().phone;
     }
   }
 };
