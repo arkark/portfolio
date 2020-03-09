@@ -37,8 +37,19 @@ export default {
 </script>
 
 <style>
+@import url("https://rsms.me/inter/inter.css");
+
 * {
   text-transform: none !important;
   word-break: normal !important;
+}
+
+.theme--light.v-divider {
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.theme--light.v-timeline:before {
+  background: rgba(0, 0, 0, 0.2);
 }
 </style>
