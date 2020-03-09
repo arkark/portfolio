@@ -22,11 +22,6 @@ export default {
     this.resizeCanvas();
 
     const run = () => {
-      if (document.readyState !== "complete") {
-        setTimeout(run, 100);
-        return;
-      }
-
       const manager = new Manager(this.ctx);
       for (let i = 0; i < this.nodeNum; i++) {
         manager.addNode();
@@ -41,7 +36,11 @@ export default {
       manager.run(100);
     };
 
-    run();
+    document.addEventListener("readystatechange", event => {
+      if (event.target.readyState === "complete") {
+        run();
+      }
+    });
   },
   methods: {
     onResize() {
