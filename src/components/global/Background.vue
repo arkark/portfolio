@@ -21,7 +21,12 @@ export default {
     this.ctx = this.$el.getContext("2d");
     this.resizeCanvas();
 
-    setTimeout(() => {
+    const run = () => {
+      if (document.readyState !== "complete") {
+        setTimeout(run, 100);
+        return;
+      }
+
       const manager = new Manager(this.ctx);
       for (let i = 0; i < this.nodeNum; i++) {
         manager.addNode();
@@ -33,8 +38,10 @@ export default {
       manager.intervalDelay = this.intervalDelay;
       manager.numAtOnce = this.numAtOnce;
 
-      manager.run(200);
-    }, 100);
+      manager.run(100);
+    };
+
+    run();
   },
   methods: {
     onResize() {
