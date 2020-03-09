@@ -32,19 +32,17 @@ export default class Manager2d {
     setInterval(move, 50);
 
     let i = 0;
-    let calculatingNodes = [];
     const constructDelaunay = () => {
       if (this.nodes.length == 0) return;
-      calculatingNodes.length = this.numAtOnce;
       for (let j = 0; j < this.numAtOnce; j++) {
-        calculatingNodes[j] = this.nodes[i++ % this.nodes.length];
+        this.nodes[i].constructDelaunay();
+        i = (i + 1) % this.nodes.length;
       }
-      calculatingNodes.forEach(node => node.constructDelaunay());
     };
     for (let i = 0; i < preCount; i++) {
       constructDelaunay();
     }
-    setInterval(() => constructDelaunay(), this.intervalDelay);
+    setInterval(constructDelaunay, this.intervalDelay);
 
     window.addEventListener("click", event => {
       const rect = this.ctx.canvas.getBoundingClientRect();

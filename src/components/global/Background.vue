@@ -33,7 +33,10 @@ export default {
       manager.intervalDelay = this.intervalDelay;
       manager.numAtOnce = this.numAtOnce;
 
-      manager.run(100);
+      const preCount = Math.ceil(
+        (Math.sqrt(this.nodeNum) * this.nodeNum) / this.numAtOnce
+      );
+      manager.run(preCount);
     };
 
     document.addEventListener("readystatechange", event => {
