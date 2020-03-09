@@ -7,11 +7,13 @@ const atcoder = require("./atcoder.js");
 const items = [];
 
 items.push({
-  url: "https://img.shields.io/badge/GitHub-arkark-brightgreen",
+  url:
+    "https://img.shields.io/static/v1?label=GitHub&message=arkark&color=brightgreen&logo=github&logoColor=white",
   filename: "github_link.svg"
 });
 items.push({
-  url: "https://img.shields.io/badge/Twitter-@arkark__-blue",
+  url:
+    "https://img.shields.io/static/v1?label=Twitter&message=@arkark_&color=blue&logo=twitter&logoColor=white",
   filename: "twitter_link.svg"
 });
 items.push({
@@ -23,7 +25,8 @@ items.push({
   filename: "atcoder_link.svg"
 });
 items.push({
-  url: "https://img.shields.io/badge/Shadertoy-Ark-green",
+  url:
+    "https://img.shields.io/static/v1?label=Shadertoy&message=Ark&color=green&logo=webgl&logoColor=white",
   filename: "shadertoy_link.svg"
 });
 
