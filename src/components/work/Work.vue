@@ -11,9 +11,9 @@
     <v-timeline align-top dense class="mr-8">
       <v-timeline-item :color="'grey darken-3'" hide-dot>
         <v-container class="pa-0">
-          <v-row>
+          <v-row align="center">
             <v-col cols="12" class="pa-0">
-              <v-row justify="center">
+              <v-row align="center" justify="center">
                 <work-node
                   v-for="(work, key) in mainWorkList"
                   :key="key"
