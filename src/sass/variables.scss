@@ -1,16 +1,6 @@
-@import url("https://rsms.me/inter/inter.css");
-$body-font-family: "Inter", sans-serif;
-$heading-font-family: "Inter", sans-serif;
+$body-font-family: "Inter", "Roboto", sans-serif;
+$heading-font-family: "Inter", "Roboto", sans-serif;
 @supports (font-variation-settings: normal) {
-  $body-font-family: "Inter var", sans-serif;
-  $heading-font-family: "Inter var", sans-serif;
-}
-
-.theme--light.v-divider {
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.4);
-}
-
-.theme--light.v-timeline:before {
-  background: rgba(0, 0, 0, 0.2);
+  $body-font-family: "Inter var", "Roboto", sans-serif;
+  $heading-font-family: "Inter var", "Roboto", sans-serif;
 }
