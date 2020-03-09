@@ -37,8 +37,6 @@ export default {
 </script>
 
 <style>
-@import url("https://rsms.me/inter/inter.css");
-
 * {
   text-transform: none !important;
   word-break: normal !important;
