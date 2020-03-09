@@ -14,6 +14,12 @@ module.exports = {
           "./src/**/*.js",
           "./node_modules/vuetify/src/**/*.ts"
         ]),
+        whitelistPatterns: [
+          /-(leave|enter|appear)(|-(to|from|active))$/,
+          /^(?!(|.*?:)cursor-move).+-move$/,
+          /^router-link(|-exact)-active$/,
+          /data-v-.*/
+        ],
         // workaround
         whitelist: ["align-center", "justify-center"]
       })

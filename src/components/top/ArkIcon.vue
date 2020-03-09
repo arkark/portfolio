@@ -2,8 +2,7 @@
   <v-avatar size="112">
     <img
       :src="require('@/assets/ark.png')"
-      class="spinner"
-      :class="{ paused: isPaused }"
+      :class="{ spinner: true, paused: isPaused }"
       @click="flip"
     />
   </v-avatar>
