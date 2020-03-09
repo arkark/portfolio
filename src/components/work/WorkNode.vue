@@ -35,7 +35,7 @@
         </v-hover>
       </v-toolbar>
       <a :href="work.url" target="_blank" rel="noopener noreferrer">
-        <v-img :src="work.src" width="100%" :height="imageHeight"> </v-img>
+        <v-img :src="work.src" width="100%" :height="imageHeight"></v-img>
       </a>
       <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
         <span class="pr-10">{{ work.title }}</span>
@@ -46,9 +46,7 @@
       ></v-divider>
       <v-card-text class="caption px-3 py-1">
         <span v-if="work.rawHtml === true" v-html="work.description"></span>
-        <span v-else>
-          {{ work.description }}
-        </span>
+        <span v-else>{{ work.description }}</span>
       </v-card-text>
       <v-footer absolute :color="'#0000'" class="px-3 py-2 caption">
         <genre-chip :genre="work.genre"></genre-chip>
@@ -67,7 +65,7 @@
 </template>
 
 <script>
-import moment from "moment";
+import dayjs from "dayjs";
 import GenreChip from "@/components/work/GenreChip";
 
 export default {
@@ -92,9 +90,9 @@ export default {
   methods: {
     formatDate(date) {
       if (/.*\/.*\/.*/.test(date)) {
-        return moment(date, "Y/M/D").format("ll");
+        return dayjs(date, "YYYY/M/D").format("MMM, YYYY");
       } else {
-        return moment(date, "Y/M").format("MMM, Y");
+        return dayjs(date, "YYYY/M").format("MMM D, YYYY");
       }
     }
   },

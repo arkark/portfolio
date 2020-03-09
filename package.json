@@ -8,8 +8,8 @@
     "shields": "node src/scripts/shields.js"
   },
   "dependencies": {
+    "dayjs": "^1.8.22",
     "ismobilejs": "^1.0.3",
-    "moment": "^2.24.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
     "vuetify": "^2.2.11",
