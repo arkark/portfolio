@@ -1,6 +1,9 @@
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
-import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+import "@fortawesome/fontawesome-free/scss/brands.scss";
+import "@fortawesome/fontawesome-free/scss/regular.scss";
+import "@fortawesome/fontawesome-free/scss/solid.scss";
 
 Vue.use(Vuetify);
 
