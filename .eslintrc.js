@@ -1,4 +1,4 @@
-const level = process.env.NODE_ENV === "production" ? "error" : "warn";
+const LEVEL = process.env.NODE_ENV === "production" ? "error" : "warn";
 
 module.exports = {
   root: true,
@@ -11,9 +11,9 @@ module.exports = {
     "eslint:recommended"
   ],
   rules: {
-    "no-console": level,
-    "no-unused-vars": [level, { argsIgnorePattern: "^_" }],
-    "vue/no-unused-components": level
+    "no-console": LEVEL,
+    "no-unused-vars": [LEVEL, { argsIgnorePattern: "^_" }],
+    "vue/no-unused-components": LEVEL
   },
   parserOptions: {
     parser: "babel-eslint"
