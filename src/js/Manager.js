@@ -2,7 +2,7 @@ import Vec2 from "@/js/math/Vec2.js";
 import Node from "@/js/Node.js";
 import CursorNode from "@/js/CursorNode.js";
 
-const SHUFFLE_DURATION = 20;
+const SHUFFLE_DURATION = 30;
 
 export default class Manager2d {
   constructor(ctx) {
