@@ -2,6 +2,8 @@ import Vec2 from "@/js/math/Vec2.js";
 import Node from "@/js/Node.js";
 import CursorNode from "@/js/CursorNode.js";
 
+const SHUFFLE_DURATION = 20;
+
 export default class Manager2d {
   constructor(ctx) {
     this.intervalDelay = 10;
@@ -10,6 +12,7 @@ export default class Manager2d {
     this.nodes = [];
     const cursorNode = new CursorNode(this.ctx, this._getRandomPosition());
     this.nodes.push(cursorNode);
+    this.restToShuffle = SHUFFLE_DURATION;
   }
 
   run(preCount) {
@@ -43,6 +46,15 @@ export default class Manager2d {
       constructDelaunay();
     }
     setInterval(constructDelaunay, this.intervalDelay);
+
+    const tickShuffle = () => {
+      this.restToShuffle--;
+      if (this.restToShuffle <= 0) {
+        this.shuffle();
+      }
+    };
+    setInterval(tickShuffle, 1000);
+    this.shuffle();
 
     window.addEventListener("click", event => {
       const rect = this.ctx.canvas.getBoundingClientRect();
@@ -83,6 +95,7 @@ export default class Manager2d {
     this.nodes.forEach(node => {
       node.targetPos = this._getRandomPosition();
     });
+    this.restToShuffle = SHUFFLE_DURATION;
   }
 
   _getRandomPosition() {
