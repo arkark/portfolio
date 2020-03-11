@@ -101,11 +101,15 @@ export default class Manager2d {
   _getRandomPosition() {
     const width = this.ctx.canvas.clientWidth;
     const height = this.ctx.canvas.clientHeight;
+    const p = 4.0; // L^p space
 
     while (true) {
       let x = Math.random() * 2.0 - 1.0;
       let y = Math.random() * 2.0 - 1.0;
-      if (x * x + y * y > 1.0 * 1.0) {
+      if (
+        Math.pow(Math.abs(x), p) + Math.pow(Math.abs(y), p) >
+        Math.pow(0.95, p)
+      ) {
         continue;
       }
       x = ((x + 1.0) / 2.0) * width;
