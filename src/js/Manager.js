@@ -99,14 +99,20 @@ export default class Manager2d {
   }
 
   _getRandomPosition() {
-    const padding = 10;
     const width = this.ctx.canvas.clientWidth;
     const height = this.ctx.canvas.clientHeight;
 
-    let x = Math.random() * (width - 2 * padding) + padding;
-    let y = Math.random() * (height - 2 * padding) + padding;
-    x = Math.round(x * 100) / 100;
-    y = Math.round(y * 100) / 100;
-    return new Vec2(x, y);
+    while (true) {
+      let x = Math.random() * 2.0 - 1.0;
+      let y = Math.random() * 2.0 - 1.0;
+      if (x * x + y * y > 1.0 * 1.0) {
+        continue;
+      }
+      x = ((x + 1.0) / 2.0) * width;
+      y = ((y + 1.0) / 2.0) * height;
+      x = Math.round(x * 100) / 100;
+      y = Math.round(y * 100) / 100;
+      return new Vec2(x, y);
+    }
   }
 }

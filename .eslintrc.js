@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     "no-console": LEVEL,
     "no-unused-vars": [LEVEL, { argsIgnorePattern: "^_" }],
+    "no-constant-condition": "off",
     "vue/no-unused-components": LEVEL
   },
   parserOptions: {
