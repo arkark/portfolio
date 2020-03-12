@@ -15,6 +15,26 @@
   </v-app>
 </template>
 
+<style>
+* {
+  text-transform: none !important;
+  word-break: normal !important;
+}
+
+.theme--light.v-divider {
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.theme--light.v-timeline:before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+</style>
+
 <script>
 import Background from "@/components/global/Background.vue";
 import ToolBar from "@/components/global/ToolBar.vue";
@@ -35,19 +55,3 @@ export default {
   }
 };
 </script>
-
-<style>
-* {
-  text-transform: none !important;
-  word-break: normal !important;
-}
-
-.theme--light.v-divider {
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.4);
-}
-
-.theme--light.v-timeline:before {
-  background: rgba(0, 0, 0, 0.2);
-}
-</style>

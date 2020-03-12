@@ -10,15 +10,13 @@
         <v-icon small class="mx-1">{{ item.icon }}</v-icon>
         <span>{{ item.key }}</span>
       </span>
-      ：<span>{{ item.value }}</span>
+      ：
+      <span>{{ item.value }}</span>
       <span v-if="'url' in item">
         <link-icon :url="item.url"></link-icon>
       </span>
     </p>
-    <v-divider
-      class="my-1"
-      style="border-width: thin 0 0 0; border-color: rgba(0,0,0,0.12);"
-    ></v-divider>
+    <v-divider class="my-1"></v-divider>
     <p class="mb-1">
       Math, CS, Game, Web / 競プロ, CTF (misc, web) / DとRustと回転が好きです。
     </p>
@@ -40,11 +38,19 @@
   </about-card>
 </template>
 
+<style scoped>
+.theme--light.v-divider {
+  border-width: thin 0 0 0;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+</style>
+
 <script>
 import AboutCard from "@/components/about/card/AboutCard";
 import LinkIcon from "@/components/about/icon/LinkIcon";
 
 export default {
+  name: "about-basic",
   data: function() {
     return {
       items: [

@@ -8,21 +8,6 @@
   </v-avatar>
 </template>
 
-<script>
-export default {
-  data: function() {
-    return {
-      isPaused: true
-    };
-  },
-  methods: {
-    flip: function() {
-      this.isPaused = !this.isPaused;
-    }
-  }
-};
-</script>
-
 <style scoped>
 .spinner {
   cursor: pointer;
@@ -43,3 +28,18 @@ export default {
   }
 }
 </style>
+
+<script>
+export default {
+  data: function() {
+    return {
+      isPaused: true
+    };
+  },
+  methods: {
+    flip: function() {
+      this.isPaused = !this.isPaused;
+    }
+  }
+};
+</script>

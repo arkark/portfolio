@@ -6,13 +6,13 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img :src="atcoderBadge" style="vertical-align: middle;" />
+        <img :src="atcoderBadge" class="vertical-middle" />
       </a>
     </p>
     <p class="mb-2">
       <img
         src="https://projecteuler.net/profile/Ark__.png"
-        style="vertical-align: middle;"
+        class="vertical-middle"
       />
     </p>
     <p v-for="(item, index) in items" :key="index" class="mb-1 body-2">

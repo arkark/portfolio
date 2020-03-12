@@ -1,6 +1,15 @@
 <template>
-  <canvas id="background" ref="background" v-resize="onResize"></canvas>
+  <canvas class="background" v-resize="onResize"></canvas>
 </template>
+
+<style scoped>
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #030e29;
+}
+</style>
 
 <script>
 import Manager from "@/js/Manager.js";
@@ -64,12 +73,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #030e29;
-}
-</style>

@@ -25,18 +25,9 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            :src="value.image"
-            width="32px"
-            style="vertical-align: middle;"
-          />
+          <img :src="value.image" width="32px" class="vertical-middle" />
         </a>
-        <img
-          v-else
-          :src="value.image"
-          width="32px"
-          style="vertical-align: middle;"
-        />
+        <img v-else :src="value.image" width="32px" class="vertical-middle" />
       </span>
     </p>
   </about-card>

@@ -40,10 +40,7 @@
       <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
         <span class="pr-10">{{ work.title }}</span>
       </v-card-title>
-      <v-divider
-        class="ml-2 mr-12"
-        style="border-width: thin 0 0 0;"
-      ></v-divider>
+      <v-divider class="ml-2 mr-12"></v-divider>
       <v-card-text class="caption px-3 py-1">
         <span v-if="work.rawHtml === true" v-html="work.description"></span>
         <span v-else>{{ work.description }}</span>
@@ -63,6 +60,12 @@
     </v-card>
   </v-hover>
 </template>
+
+<style scoped>
+.theme--light.v-divider {
+  border-width: thin 0 0 0;
+}
+</style>
 
 <script>
 import dayjs from "dayjs";
