@@ -4,7 +4,9 @@
       <v-icon small dark>{{ icon }}</v-icon>
     </template>
     <v-card class="elevation-4">
-      <v-card-title class="pb-0">{{ title }}</v-card-title>
+      <v-card-title class="pb-0">
+        <span><span class="title-head"></span>{{ title }}</span>
+      </v-card-title>
       <v-divider class="py-0 mx-3"></v-divider>
       <v-card-text class="pt-3 subtitle-1 text--primary">
         <slot></slot>
@@ -13,6 +15,28 @@
     <slot name="under-card"></slot>
   </v-timeline-item>
 </template>
+
+<style scoped>
+.title-head {
+  display: inline-block;
+  background: #aaa;
+  width: 0.65em;
+  height: 0.65em;
+  margin: 0.25em 0.25em 0 0.25em;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.title-head::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: #333f;
+  width: 0.65em;
+  height: 0.65em;
+  top: -0.3em;
+  left: -0.3em;
+}
+</style>
 
 <script>
 export default {
