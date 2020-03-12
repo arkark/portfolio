@@ -7,7 +7,15 @@
           display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block'
         }"
       >
-        <v-icon small class="mx-1">{{ item.icon }}</v-icon>
+        <span
+          :style="{
+            width: '1.8em',
+            display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block'
+          }"
+          class="text-center"
+        >
+          <v-icon small class="mx-1 text--primary">{{ item.icon }}</v-icon>
+        </span>
         <span>{{ item.key }}</span>
       </span>
       ：
