@@ -95,7 +95,7 @@ export default {
         },
         {
           image: require("@/assets/shields/hatenablog_link.svg"),
-          url: "https://ark4rk.hatenablog.com/archive"
+          url: "https://ark4rk.hatenablog.com"
         },
         {
           image: require("@/assets/shields/atcoder_link.svg"),
