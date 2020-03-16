@@ -1,7 +1,7 @@
 <template>
   <v-footer absolute color="#fff0" class="py-2" dark>
     <div class="flex-grow-1"></div>
-    <v-icon dark :size="fontSize" class="mx-1">
+    <v-icon dark :size="fontSize" class="mr-1">
       far fa-copyright
     </v-icon>
     <span
@@ -12,7 +12,6 @@
       2015-2020 Ark
     </span>
     <v-btn
-      v-if="!this.$vuetify.breakpoint.xsOnly"
       href="https://github.com/arkark/arkark.github.io"
       target="_blank"
       rel="noopener noreferrer"
@@ -30,7 +29,7 @@
 export default {
   computed: {
     fontSize: function() {
-      return this.$vuetify.breakpoint.xsOnly ? "0.6rem" : "0.875rem";
+      return this.$vuetify.breakpoint.xsOnly ? "0.5rem" : "0.875rem";
     }
   }
 };
