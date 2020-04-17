@@ -13,10 +13,10 @@ const colors = {
   blue: "#0000FF",
   yellow: "#C0C000",
   orange: "#FF8000",
-  red: "#FF0000"
+  red: "#FF0000",
 };
 
-const getColor = rating => {
+const getColor = (rating) => {
   if (rating === null) {
     return colors.black;
   } else if (rating < 400) {
@@ -41,12 +41,12 @@ const getColor = rating => {
 const pairs = [
   ["label", "AtCoder"],
   ["message", `Rating: ${rating}`],
-  ["color", getColor(rating)]
+  ["color", getColor(rating)],
 ];
 
-const encode = str => encodeURIComponent(str);
+const encode = (str) => encodeURIComponent(str);
 const queryString = pairs
-  .map(pair => `${pair[0]}=${encode(pair[1])}`)
+  .map((pair) => `${pair[0]}=${encode(pair[1])}`)
   .join("&");
 
 exports.badgeUrl = `https://img.shields.io/static/v1?${queryString}`;

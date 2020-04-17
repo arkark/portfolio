@@ -10,7 +10,7 @@ import ScrollerToTop from "@/components/global/ScrollerToTop.vue";
 
 export default {
   components: {
-    ScrollerToTop
-  }
+    ScrollerToTop,
+  },
 };
 </script>

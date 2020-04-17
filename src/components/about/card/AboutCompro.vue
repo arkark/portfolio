@@ -36,17 +36,17 @@ import BlogLinkIcon from "@/components/about/icon/BlogLinkIcon";
 import comproList from "@/data/compro";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       atcoderBadge: require("@/assets/shields/atcoder_rating.svg"),
-      items: comproList
+      items: comproList,
     };
   },
   components: {
     AboutCard,
     ItemizeIcon,
     LinkIcon,
-    BlogLinkIcon
-  }
+    BlogLinkIcon,
+  },
 };
 </script>

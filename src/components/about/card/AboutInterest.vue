@@ -11,34 +11,34 @@
 import AboutCard from "@/components/about/card/AboutCard";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       items: [
         {
           key: "Algorithm",
-          value: "アルゴリズム、データ構造、組合せ最適化"
+          value: "アルゴリズム、データ構造、組合せ最適化",
         },
         {
           key: "Mathematics",
-          value: "代数、圏論、グラフ理論"
+          value: "代数、圏論、グラフ理論",
         },
         {
           key: "Distributed",
-          value: "分散システム、ネットワーク"
+          value: "分散システム、ネットワーク",
         },
         {
           key: "Logic",
-          value: "論理学"
+          value: "論理学",
         },
         {
           key: "Design",
-          value: "シェーダ、ジェネラティブデザイン"
-        }
-      ]
+          value: "シェーダ、ジェネラティブデザイン",
+        },
+      ],
     };
   },
   components: {
-    AboutCard
-  }
+    AboutCard,
+  },
 };
 </script>

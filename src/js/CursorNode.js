@@ -4,7 +4,7 @@ import Node from "@/js/Node.js";
 export default class CursorNode extends Node {
   constructor(ctx, pos = new Vec2(0, 0)) {
     super(ctx, pos);
-    window.addEventListener("mousemove", event => {
+    window.addEventListener("mousemove", (event) => {
       this.targetPos = this._mousePosition(event);
     });
   }

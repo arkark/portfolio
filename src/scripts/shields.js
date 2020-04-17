@@ -9,30 +9,30 @@ const items = [];
 items.push({
   url:
     "https://img.shields.io/static/v1?label=GitHub&message=arkark&color=brightgreen&logo=github&logoColor=white",
-  filename: "github_link.svg"
+  filename: "github_link.svg",
 });
 items.push({
   url:
     "https://img.shields.io/static/v1?label=Twitter&message=@arkark_&color=blue&logo=twitter&logoColor=white",
-  filename: "twitter_link.svg"
+  filename: "twitter_link.svg",
 });
 items.push({
   url: "https://img.shields.io/badge/HatenaBlog-ark4rk-orange",
-  filename: "hatenablog_link.svg"
+  filename: "hatenablog_link.svg",
 });
 items.push({
   url: "https://img.shields.io/badge/AtCoder-arkark-yellow",
-  filename: "atcoder_link.svg"
+  filename: "atcoder_link.svg",
 });
 items.push({
   url:
     "https://img.shields.io/static/v1?label=Shadertoy&message=Ark&color=green&logo=webgl&logoColor=white",
-  filename: "shadertoy_link.svg"
+  filename: "shadertoy_link.svg",
 });
 
 items.push({
   url: atcoder.badgeUrl,
-  filename: "atcoder_rating.svg"
+  filename: "atcoder_rating.svg",
 });
 
 for (const item of items) {

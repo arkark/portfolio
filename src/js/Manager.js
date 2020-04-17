@@ -24,13 +24,13 @@ export default class Manager2d {
         this.ctx.canvas.clientHeight
       );
 
-      this.nodes.forEach(node => node.drawNode());
-      this.nodes.forEach(node => node.drawEdge());
+      this.nodes.forEach((node) => node.drawNode());
+      this.nodes.forEach((node) => node.drawEdge());
     };
     setInterval(draw, 50);
 
     const move = () => {
-      this.nodes.forEach(node => node.move());
+      this.nodes.forEach((node) => node.move());
     };
     setInterval(move, 50);
 
@@ -56,7 +56,7 @@ export default class Manager2d {
     setInterval(tickShuffle, 1000);
     this.shuffle();
 
-    window.addEventListener("click", event => {
+    window.addEventListener("click", (event) => {
       const rect = this.ctx.canvas.getBoundingClientRect();
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
@@ -92,7 +92,7 @@ export default class Manager2d {
   }
 
   shuffle() {
-    this.nodes.forEach(node => {
+    this.nodes.forEach((node) => {
       node.targetPos = this._getRandomPosition();
     });
     this.restToShuffle = SHUFFLE_DURATION;

@@ -54,32 +54,32 @@ export default {
   props: {
     parentRefs: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
-  data: function() {
+  data: function () {
     return {};
   },
   computed: {
-    options: function() {
+    options: function () {
       return {
         duration: 300,
         offset: 0,
-        easing: "easeInOutCubic"
+        easing: "easeInOutCubic",
       };
-    }
+    },
   },
   methods: {
-    scroll: function(target) {
+    scroll: function (target) {
       const hash = "#" + target.$el.id;
       this.$vuetify.goTo(target, this.options);
       if (hash !== window.location.hash) {
         this.$router.push({
           path: this.$route.path,
-          hash: hash
+          hash: hash,
         });
       }
-    }
-  }
+    },
+  },
 };
 </script>

@@ -43,7 +43,7 @@ export default {
     AboutCtf,
     AboutArticle,
     AboutActivity,
-    AboutIntern
-  }
+    AboutIntern,
+  },
 };
 </script>

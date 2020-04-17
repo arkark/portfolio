@@ -30,16 +30,16 @@ import BlogLinkIcon from "@/components/about/icon/BlogLinkIcon";
 import internList from "@/data/intern";
 
 export default {
-  data: function() {
+  data: function () {
     return {
-      items: internList
+      items: internList,
     };
   },
   components: {
     AboutCard,
     ItemizeIcon,
     LinkIcon,
-    BlogLinkIcon
-  }
+    BlogLinkIcon,
+  },
 };
 </script>

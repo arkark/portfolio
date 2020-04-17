@@ -37,15 +37,15 @@
 import AboutCard from "@/components/about/card/AboutCard";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       items: [
         {
           key: "Favorite",
           values: [
             { image: require("@/assets/icons/file_type_dlang.svg") },
-            { image: require("@/assets/icons/file_type_rust.svg") }
-          ]
+            { image: require("@/assets/icons/file_type_rust.svg") },
+          ],
         },
         {
           key: "Often",
@@ -53,8 +53,8 @@ export default {
             { image: require("@/assets/icons/file_type_kotlin.svg") },
             { image: require("@/assets/icons/file_type_js_official.svg") },
             { image: require("@/assets/icons/file_type_vue.svg") },
-            { image: require("@/assets/icons/file_type_python.svg") }
-          ]
+            { image: require("@/assets/icons/file_type_python.svg") },
+          ],
         },
         {
           key: "Sometimes",
@@ -69,8 +69,8 @@ export default {
             { image: require("@/assets/icons/file_type_php.svg") },
             { image: require("@/assets/icons/file_type_prolog.svg") },
             { image: require("@/assets/icons/file_type_glsl.svg") },
-            { image: require("@/assets/icons/file_type_shell.svg") }
-          ]
+            { image: require("@/assets/icons/file_type_shell.svg") },
+          ],
         },
         {
           key: "Useful",
@@ -78,19 +78,19 @@ export default {
             {
               image: require("@/assets/icons/file_type_git.svg"),
               url:
-                "https://github.com/arkark/dotfiles/blob/master/files/.gitconfig"
+                "https://github.com/arkark/dotfiles/blob/master/files/.gitconfig",
             },
             { image: require("@/assets/icons/file_type_docker.svg") },
             { image: require("@/assets/icons/file_type_mysql.svg") },
             { image: require("@/assets/icons/file_type_tex.svg") },
-            { image: require("@/assets/icons/file_type_vscode.svg") }
-          ]
-        }
-      ]
+            { image: require("@/assets/icons/file_type_vscode.svg") },
+          ],
+        },
+      ],
     };
   },
   components: {
-    AboutCard
-  }
+    AboutCard,
+  },
 };
 </script>

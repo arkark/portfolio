@@ -6,22 +6,22 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {};
   },
   computed: {
-    options: function() {
+    options: function () {
       return {
         duration: 600,
         offset: 0,
-        easing: "easeInOutCubic"
+        easing: "easeInOutCubic",
       };
-    }
+    },
   },
   methods: {
-    gotoTop: function() {
+    gotoTop: function () {
       this.$vuetify.goTo(0, this.options);
-    }
-  }
+    },
+  },
 };
 </script>

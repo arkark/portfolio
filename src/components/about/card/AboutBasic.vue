@@ -4,13 +4,13 @@
       <span
         :style="{
           width: '6em',
-          display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block'
+          display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block',
         }"
       >
         <span
           :style="{
             width: '1.8em',
-            display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block'
+            display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block',
           }"
           class="text-center"
         >
@@ -59,58 +59,58 @@ import LinkIcon from "@/components/about/icon/LinkIcon";
 
 export default {
   name: "about-basic",
-  data: function() {
+  data: function () {
     return {
       items: [
         {
           icon: "fas fa-user",
           key: "名前",
-          value: "Takeshi Kaneko"
+          value: "Takeshi Kaneko",
         },
         {
           icon: "fas fa-user-tag",
           key: "HN",
-          value: "Ark / アーク"
+          value: "Ark / アーク",
         },
         {
           icon: "fas fa-graduation-cap",
           key: "所属",
-          value: "東京工業大学 情報理工学院 数理・計算科学系"
+          value: "東京工業大学 情報理工学院 数理・計算科学系",
         },
         {
           icon: "fas fa-users",
           key: "サークル",
           value: "東京工業大学デジタル創作同好会 traP",
-          url: "https://trap.jp/"
-        }
+          url: "https://trap.jp/",
+        },
       ],
       badges: [
         {
           image: require("@/assets/shields/github_link.svg"),
-          url: "https://github.com/arkark"
+          url: "https://github.com/arkark",
         },
         {
           image: require("@/assets/shields/twitter_link.svg"),
-          url: "https://twitter.com/arkark_"
+          url: "https://twitter.com/arkark_",
         },
         {
           image: require("@/assets/shields/hatenablog_link.svg"),
-          url: "https://ark4rk.hatenablog.com"
+          url: "https://ark4rk.hatenablog.com",
         },
         {
           image: require("@/assets/shields/atcoder_link.svg"),
-          url: "https://atcoder.jp/user/arkark"
+          url: "https://atcoder.jp/user/arkark",
         },
         {
           image: require("@/assets/shields/shadertoy_link.svg"),
-          url: "https://www.shadertoy.com/user/Ark"
-        }
-      ]
+          url: "https://www.shadertoy.com/user/Ark",
+        },
+      ],
     };
   },
   components: {
     AboutCard,
-    LinkIcon
-  }
+    LinkIcon,
+  },
 };
 </script>

@@ -27,16 +27,16 @@ import BlogLinkIcon from "@/components/about/icon/BlogLinkIcon";
 import ctfList from "@/data/ctf";
 
 export default {
-  data: function() {
+  data: function () {
     return {
-      items: ctfList
+      items: ctfList,
     };
   },
   components: {
     AboutCard,
     ItemizeIcon,
     LinkIcon,
-    BlogLinkIcon
-  }
+    BlogLinkIcon,
+  },
 };
 </script>

@@ -15,12 +15,12 @@
 import Manager from "@/js/Manager.js";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       ctx: null,
       shouldMove: true,
       moveSpeed: 0.6,
-      intervalDelay: 100
+      intervalDelay: 100,
     };
   },
   mounted() {
@@ -39,9 +39,9 @@ export default {
       for (let i = 0; i < nodeNum; i++) {
         manager.addNode();
       }
-      manager.nodes.forEach(node => (node.shouldMove = this.shouldMove));
+      manager.nodes.forEach((node) => (node.shouldMove = this.shouldMove));
       manager.nodes.forEach(
-        node => (node.moveSpeed = this.moveSpeed * (1.0 + Math.random()))
+        (node) => (node.moveSpeed = this.moveSpeed * (1.0 + Math.random()))
       );
       manager.intervalDelay = this.intervalDelay;
       manager.numAtOnce = numAtOnce;
@@ -49,7 +49,7 @@ export default {
       manager.run(preCount);
     };
 
-    document.addEventListener("readystatechange", event => {
+    document.addEventListener("readystatechange", (event) => {
       if (event.target.readyState === "complete") {
         run();
       }
@@ -69,7 +69,7 @@ export default {
       this.ctx.canvas.width = width * ratio;
       this.ctx.canvas.height = height * ratio;
       this.ctx.scale(ratio, ratio);
-    }
-  }
+    },
+  },
 };
 </script>

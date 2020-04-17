@@ -9,8 +9,8 @@ Vue.use(Vuetify);
 
 const opts = {
   icons: {
-    iconfont: "fa"
-  }
+    iconfont: "fa",
+  },
 };
 
 export default new Vuetify(opts);

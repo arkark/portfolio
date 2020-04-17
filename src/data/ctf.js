@@ -1,6 +1,6 @@
 export default [
   {
     label: "SECCON 2019 CTF : 予選37位、国内決勝進出（チーム : ./Vespiary）",
-    url: "https://www.seccon.jp/2019/seccon2019/"
-  }
+    url: "https://www.seccon.jp/2019/seccon2019/",
+  },
 ];

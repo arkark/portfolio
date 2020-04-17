@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    selectedGenres: new Set()
+    selectedGenres: new Set(),
   },
   mutations: {
     selectGenre(state, genre) {
@@ -11,6 +11,6 @@ export default {
     unselectGenre(state, genre) {
       state.selectedGenres.delete(genre);
       state.selectedGenres = new Set(state.selectedGenres);
-    }
-  }
+    },
+  },
 };

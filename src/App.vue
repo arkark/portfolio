@@ -51,7 +51,7 @@ export default {
     AppFooter,
     Top,
     About,
-    Work
-  }
+    Work,
+  },
 };
 </script>

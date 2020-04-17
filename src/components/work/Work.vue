@@ -59,15 +59,15 @@ import workList from "@/data/work.js";
 import WorkNode from "@/components/work/WorkNode.vue";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       mainWorkList,
       workList,
-      genres: ["Game", "Tool", "Design", "PixelArt"]
+      genres: ["Game", "Tool", "Design", "PixelArt"],
     };
   },
   components: {
-    WorkNode
-  }
+    WorkNode,
+  },
 };
 </script>

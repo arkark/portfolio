@@ -107,7 +107,7 @@ export default class Node {
   }
 
   drawEdge() {
-    this.adjNodes.forEach(node => {
+    this.adjNodes.forEach((node) => {
       const v1 = this.pos;
       const v2 = node.pos;
       this.ctx.beginPath();
@@ -121,7 +121,7 @@ export default class Node {
 
   // 偏角ソート
   _sortAsClockWise(nodes) {
-    nodes.forEach(n => (n.__arg = Math.atan2(n.y - this.y, n.x - this.x)));
+    nodes.forEach((n) => (n.__arg = Math.atan2(n.y - this.y, n.x - this.x)));
     nodes.sort((a, b) => a.__arg - b.__arg);
   }
 
@@ -148,7 +148,7 @@ export default class Node {
       return dSq < rSq;
     };
 
-    const remove = i => {
+    const remove = (i) => {
       nonAdjNodes.push(nodes[i]);
       nodes.splice(i, 1);
     };
@@ -192,16 +192,16 @@ export default class Node {
         //
       }
     }
-    nodes.forEach(n => adjNodes.push(n));
+    nodes.forEach((n) => adjNodes.push(n));
     nodes.length = 0;
   }
 
   // 移譲
   _delegate(adjNodes, nonAdjNodes) {
-    nonAdjNodes.forEach(n1 => {
+    nonAdjNodes.forEach((n1) => {
       let minD = Infinity;
       let minN = null;
-      adjNodes.forEach(n2 => {
+      adjNodes.forEach((n2) => {
         let d = n2.pos.distanceSq(n1.pos);
         if (d < minD) {
           minD = d;

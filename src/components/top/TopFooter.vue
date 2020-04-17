@@ -6,7 +6,7 @@
     </v-icon>
     <span
       :style="{
-        'font-size': fontSize
+        'font-size': fontSize,
       }"
     >
       2015-2020 Ark
@@ -28,9 +28,9 @@
 <script>
 export default {
   computed: {
-    fontSize: function() {
+    fontSize: function () {
       return this.$vuetify.breakpoint.xsOnly ? "0.5rem" : "0.875rem";
-    }
-  }
+    },
+  },
 };
 </script>

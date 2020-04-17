@@ -6,7 +6,7 @@ export default [
     genre: "Tool",
     description:
       "D言語でつくったProlog処理系。LexerやParser、具体化の機構、算術演算、リスト、カットオペレータ等、一からすべて実装した。",
-    date: "2018/11"
+    date: "2018/11",
   },
   {
     title: "Teleport Puzzle",
@@ -15,7 +15,7 @@ export default [
     genre: "Game",
     description:
       "2016年工大祭向けに制作したパズルアクションゲーム。操作性とレベルデザインを重視してつくった。",
-    date: "2016/10"
+    date: "2016/10",
   },
   {
     title: "Brainfuck製15パズル",
@@ -23,6 +23,6 @@ export default [
     src: require("@/assets/screenshots/game/15puzzle.png"),
     genre: "Game",
     description: "brainfuckで制作したコンソールゲーム。",
-    date: "2015/9"
-  }
+    date: "2015/9",
+  },
 ];

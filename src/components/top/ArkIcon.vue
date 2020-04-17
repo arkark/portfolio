@@ -31,15 +31,15 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
-      isPaused: true
+      isPaused: true,
     };
   },
   methods: {
-    flip: function() {
+    flip: function () {
       this.isPaused = !this.isPaused;
-    }
-  }
+    },
+  },
 };
 </script>

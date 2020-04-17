@@ -6,7 +6,7 @@ export default [
     genre: "Tool",
     description:
       "ファイルの変更を検出して、サンプルケースのダウンロードとテストを自動化するツール",
-    date: "2020/3/2"
+    date: "2020/3/2",
   },
   {
     title: "dcp",
@@ -15,7 +15,7 @@ export default [
     genre: "Tool",
     description:
       "`docker container cp`のalias。Dockerコンテナ内のパスにも補完が効く",
-    date: "2019/9/8"
+    date: "2019/9/8",
   },
   {
     title: "DistortionCamera",
@@ -25,7 +25,7 @@ export default [
     genre: "Tool",
     description:
       "センサに反応して空間を歪ませながら撮影できるカメラのAndroidアプリ",
-    date: "2019/7/1"
+    date: "2019/7/1",
   },
   {
     title: "SimBlock Visualizer",
@@ -34,7 +34,7 @@ export default [
       "https://github.com/dsg-titech/simblock-visualizer/raw/master/public/screenshot.png",
     genre: "Tool",
     description: "ブロックチェーンネットワークシミュレータのビジュアライザ",
-    date: "2019/6/27"
+    date: "2019/6/27",
   },
   {
     title: "latexmk-docker",
@@ -43,7 +43,7 @@ export default [
       "https://github.com/arkark/latexmk-docker/blob/master/screenshot.png?raw=true",
     genre: "Tool",
     description: "Docker上で動く快適なLatex環境",
-    date: "2019/1"
+    date: "2019/1",
   },
   {
     title: "Brainfuck Online Simulator",
@@ -51,7 +51,7 @@ export default [
     src: require("@/assets/screenshots/tool/brainfuck_online_simulator.png"),
     genre: "Tool",
     description: "Vue.jsの勉強にBrainfuckのオンライン実行環境",
-    date: "2018/6/10"
+    date: "2018/6/10",
   },
   {
     title: "Interactive Voronoi Diagram",
@@ -59,7 +59,7 @@ export default [
     src: require("@/assets/screenshots/design/voronoi.png"),
     genre: "Design",
     description: "Shaderでボロノイ図をかいた",
-    date: "2018/3/29"
+    date: "2018/3/29",
   },
   {
     title: "Oscillating Circle",
@@ -67,7 +67,7 @@ export default [
     src: require("@/assets/screenshots/game/oscillating_circle.png"),
     genre: "Game",
     description: "traP部内3時間ゲームジャムで作ったゲーム。テーマは「振動」",
-    date: "2017/8/28"
+    date: "2017/8/28",
   },
   {
     title: "Growth Ball",
@@ -76,7 +76,7 @@ export default [
     genre: "Game",
     description:
       "traP部内3時間ゲームジャムで作ったゲーム。転がる処理をやってみた。テーマは「成長」",
-    date: "2017/6/11"
+    date: "2017/6/11",
   },
   {
     title: "the Fall",
@@ -84,7 +84,7 @@ export default [
     src: require("@/assets/screenshots/game/the_fall.png"),
     genre: "Game",
     description: "traP部内3時間ゲームジャムで作ったゲーム。テーマは「速度」",
-    date: "2017/5/4"
+    date: "2017/5/4",
   },
   {
     title: "Burning D-man and Gopher",
@@ -92,7 +92,7 @@ export default [
     src: require("@/assets/screenshots/game/burning_dman_and_gopher.png"),
     genre: "Game",
     description: "traP部内3時間ゲームジャムで作ったゲーム。",
-    date: "2017/3/21"
+    date: "2017/3/21",
   },
   {
     title: "Rotation Cross",
@@ -101,7 +101,7 @@ export default [
     genre: "Game",
     description:
       "traP部内3時間ゲームジャムで作ったパズルゲーム。テーマは「＋」",
-    date: "2017/2/20"
+    date: "2017/2/20",
   },
   {
     title: "Spread Circle",
@@ -110,7 +110,7 @@ export default [
     genre: "Game",
     description:
       "traP部内3時間ゲームジャムで作ったミニゲーム。テーマは「うつる」",
-    date: "2017/2/13"
+    date: "2017/2/13",
   },
   {
     title: "テックちゃん",
@@ -118,7 +118,7 @@ export default [
     src: require("@/assets/screenshots/dot/tech_chan.png"),
     genre: "PixelArt",
     description: "東京工業大学工大祭のマスコットキャラクター",
-    date: "2017/2/2"
+    date: "2017/2/2",
   },
   {
     title: "Just Shot",
@@ -127,7 +127,7 @@ export default [
     genre: "Game",
     description:
       "traP部内3時間ゲームジャムで作ったシューティングゲーム。テーマは「限界」",
-    date: "2017/1/13"
+    date: "2017/1/13",
   },
   {
     title: "D言語くんライフゲーム",
@@ -137,7 +137,7 @@ export default [
     description:
       '<a href="https://qiita.com/advent-calendar/2016/d-man">D言語くん Advent Calendar 2016</a>で作ったライフゲーム',
     date: "2016/12/20",
-    rawHtml: true
+    rawHtml: true,
   },
   {
     title: "Sphere to Plane Transition",
@@ -145,7 +145,7 @@ export default [
     src: require("@/assets/screenshots/design/sphere_to_plane_transition.png"),
     genre: "Design",
     description: "同相写像を利用した遷移のデモ",
-    date: "2016/11/12"
+    date: "2016/11/12",
   },
   {
     title: "Magic Circle",
@@ -153,7 +153,7 @@ export default [
     src: require("@/assets/screenshots/design/magic_circle.png"),
     genre: "Design",
     description: "魔法陣を作りたくなったのでShaderで作ってみました",
-    date: "2016/10/26"
+    date: "2016/10/26",
   },
   {
     title: "One Day One Gif",
@@ -161,7 +161,7 @@ export default [
     src: require("@/assets/screenshots/design/one_day_one_gif.png"),
     genre: "Design",
     description: "「毎日一枚gifを作る」という謎企画",
-    date: "2016/8"
+    date: "2016/8",
   },
   {
     title: "Polar Coordinates Motion",
@@ -171,7 +171,7 @@ export default [
     description:
       '<a href="http://foxcodex.html.xdomain.jp/PolarCoordinates.html">これ</a>を実装したかったので作ってみた',
     date: "2016/7/27",
-    rawHtml: true
+    rawHtml: true,
   },
   {
     title: "フシギダネ",
@@ -179,7 +179,7 @@ export default [
     src: require("@/assets/screenshots/dot/pokemon_001.png"),
     genre: "PixelArt",
     description: "No.001 フシギダネ",
-    date: "2016/6/14"
+    date: "2016/6/14",
   },
   {
     title: "IceBreakers | traP",
@@ -188,7 +188,7 @@ export default [
     genre: "Game",
     description:
       "ハッカソンHack Uで制作した二人協力ゲーム。プログラムを担当しました。",
-    date: "2016/6"
+    date: "2016/6",
   },
   {
     title: "ジャック・オ・ランタン",
@@ -196,7 +196,7 @@ export default [
     src: require("@/assets/screenshots/dot/Jaxk-o'-Lantern2.png"),
     genre: "PixelArt",
     description: "ハロウィンなので",
-    date: "2015/10/17"
+    date: "2015/10/17",
   },
   {
     title: "Spin! Spin!",
@@ -204,6 +204,6 @@ export default [
     src: require("@/assets/screenshots/game/spin_spin_.png"),
     genre: "Game",
     description: "2015年工大祭向けに作った3D障害物避けゲーム",
-    date: "2015/10"
-  }
+    date: "2015/10",
+  },
 ];

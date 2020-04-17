@@ -75,20 +75,20 @@ export default {
   props: {
     work: {
       type: Object,
-      required: true
+      required: true,
     },
     cardWidth: {
       type: Number,
-      required: true
+      required: true,
     },
     cardHeight: {
       type: Number,
-      required: true
+      required: true,
     },
     imageHeight: {
       type: Number,
-      required: true
-    }
+      required: true,
+    },
   },
   methods: {
     formatDate(date) {
@@ -97,10 +97,10 @@ export default {
       } else {
         return dayjs(date, "YYYY/M").format("MMM D, YYYY");
       }
-    }
+    },
   },
   components: {
-    GenreChip
-  }
+    GenreChip,
+  },
 };
 </script>

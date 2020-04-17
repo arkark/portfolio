@@ -21,16 +21,16 @@ import BlogLinkIcon from "@/components/about/icon/BlogLinkIcon";
 import marathonList from "@/data/marathon";
 
 export default {
-  data: function() {
+  data: function () {
     return {
-      items: marathonList
+      items: marathonList,
     };
   },
   components: {
     AboutCard,
     ItemizeIcon,
     LinkIcon,
-    BlogLinkIcon
-  }
+    BlogLinkIcon,
+  },
 };
 </script>

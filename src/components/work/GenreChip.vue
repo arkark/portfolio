@@ -15,26 +15,26 @@ export default {
   props: {
     genre: {
       type: String,
-      required: true
+      required: true,
     },
     "x-small": {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
-    isSelected: function() {
+    isSelected: function () {
       return this.$store.state.work.selectedGenres.has(this.genre);
-    }
+    },
   },
   methods: {
-    select: function() {
+    select: function () {
       if (this.isSelected) {
         this.$store.commit("work/unselectGenre", this.genre);
       } else {
         this.$store.commit("work/selectGenre", this.genre);
       }
-    }
-  }
+    },
+  },
 };
 </script>

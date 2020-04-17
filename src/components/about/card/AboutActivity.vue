@@ -36,7 +36,7 @@ export default {
   components: {
     AboutCard,
     ItemizeIcon,
-    LinkIcon
-  }
+    LinkIcon,
+  },
 };
 </script>

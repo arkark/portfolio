@@ -32,16 +32,16 @@ import BlogLinkIcon from "@/components/about/icon/BlogLinkIcon";
 import articleList from "@/data/article";
 
 export default {
-  data: function() {
+  data: function () {
     return {
-      items: articleList
+      items: articleList,
     };
   },
   components: {
     AboutCard,
     ItemizeIcon,
     LinkIcon,
-    BlogLinkIcon
-  }
+    BlogLinkIcon,
+  },
 };
 </script>

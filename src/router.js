@@ -9,15 +9,15 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "top"
+      name: "top",
     },
     {
       path: "*",
-      redirect: { name: "top" }
-    }
+      redirect: { name: "top" },
+    },
   ],
   scrollBehavior(_to, _from, _savedPosition) {
     const selector = window.location.hash;
     return selector !== "" ? { selector } : { x: 0, y: 0 };
-  }
+  },
 });

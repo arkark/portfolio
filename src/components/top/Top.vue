@@ -48,35 +48,35 @@ import ArkIcon from "@/components/top/ArkIcon.vue";
 import TopFooter from "@/components/top/TopFooter.vue";
 
 export default {
-  data: function() {
+  data: function () {
     return {
       accountList: [
         {
           url: "https://github.com/arkark",
-          iconName: "fab fa-github"
+          iconName: "fab fa-github",
         },
         {
           url: "https://twitter.com/arkark_",
-          iconName: "fab fa-twitter"
+          iconName: "fab fa-twitter",
         },
         {
           url: "https://ark4rk.hatenablog.com",
-          iconName: "fas fa-pen-nib"
-        }
+          iconName: "fas fa-pen-nib",
+        },
       ],
       screenWidth: document.documentElement.clientWidth,
-      screenHeight: document.documentElement.clientHeight
+      screenHeight: document.documentElement.clientHeight,
     };
   },
   methods: {
-    onResize: function() {
+    onResize: function () {
       this.screenWidth = document.documentElement.clientWidth;
       this.screenHeight = document.documentElement.clientHeight;
-    }
+    },
   },
   components: {
     ArkIcon,
-    TopFooter
-  }
+    TopFooter,
+  },
 };
 </script>
