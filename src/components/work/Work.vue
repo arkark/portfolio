@@ -38,7 +38,7 @@
                   v-for="(work, key) in workList"
                   :key="key"
                   :work="work"
-                  :cardWidth="200"
+                  :cardWidth="210"
                   :cardHeight="270"
                   :imageHeight="140"
                   class="ma-2"
