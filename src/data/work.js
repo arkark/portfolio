@@ -20,8 +20,7 @@ export default [
   {
     title: "DistortionCamera",
     url: "https://github.com/arkark/DistortionCamera",
-    src:
-      "https://github.com/arkark/DistortionCamera/blob/master/screenshot.png?raw=true",
+    src: require("@/assets/screenshots/tool/distortion_camera.210x140.png"),
     genre: "Tool",
     description:
       "センサに反応して空間を歪ませながら撮影できるカメラのAndroidアプリ",
@@ -30,8 +29,7 @@ export default [
   {
     title: "SimBlock Visualizer",
     url: "https://github.com/dsg-titech/simblock-visualizer",
-    src:
-      "https://github.com/dsg-titech/simblock-visualizer/raw/master/public/screenshot.png",
+    src: require("@/assets/screenshots/tool/simblock_visualizer.210x140.png"),
     genre: "Tool",
     description: "ブロックチェーンネットワークシミュレータのビジュアライザ",
     date: "2019/6/27",
@@ -39,8 +37,7 @@ export default [
   {
     title: "latexmk-docker",
     url: "https://github.com/arkark/latexmk-docker",
-    src:
-      "https://github.com/arkark/latexmk-docker/blob/master/screenshot.png?raw=true",
+    src: require("@/assets/screenshots/tool/latexmk_docker.210x140.png"),
     genre: "Tool",
     description: "Docker上で動く快適なLatex環境",
     date: "2019/1",
