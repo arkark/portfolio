@@ -35,7 +35,7 @@
         </v-hover>
       </v-toolbar>
       <a :href="work.url" target="_blank" rel="noopener noreferrer">
-        <v-img :src="work.src" width="100%" :height="imageHeight"></v-img>
+        <v-img :src="work.src" width="100%" :height="imageHeight" eager></v-img>
       </a>
       <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
         <span class="pr-10">{{ work.title }}</span>
