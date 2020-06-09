@@ -87,7 +87,7 @@ export default {
             {
               image: require("@/assets/icons/file_type_git.svg"),
               url:
-                "https://github.com/arkark/dotfiles/blob/master/files/.gitconfig",
+                "https://github.com/arkark/dotfiles/blob/master/home/.gitconfig",
             },
             { image: require("@/assets/icons/file_type_docker.svg") },
             { image: require("@/assets/icons/file_type_mysql.svg") },
