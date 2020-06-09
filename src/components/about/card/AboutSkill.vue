@@ -25,9 +25,18 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img :src="value.image" width="32px" class="vertical-middle" />
+          <img
+            :src="value.image"
+            :width="item.size + 'px'"
+            class="vertical-middle"
+          />
         </a>
-        <img v-else :src="value.image" width="32px" class="vertical-middle" />
+        <img
+          v-else
+          :src="value.image"
+          :width="item.size + 'px'"
+          class="vertical-middle"
+        />
       </span>
     </p>
   </about-card>
@@ -46,19 +55,19 @@ export default {
             { image: require("@/assets/icons/file_type_dlang.svg") },
             { image: require("@/assets/icons/file_type_rust.svg") },
           ],
-        },
-        {
-          key: "Often",
-          values: [
-            { image: require("@/assets/icons/file_type_kotlin.svg") },
-            { image: require("@/assets/icons/file_type_js_official.svg") },
-            { image: require("@/assets/icons/file_type_vue.svg") },
-            { image: require("@/assets/icons/file_type_python.svg") },
-          ],
+          size: 32,
         },
         {
           key: "Sometimes",
           values: [
+            { image: require("@/assets/icons/file_type_js_official.svg") },
+            {
+              image: require("@/assets/icons/file_type_typescript_official.svg"),
+            },
+            { image: require("@/assets/icons/file_type_vue.svg") },
+            { image: require("@/assets/icons/file_type_reactjs.svg") },
+            { image: require("@/assets/icons/file_type_kotlin.svg") },
+            { image: require("@/assets/icons/file_type_python.svg") },
             { image: require("@/assets/icons/file_type_c3.svg") },
             { image: require("@/assets/icons/file_type_cpp3.svg") },
             { image: require("@/assets/icons/file_type_go.svg") },
@@ -69,8 +78,8 @@ export default {
             { image: require("@/assets/icons/file_type_php.svg") },
             { image: require("@/assets/icons/file_type_prolog.svg") },
             { image: require("@/assets/icons/file_type_glsl.svg") },
-            { image: require("@/assets/icons/file_type_shell.svg") },
           ],
+          size: 18,
         },
         {
           key: "Useful",
@@ -85,6 +94,7 @@ export default {
             { image: require("@/assets/icons/file_type_tex.svg") },
             { image: require("@/assets/icons/file_type_vscode.svg") },
           ],
+          size: 32,
         },
       ],
     };

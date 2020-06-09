@@ -26,7 +26,9 @@
     </p>
     <v-divider class="my-1"></v-divider>
     <p class="mb-1">
-      Math, CS, Game, Web / 競プロ, CTF (misc, web) / DとRustと回転が好きです。
+      Math, CS, Game, Web / CTF
+      <a href="https://ctftime.org/team/80092">./Vespiary</a> / 競プロ 青⇆黄 /
+      DとRustと回転が好きです。
     </p>
     <p class="mb-1">
       <span v-if="$vuetify.breakpoint.width > 780" class="mr-2">

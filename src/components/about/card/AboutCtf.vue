@@ -11,10 +11,9 @@
       </span>
     </p>
     <p class="mb-1">
-      過去の
-      <a href="https://ark4rk.hatenablog.com/archive/category/CTF">
-        writeup
-      </a>
+      writeups:
+      <a href="https://github.com/x-vespiary/writeup">GitHub</a>,
+      <a href="https://ark4rk.hatenablog.com/archive/category/CTF">Blog</a>
     </p>
   </about-card>
 </template>

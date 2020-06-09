@@ -13,6 +13,7 @@
       <img
         src="https://projecteuler.net/profile/Ark__.png"
         class="vertical-middle"
+        width="160px"
       />
     </p>
     <p v-for="(item, index) in items" :key="index" class="mb-1 body-2">
