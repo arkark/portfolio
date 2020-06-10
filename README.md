@@ -3,7 +3,7 @@ My Portfolio Website
 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a4953dfc-2175-4b70-a50b-c69d8f159d4d/deploy-status)](https://app.netlify.com/sites/ark-portfolio/deploys)
-![Node.js CI](https://github.com/arkark/arkark.github.io/workflows/Node.js%20CI/badge.svg)
+[![Node.js CI](https://github.com/arkark/arkark.github.io/workflows/Node.js%20CI/badge.svg)](https://github.com/arkark/arkark.github.io/actions)
 
 ## Links
 
