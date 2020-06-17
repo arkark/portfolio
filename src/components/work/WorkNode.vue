@@ -40,12 +40,7 @@
         width="100%"
         :height="imageHeight"
       ></v-skeleton-loader>
-      <a
-        v-show="readyToLoad"
-        :href="work.url"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a v-else :href="work.url" target="_blank" rel="noopener noreferrer">
         <v-img :src="work.src" width="100%" :height="imageHeight" eager></v-img>
       </a>
       <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
