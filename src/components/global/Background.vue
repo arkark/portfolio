@@ -57,7 +57,7 @@ export default {
       run();
     } else {
       document.addEventListener("readystatechange", (event) => {
-        if (event.target.readyState === "interactive") {
+        if (event.target.readyState === "complete") {
           run();
         }
       });
