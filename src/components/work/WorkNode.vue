@@ -36,12 +36,22 @@
       </v-toolbar>
       <v-skeleton-loader
         v-if="!readyToLoad"
+        boilerplate
         type="image"
         width="100%"
         :height="imageHeight"
       ></v-skeleton-loader>
       <a v-else :href="work.url" target="_blank" rel="noopener noreferrer">
-        <v-img :src="work.src" width="100%" :height="imageHeight" eager></v-img>
+        <v-img :src="work.src" width="100%" :height="imageHeight" eager>
+          <template v-slot:placeholder>
+            <v-row class="fill-height ma-0" align="center" justify="center">
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-2"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
       </a>
       <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
         <span class="pr-10">{{ work.title }}</span>
