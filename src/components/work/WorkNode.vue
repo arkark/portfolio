@@ -34,7 +34,18 @@
           </v-btn>
         </v-hover>
       </v-toolbar>
-      <a :href="work.url" target="_blank" rel="noopener noreferrer">
+      <v-skeleton-loader
+        v-if="!readyToLoad"
+        type="image"
+        width="100%"
+        :height="imageHeight"
+      ></v-skeleton-loader>
+      <a
+        v-show="readyToLoad"
+        :href="work.url"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <v-img :src="work.src" width="100%" :height="imageHeight" eager></v-img>
       </a>
       <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
@@ -89,6 +100,22 @@ export default {
       type: Number,
       required: true,
     },
+  },
+  data: function () {
+    return {
+      readyToLoad: false,
+    };
+  },
+  mounted: function () {
+    if (document.readyState === "complete") {
+      this.readyToLoad = true;
+    } else {
+      document.addEventListener("readystatechange", () => {
+        if (document.readyState === "complete") {
+          this.readyToLoad = true;
+        }
+      });
+    }
   },
   methods: {
     formatDate(date) {

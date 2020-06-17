@@ -27,7 +27,11 @@ export default {
     this.ctx = this.$el.getContext("2d");
     this.resizeCanvas();
 
+    let first = true;
     const run = () => {
+      if (!first) return;
+      first = true;
+
       const width = document.documentElement.clientWidth;
       const height = document.documentElement.clientHeight;
       const area = width * height;
@@ -49,11 +53,15 @@ export default {
       manager.run(preCount);
     };
 
-    document.addEventListener("readystatechange", (event) => {
-      if (event.target.readyState === "complete") {
-        run();
-      }
-    });
+    if (document.readyState === "complete") {
+      run();
+    } else {
+      document.addEventListener("readystatechange", (event) => {
+        if (event.target.readyState === "interactive") {
+          run();
+        }
+      });
+    }
   },
   methods: {
     onResize() {
