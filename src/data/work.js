@@ -2,7 +2,7 @@ export default [
   {
     title: "atcoder-auto-tester",
     url: "https://github.com/arkark/atcoder-auto-tester",
-    src: require("@/assets/screenshots/tool/atcoder-auto-tester.210x140.png"),
+    src: require("@/assets/screenshots/tool/atcoder-auto-tester.png"),
     genre: "Tool",
     description:
       "ファイルの変更を検出して、サンプルケースのダウンロードとテストを自動化するツール",
@@ -11,7 +11,7 @@ export default [
   {
     title: "dcp",
     url: "https://github.com/arkark/dcp",
-    src: require("@/assets/screenshots/tool/dcp.210x140.png"),
+    src: require("@/assets/screenshots/tool/dcp.png"),
     genre: "Tool",
     description:
       "`docker container cp`のalias。Dockerコンテナ内のパスにも補完が効く",
@@ -20,7 +20,7 @@ export default [
   {
     title: "DistortionCamera",
     url: "https://github.com/arkark/DistortionCamera",
-    src: require("@/assets/screenshots/tool/distortion_camera.210x140.png"),
+    src: require("@/assets/screenshots/tool/distortion_camera.png"),
     genre: "Tool",
     description:
       "センサに反応して空間を歪ませながら撮影できるカメラのAndroidアプリ",
@@ -29,7 +29,7 @@ export default [
   {
     title: "SimBlock Visualizer",
     url: "https://github.com/dsg-titech/simblock-visualizer",
-    src: require("@/assets/screenshots/tool/simblock_visualizer.210x140.png"),
+    src: require("@/assets/screenshots/tool/simblock_visualizer.png"),
     genre: "Tool",
     description: "ブロックチェーンネットワークシミュレータのビジュアライザ",
     date: "2019/6/27",
@@ -37,7 +37,7 @@ export default [
   {
     title: "latexmk-docker",
     url: "https://github.com/arkark/latexmk-docker",
-    src: require("@/assets/screenshots/tool/latexmk_docker.210x140.png"),
+    src: require("@/assets/screenshots/tool/latexmk_docker.png"),
     genre: "Tool",
     description: "Docker上で動く快適なLatex環境",
     date: "2019/1",
@@ -45,7 +45,7 @@ export default [
   {
     title: "Brainfuck Online Simulator",
     url: "https://arkark.github.io/brainfuck-online-simulator/",
-    src: require("@/assets/screenshots/tool/brainfuck_online_simulator.210x140.png"),
+    src: require("@/assets/screenshots/tool/brainfuck_online_simulator.png"),
     genre: "Tool",
     description: "Vue.jsの勉強にBrainfuckのオンライン実行環境",
     date: "2018/6/10",
@@ -53,7 +53,7 @@ export default [
   {
     title: "Interactive Voronoi Diagram",
     url: "https://www.shadertoy.com/view/ldVyDw",
-    src: require("@/assets/screenshots/design/voronoi.210x140.png"),
+    src: require("@/assets/screenshots/design/voronoi.png"),
     genre: "Design",
     description: "Shaderでボロノイ図をかいた",
     date: "2018/3/29",
@@ -61,7 +61,7 @@ export default [
   {
     title: "Oscillating Circle",
     url: "https://arkark.github.io/traP3jam/2017/0828",
-    src: require("@/assets/screenshots/game/oscillating_circle.210x140.png"),
+    src: require("@/assets/screenshots/game/oscillating_circle.png"),
     genre: "Game",
     description: "traP部内3時間ゲームジャムで作ったゲーム。テーマは「振動」",
     date: "2017/8/28",
@@ -69,7 +69,7 @@ export default [
   {
     title: "Growth Ball",
     url: "https://arkark.github.io/traP3jam/2017/0611",
-    src: require("@/assets/screenshots/game/growth_ball.210x140.png"),
+    src: require("@/assets/screenshots/game/growth_ball.png"),
     genre: "Game",
     description:
       "traP部内3時間ゲームジャムで作ったゲーム。転がる処理をやってみた。テーマは「成長」",
@@ -78,7 +78,7 @@ export default [
   {
     title: "the Fall",
     url: "https://arkark.github.io/traP3jam/2017/0504",
-    src: require("@/assets/screenshots/game/the_fall.210x140.png"),
+    src: require("@/assets/screenshots/game/the_fall.png"),
     genre: "Game",
     description: "traP部内3時間ゲームジャムで作ったゲーム。テーマは「速度」",
     date: "2017/5/4",
@@ -86,7 +86,7 @@ export default [
   {
     title: "Burning D-man and Gopher",
     url: "https://arkark.github.io/traP3jam/2017/0321",
-    src: require("@/assets/screenshots/game/burning_dman_and_gopher.210x140.png"),
+    src: require("@/assets/screenshots/game/burning_dman_and_gopher.png"),
     genre: "Game",
     description: "traP部内3時間ゲームジャムで作ったゲーム。",
     date: "2017/3/21",
@@ -94,7 +94,7 @@ export default [
   {
     title: "Rotation Cross",
     url: "https://arkark.github.io/traP3jam/2017/0220",
-    src: require("@/assets/screenshots/game/rotation_cross.210x140.png"),
+    src: require("@/assets/screenshots/game/rotation_cross.png"),
     genre: "Game",
     description:
       "traP部内3時間ゲームジャムで作ったパズルゲーム。テーマは「＋」",
@@ -103,7 +103,7 @@ export default [
   {
     title: "Spread Circle",
     url: "https://arkark.github.io/traP3jam/2017/0213",
-    src: require("@/assets/screenshots/game/spread_circle.210x140.png"),
+    src: require("@/assets/screenshots/game/spread_circle.png"),
     genre: "Game",
     description:
       "traP部内3時間ゲームジャムで作ったミニゲーム。テーマは「うつる」",
@@ -112,7 +112,7 @@ export default [
   {
     title: "テックちゃん",
     url: "https://twitter.com/arkark_/status/827123984932098049",
-    src: require("@/assets/screenshots/dot/tech_chan.210x140.png"),
+    src: require("@/assets/screenshots/dot/tech_chan.png"),
     genre: "PixelArt",
     description: "東京工業大学工大祭のマスコットキャラクター",
     date: "2017/2/2",
@@ -120,7 +120,7 @@ export default [
   {
     title: "Just Shot",
     url: "https://arkark.github.io/traP3jam/2017/0113",
-    src: require("@/assets/screenshots/game/just_shot.210x140.png"),
+    src: require("@/assets/screenshots/game/just_shot.png"),
     genre: "Game",
     description:
       "traP部内3時間ゲームジャムで作ったシューティングゲーム。テーマは「限界」",
@@ -129,7 +129,7 @@ export default [
   {
     title: "D言語くんライフゲーム",
     url: "https://arkark.github.io/DLangManGameOfLife/",
-    src: require("@/assets/screenshots/game/dlangman_game_of_life.210x140.png"),
+    src: require("@/assets/screenshots/game/dlangman_game_of_life.png"),
     genre: "Game",
     description:
       '<a href="https://qiita.com/advent-calendar/2016/d-man">D言語くん Advent Calendar 2016</a>で作ったライフゲーム',
@@ -139,7 +139,7 @@ export default [
   {
     title: "Sphere to Plane Transition",
     url: "https://www.shadertoy.com/view/MtdXz7",
-    src: require("@/assets/screenshots/design/sphere_to_plane_transition.210x140.png"),
+    src: require("@/assets/screenshots/design/sphere_to_plane_transition.png"),
     genre: "Design",
     description: "同相写像を利用した遷移のデモ",
     date: "2016/11/12",
@@ -147,7 +147,7 @@ export default [
   {
     title: "Magic Circle",
     url: "https://www.shadertoy.com/view/MlGGDt",
-    src: require("@/assets/screenshots/design/magic_circle.210x140.png"),
+    src: require("@/assets/screenshots/design/magic_circle.png"),
     genre: "Design",
     description: "魔法陣を作りたくなったのでShaderで作ってみました",
     date: "2016/10/26",
@@ -155,7 +155,7 @@ export default [
   {
     title: "One Day One Gif",
     url: "https://github.com/arkark/OneDayOneGif",
-    src: require("@/assets/screenshots/design/one_day_one_gif.210x140.png"),
+    src: require("@/assets/screenshots/design/one_day_one_gif.png"),
     genre: "Design",
     description: "「毎日一枚gifを作る」という謎企画",
     date: "2016/8",
@@ -163,7 +163,7 @@ export default [
   {
     title: "Polar Coordinates Motion",
     url: "https://www.shadertoy.com/view/ll3GWM",
-    src: require("@/assets/screenshots/design/polar_coordinates_motion.210x140.png"),
+    src: require("@/assets/screenshots/design/polar_coordinates_motion.png"),
     genre: "Design",
     description:
       '<a href="http://foxcodex.html.xdomain.jp/PolarCoordinates.html">これ</a>を実装したかったので作ってみた',
@@ -173,7 +173,7 @@ export default [
   {
     title: "フシギダネ",
     url: "https://twitter.com/arkark_/status/742752077667930112",
-    src: require("@/assets/screenshots/dot/pokemon_001.210x140.png"),
+    src: require("@/assets/screenshots/dot/pokemon_001.png"),
     genre: "PixelArt",
     description: "No.001 フシギダネ",
     date: "2016/6/14",
@@ -181,7 +181,7 @@ export default [
   {
     title: "IceBreakers | traP",
     url: "https://trapti.tech/works/1404/",
-    src: require("@/assets/screenshots/game/ice_breakers.210x140.png"),
+    src: require("@/assets/screenshots/game/ice_breakers.png"),
     genre: "Game",
     description:
       "ハッカソンHack Uで制作した二人協力ゲーム。プログラムを担当しました。",
@@ -190,7 +190,7 @@ export default [
   {
     title: "ジャック・オ・ランタン",
     url: "https://twitter.com/arkark_/status/655434808873455616",
-    src: require("@/assets/screenshots/dot/Jaxk-o-Lantern2.210x140.png"),
+    src: require("@/assets/screenshots/dot/Jaxk-o-Lantern2.png"),
     genre: "PixelArt",
     description: "ハロウィンなので",
     date: "2015/10/17",
@@ -198,7 +198,7 @@ export default [
   {
     title: "Spin! Spin!",
     url: "https://github.com/arkark/Spin_Spin_",
-    src: require("@/assets/screenshots/game/spin_spin_.210x140.png"),
+    src: require("@/assets/screenshots/game/spin_spin_.png"),
     genre: "Game",
     description: "2015年工大祭向けに作った3D障害物避けゲーム",
     date: "2015/10",
