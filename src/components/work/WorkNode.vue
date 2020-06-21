@@ -34,15 +34,8 @@
           </v-btn>
         </v-hover>
       </v-toolbar>
-      <v-skeleton-loader
-        v-if="!readyToLoad"
-        boilerplate
-        type="image"
-        width="100%"
-        :height="imageHeight"
-      ></v-skeleton-loader>
-      <a v-else :href="work.url" target="_blank" rel="noopener noreferrer">
-        <v-img :src="work.src" width="100%" :height="imageHeight" eager>
+      <a :href="work.url" target="_blank" rel="noopener noreferrer">
+        <v-img :src="work.src" width="100%" :height="imageHeight">
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular
@@ -105,22 +98,6 @@ export default {
       type: Number,
       required: true,
     },
-  },
-  data: function () {
-    return {
-      readyToLoad: false,
-    };
-  },
-  mounted: function () {
-    if (document.readyState === "complete") {
-      this.readyToLoad = true;
-    } else {
-      document.addEventListener("readystatechange", () => {
-        if (document.readyState === "complete") {
-          this.readyToLoad = true;
-        }
-      });
-    }
   },
   methods: {
     formatDate(date) {
