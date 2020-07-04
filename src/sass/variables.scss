@@ -1,3 +1,7 @@
+$fa-font-display: block;
+
+/* font family */
+
 $body-font-family: "Inter", "Roboto", sans-serif;
 $heading-font-family: "Inter", "Roboto", sans-serif;
 @supports (font-variation-settings: normal) {
@@ -5,4 +9,39 @@ $heading-font-family: "Inter", "Roboto", sans-serif;
   $heading-font-family: "Inter var", "Roboto", sans-serif;
 }
 
-$fa-font-display: block;
+/* font weights */
+
+$card-title-font-weight: 550;
+
+$font-weights: (
+  "thin": 100,
+  "light": 300,
+  "regular": 450,
+  "medium": 500,
+  "bold": 700,
+  "black": 900,
+);
+
+$headings: (
+  "subtitle-1": (
+    "weight": 450,
+  ),
+  "subtitle-2": (
+    "weight": 500,
+  ),
+  "body-1": (
+    "weight": 450,
+  ),
+  "body-2": (
+    "weight": 450,
+  ),
+  "button": (
+    "weight": 500,
+  ),
+  "caption": (
+    "weight": 450,
+  ),
+  "overline": (
+    "weight": 500,
+  ),
+);

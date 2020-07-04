@@ -5,7 +5,7 @@
     </template>
     <v-card class="elevation-4">
       <v-card-title class="pb-0">
-        <span><span class="title-head"></span>{{ title }}</span>
+        <span><span class="title-head"></span> {{ title }}</span>
       </v-card-title>
       <v-divider class="py-0 mx-3"></v-divider>
       <v-card-text class="pt-3 subtitle-1 text--primary">

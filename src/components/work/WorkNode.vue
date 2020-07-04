@@ -53,7 +53,7 @@
           </template>
         </v-img>
       </a>
-      <v-card-title class="subtitle-2 font-weight-medium px-3 pt-1 pb-0">
+      <v-card-title class="subtitle-2 px-3 pt-1 pb-0">
         <span class="pr-10">{{ work.title }}</span>
       </v-card-title>
       <v-divider class="ml-2 mr-12"></v-divider>
