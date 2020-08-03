@@ -10,11 +10,7 @@
       </a>
     </p>
     <p class="mb-2">
-      <img
-        src="https://projecteuler.net/profile/Ark__.png"
-        class="vertical-middle"
-        width="160px"
-      />
+      <img :src="projectEulerBadge" class="vertical-middle" width="160px" />
     </p>
     <p v-for="(item, index) in items" :key="index" class="mb-1 body-2">
       <itemize-icon></itemize-icon>
@@ -40,6 +36,7 @@ export default {
   data: function () {
     return {
       atcoderBadge: require("@/assets/shields/atcoder_rating.svg"),
+      projectEulerBadge: require("@/assets/project_euler.png"),
       items: comproList,
     };
   },
