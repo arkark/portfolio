@@ -27,10 +27,6 @@ export default {
           value: "分散システム、ネットワーク",
         },
         {
-          key: "Logic",
-          value: "論理学",
-        },
-        {
           key: "Design",
           value: "シェーダ、ジェネラティブデザイン",
         },

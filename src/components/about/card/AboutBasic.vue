@@ -27,7 +27,7 @@
     <v-divider class="my-1"></v-divider>
     <p class="mb-1">
       Math, CS, Game, Web / CTF
-      <a href="https://ctftime.org/team/80092">./Vespiary</a> / 競プロ 青⇆黄 /
+      <a href="https://ctftime.org/team/80092">./Vespiary</a> / 競プロ /
       DとRustと回転が好きです。
     </p>
     <p class="mb-1">
@@ -35,7 +35,7 @@
         <v-icon small>fas fa-angle-right</v-icon>
         <v-icon small>fas fa-angle-right</v-icon>
       </span>
-      <span v-for="(badge, key) in badges" :key="key" class="mr-1">
+      <span v-for="badge in badges" :key="badge.key" class="mr-1">
         <a :href="badge.url" target="_blank" rel="noopener noreferrer">
           <img :src="badge.image" style="vertical-align: middle;" />
         </a>
@@ -88,22 +88,27 @@ export default {
       ],
       badges: [
         {
+          key: "GitHub",
           image: require("@/assets/shields/github_link.svg"),
           url: "https://github.com/arkark",
         },
         {
+          key: "Twitter",
           image: require("@/assets/shields/twitter_link.svg"),
           url: "https://twitter.com/arkark_",
         },
         {
+          key: "Hatena Blog",
           image: require("@/assets/shields/hatenablog_link.svg"),
           url: "https://ark4rk.hatenablog.com",
         },
         {
+          key: "AtCoder",
           image: require("@/assets/shields/atcoder_link.svg"),
           url: "https://atcoder.jp/user/arkark",
         },
         {
+          key: "Shadertoy",
           image: require("@/assets/shields/shadertoy_link.svg"),
           url: "https://www.shadertoy.com/user/Ark",
         },
