@@ -24,5 +24,10 @@ module.exports = {
         whitelist: ["align-center", "justify-center"],
       }),
     ],
+    devServer: {
+      watchOptions: {
+        poll: true,
+      },
+    },
   },
 };
