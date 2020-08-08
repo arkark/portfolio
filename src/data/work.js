@@ -1,23 +1,5 @@
 export default [
   {
-    title: "atcoder-auto-tester",
-    url: "https://github.com/arkark/atcoder-auto-tester",
-    src: require("@/assets/screenshots/tool/atcoder-auto-tester.png"),
-    genre: "Tool",
-    description:
-      "ファイルの変更を検出して、サンプルケースのダウンロードとテストを自動化するツール",
-    date: "2020/3/2",
-  },
-  {
-    title: "dcp",
-    url: "https://github.com/arkark/dcp",
-    src: require("@/assets/screenshots/tool/dcp.png"),
-    genre: "Tool",
-    description:
-      "`docker container cp`のalias。Dockerコンテナ内のパスにも補完が効く",
-    date: "2019/9/8",
-  },
-  {
     title: "DistortionCamera",
     url: "https://github.com/arkark/DistortionCamera",
     src: require("@/assets/screenshots/tool/distortion_camera.png"),
@@ -41,6 +23,14 @@ export default [
     genre: "Tool",
     description: "Docker上で動く快適なLatex環境",
     date: "2019/1",
+  },
+  {
+    title: "D-Prolog",
+    url: "https://github.com/arkark/d-prolog",
+    src: require("@/assets/screenshots/tool/d-prolog.png"),
+    genre: "Tool",
+    description: "D言語でつくったProlog処理系",
+    date: "2018/11",
   },
   {
     title: "Brainfuck Online Simulator",
@@ -153,6 +143,15 @@ export default [
     date: "2016/10/26",
   },
   {
+    title: "Teleport Puzzle",
+    url: "https://github.com/arkark/TeleportPuzzle",
+    src: require("@/assets/screenshots/game/teleport_puzzle.png"),
+    genre: "Game",
+    description:
+      "2016年工大祭向けに制作したパズルアクションゲーム。操作性とレベルデザインを重視してつくった。",
+    date: "2016/10",
+  },
+  {
     title: "One Day One Gif",
     url: "https://github.com/arkark/OneDayOneGif",
     src: require("@/assets/screenshots/design/one_day_one_gif.png"),
@@ -202,5 +201,13 @@ export default [
     genre: "Game",
     description: "2015年工大祭向けに作った3D障害物避けゲーム",
     date: "2015/10",
+  },
+  {
+    title: "Brainfuck製15パズル",
+    url: "https://github.com/arkark/15puzzle_brainfuck",
+    src: require("@/assets/screenshots/game/15puzzle.png"),
+    genre: "Game",
+    description: "brainfuckで制作したコンソールゲーム",
+    date: "2015/9",
   },
 ];

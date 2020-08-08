@@ -11,26 +11,6 @@
     <v-timeline align-top dense class="mr-8">
       <v-timeline-item :color="'grey darken-3'" hide-dot>
         <v-container class="pa-0">
-          <v-row align="center">
-            <v-col cols="12" class="pa-0">
-              <v-row align="center" justify="center">
-                <work-node
-                  v-for="(work, key) in mainWorkList"
-                  :key="key"
-                  :work="work"
-                  :cardWidth="240"
-                  :cardHeight="310"
-                  :imageHeight="160"
-                  class="my-2 mx-3"
-                >
-                </work-node>
-              </v-row>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-timeline-item>
-      <v-timeline-item :color="'grey darken-3'" hide-dot>
-        <v-container class="pa-0">
           <v-row>
             <v-col cols="12" class="pa-0">
               <v-row justify="center">
@@ -54,14 +34,12 @@
 </template>
 
 <script>
-import mainWorkList from "@/data/main_work.js";
 import workList from "@/data/work.js";
 import WorkNode from "@/components/work/WorkNode.vue";
 
 export default {
   data: function () {
     return {
-      mainWorkList,
       workList,
       genres: ["Game", "Tool", "Design", "PixelArt"],
     };
