@@ -55,7 +55,7 @@ export default {
             { image: require("@/assets/icons/file_type_dlang.svg") },
             { image: require("@/assets/icons/file_type_rust.svg") },
           ],
-          size: 32,
+          size: 28,
         },
         {
           key: "Sometimes",
@@ -82,7 +82,7 @@ export default {
           size: 18,
         },
         {
-          key: "Useful",
+          key: "Tools",
           values: [
             {
               image: require("@/assets/icons/file_type_git.svg"),
@@ -90,11 +90,11 @@ export default {
                 "https://github.com/arkark/dotfiles/blob/master/home/.gitconfig",
             },
             { image: require("@/assets/icons/file_type_docker.svg") },
-            { image: require("@/assets/icons/file_type_mysql.svg") },
+            { image: require("@/assets/icons/file_type_netlify.svg") },
             { image: require("@/assets/icons/file_type_tex.svg") },
             { image: require("@/assets/icons/file_type_vscode.svg") },
           ],
-          size: 32,
+          size: 24,
         },
       ],
     };
