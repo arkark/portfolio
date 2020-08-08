@@ -12,9 +12,9 @@
       <about-basic></about-basic>
       <about-interest></about-interest>
       <about-skill></about-skill>
+      <about-ctf></about-ctf>
       <about-compro></about-compro>
       <about-marathon></about-marathon>
-      <about-ctf></about-ctf>
       <about-article></about-article>
       <about-activity></about-activity>
       <about-intern></about-intern>
@@ -26,9 +26,9 @@
 import AboutBasic from "@/components/about/card/AboutBasic";
 import AboutInterest from "@/components/about/card/AboutInterest";
 import AboutSkill from "@/components/about/card/AboutSkill";
+import AboutCtf from "@/components/about/card/AboutCtf";
 import AboutCompro from "@/components/about/card/AboutCompro";
 import AboutMarathon from "@/components/about/card/AboutMarathon";
-import AboutCtf from "@/components/about/card/AboutCtf";
 import AboutArticle from "@/components/about/card/AboutArticle";
 import AboutActivity from "@/components/about/card/AboutActivity";
 import AboutIntern from "@/components/about/card/AboutIntern";
@@ -38,9 +38,9 @@ export default {
     AboutBasic,
     AboutInterest,
     AboutSkill,
+    AboutCtf,
     AboutCompro,
     AboutMarathon,
-    AboutCtf,
     AboutArticle,
     AboutActivity,
     AboutIntern,
