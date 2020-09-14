@@ -13,4 +13,3 @@ My Portfolio Website
 [![Twitter](src/assets/shields/twitter_link.svg)](https://twitter.com/arkark_)
 [![Hatena Blog](src/assets/shields/hatenablog_link.svg)](https://ark4rk.hatenablog.com)
 [![AtCoder](src/assets/shields/atcoder_link.svg)](https://atcoder.jp/user/arkark)
-[![Shadertoy](src/assets/shields/shadertoy_link.svg)](https://www.shadertoy.com/user/Ark)
