@@ -8,20 +8,21 @@ const items = [];
 
 items.push({
   url:
-    "https://img.shields.io/static/v1?label=GitHub&message=arkark&color=brightgreen&logo=github&logoColor=white",
+    "https://img.shields.io/static/v1?style=plastic&label=GitHub&message=arkark&color=brightgreen&logo=github&logoColor=white",
   filename: "github_link.svg",
 });
 items.push({
   url:
-    "https://img.shields.io/static/v1?label=Twitter&message=@arkark_&color=blue&logo=twitter&logoColor=white",
+    "https://img.shields.io/static/v1?style=plastic&label=Twitter&message=@arkark_&color=blue&logo=twitter&logoColor=white",
   filename: "twitter_link.svg",
 });
 items.push({
-  url: "https://img.shields.io/badge/HatenaBlog-ark4rk-orange",
+  url:
+    "https://img.shields.io/static/v1?style=plastic&label=HatenaBlog&message=ark4rk&color=orange",
   filename: "hatenablog_link.svg",
 });
 items.push({
-  url: `https://img.shields.io/badge/AtCoder-arkark-${encodeURIComponent(
+  url: `https://img.shields.io/static/v1?style=plastic&label=AtCoder&message=arkark&color=${encodeURIComponent(
     atcoder.color
   )}`,
   filename: "atcoder_link.svg",
