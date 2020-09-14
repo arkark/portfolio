@@ -107,11 +107,6 @@ export default {
           image: require("@/assets/shields/atcoder_link.svg"),
           url: "https://atcoder.jp/user/arkark",
         },
-        {
-          key: "Shadertoy",
-          image: require("@/assets/shields/shadertoy_link.svg"),
-          url: "https://www.shadertoy.com/user/Ark",
-        },
       ],
     };
   },

@@ -21,13 +21,10 @@ items.push({
   filename: "hatenablog_link.svg",
 });
 items.push({
-  url: "https://img.shields.io/badge/AtCoder-arkark-yellow",
+  url: `https://img.shields.io/badge/AtCoder-arkark-${encodeURIComponent(
+    atcoder.color
+  )}`,
   filename: "atcoder_link.svg",
-});
-items.push({
-  url:
-    "https://img.shields.io/static/v1?label=Shadertoy&message=Ark&color=green&logo=webgl&logoColor=white",
-  filename: "shadertoy_link.svg",
 });
 
 items.push({

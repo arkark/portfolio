@@ -49,4 +49,5 @@ const queryString = pairs
   .map((pair) => `${pair[0]}=${encode(pair[1])}`)
   .join("&");
 
+exports.color = getColor(rating);
 exports.badgeUrl = `https://img.shields.io/static/v1?${queryString}`;
