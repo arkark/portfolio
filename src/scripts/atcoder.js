@@ -39,7 +39,7 @@ const getColor = (rating) => {
 };
 
 const pairs = [
-  ["style", "plastic"],
+  ["style", "flat"],
   ["label", "AtCoder"],
   ["message", `Rating: ${rating}`],
   ["color", getColor(rating)],
