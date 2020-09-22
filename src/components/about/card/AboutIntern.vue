@@ -1,7 +1,7 @@
 <template>
   <about-card :title="'インターン等'">
     <template v-for="(item, index) in items">
-      <p class="mb-1" :key="index">
+      <p class="mb-1" :key="'label-' + index">
         <span>{{ item.label }}</span>
       </p>
       <ul :key="index" class="fa-ul body-2 ma-0">
