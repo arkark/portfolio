@@ -32,7 +32,6 @@
 <script>
 import AboutBasic from "@/components/about/card/AboutBasic";
 import AboutInterest from "@/components/about/card/AboutInterest";
-import AboutSkill from "@/components/about/card/AboutSkill";
 import AboutCtf from "@/components/about/card/AboutCtf";
 import AboutCompro from "@/components/about/card/AboutCompro";
 import AboutMarathon from "@/components/about/card/AboutMarathon";
@@ -51,10 +50,6 @@ export default {
         {
           component: AboutInterest,
           icon: "fas fa-cogs",
-        },
-        {
-          component: AboutSkill,
-          icon: "fas fa-code-branch",
         },
         {
           component: AboutCtf,
@@ -91,7 +86,6 @@ export default {
   components: {
     AboutBasic,
     AboutInterest,
-    AboutSkill,
     AboutCtf,
     AboutCompro,
     AboutMarathon,

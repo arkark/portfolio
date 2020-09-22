@@ -1,50 +1,73 @@
 <template>
   <about-card :title="'プロフィール'">
-    <p v-for="(item, index) in items" :key="index" class="mb-0">
-      <span
-        :style="{
-          width: '6em',
-          display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block',
-        }"
-      >
-        <span
-          :style="{
-            width: '1.8em',
-            display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block',
-          }"
-          class="text-center"
-        >
-          <v-icon small class="mx-1 text--primary">{{ item.icon }}</v-icon>
-        </span>
-        <span>{{ item.key }}</span>
-      </span>
-      ：
-      <span>{{ item.value }}</span>
-      <span v-if="'url' in item">
-        <link-icon :url="item.url"></link-icon>
-      </span>
-    </p>
-    <v-divider class="my-1"></v-divider>
-    <p class="mb-1">
-      Math, CS, Game, Web / CTF
-      <a href="https://ctftime.org/team/80092">./Vespiary</a> / 競プロ /
-      DとRustと回転が好きです。
-    </p>
-    <p class="mb-1">
-      <span v-if="$vuetify.breakpoint.width > 780" class="mr-2">
-        <v-icon small>fas fa-angle-right</v-icon>
-        <v-icon small>fas fa-angle-right</v-icon>
-      </span>
+    <p class="mb-2">
       <span v-for="badge in badges" :key="badge.key" class="mr-1">
         <a :href="badge.url" target="_blank" rel="noopener noreferrer">
           <img :src="badge.image" style="vertical-align: middle" />
         </a>
       </span>
-      <span v-if="$vuetify.breakpoint.width > 780" class="ml-2">
-        <v-icon small>fas fa-angle-left</v-icon>
-        <v-icon small>fas fa-angle-left</v-icon>
+    </p>
+    <ul class="fa-ul body-1 ma-0">
+      <li v-for="(info, index) in infos" :key="index">
+        <span class="fa-li"><i :class="info.icon"></i></span>
+        <span
+          :style="{
+            width: '5em',
+            display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block',
+          }"
+        >
+          <span>{{ info.key }}</span>
+        </span>
+        ：
+        <span>{{ info.value }}</span>
+        <span v-if="'url' in info">
+          <link-icon :url="info.url"></link-icon>
+        </span>
+      </li>
+    </ul>
+    <v-divider class="my-1"></v-divider>
+    <p class="mb-1">
+      Math, CS, Game, Web / CTF / 競プロ / DとRustと回転が好きです。
+    </p>
+    <p v-for="(skill, index) in skills" :key="index" class="mb-0">
+      <span class="font-weight-bold mr-1">{{ skill.key }}:</span>
+      <span v-for="(value, i) in skill.values" :key="index + '-' + i">
+        <a
+          v-if="'url' in value"
+          :href="value.url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            :src="value.image"
+            :width="skill.size + 'px'"
+            class="vertical-middle"
+          />
+        </a>
+        <img
+          v-else
+          :src="value.image"
+          :width="skill.size + 'px'"
+          class="vertical-middle"
+        />
       </span>
     </p>
+    <template v-slot:under-card>
+      <v-row
+        align="end"
+        class="mr-2 caption font-weight-medium text--secondary"
+        style="font-size: 0.2rem !important"
+      >
+        <v-spacer></v-spacer>
+        <span>
+          <span>Resource:&copy;</span>
+          <a href="https://github.com/vscode-icons/vscode-icons">
+            vscode-icons
+          </a>
+          <span>contributors</span>
+        </span>
+      </v-row>
+    </template>
   </about-card>
 </template>
 
@@ -63,7 +86,7 @@ export default {
   name: "about-basic",
   data: function () {
     return {
-      items: [
+      infos: [
         {
           icon: "fas fa-user",
           key: "名前",
@@ -106,6 +129,56 @@ export default {
           key: "AtCoder",
           image: require("@/assets/shields/atcoder_link.svg"),
           url: "https://atcoder.jp/user/arkark",
+        },
+      ],
+      skills: [
+        {
+          key: "Favorite",
+          values: [
+            { image: require("@/assets/icons/file_type_dlang.svg") },
+            { image: require("@/assets/icons/file_type_rust.svg") },
+          ],
+          size: 28,
+        },
+        {
+          key: "Sometimes",
+          values: [
+            { image: require("@/assets/icons/file_type_js_official.svg") },
+            {
+              image: require("@/assets/icons/file_type_typescript_official.svg"),
+            },
+            { image: require("@/assets/icons/file_type_vue.svg") },
+            { image: require("@/assets/icons/file_type_reactjs.svg") },
+            { image: require("@/assets/icons/file_type_kotlin.svg") },
+            { image: require("@/assets/icons/file_type_python.svg") },
+            { image: require("@/assets/icons/file_type_c3.svg") },
+            { image: require("@/assets/icons/file_type_cpp3.svg") },
+            { image: require("@/assets/icons/file_type_go.svg") },
+            { image: require("@/assets/icons/file_type_jar.svg") },
+            { image: require("@/assets/icons/file_type_scala.svg") },
+            { image: require("@/assets/icons/file_type_processinglang.svg") },
+            { image: require("@/assets/icons/file_type_ruby.svg") },
+            { image: require("@/assets/icons/file_type_php.svg") },
+            { image: require("@/assets/icons/file_type_prolog.svg") },
+            { image: require("@/assets/icons/file_type_glsl.svg") },
+          ],
+          size: 20,
+        },
+        {
+          key: "Tools",
+          values: [
+            {
+              image: require("@/assets/icons/file_type_git.svg"),
+              url:
+                "https://github.com/arkark/dotfiles/blob/master/home/.gitconfig",
+            },
+            { image: require("@/assets/icons/file_type_docker.svg") },
+            { image: require("@/assets/icons/file_type_mysql.svg") },
+            { image: require("@/assets/icons/file_type_netlify.svg") },
+            { image: require("@/assets/icons/file_type_tex.svg") },
+            { image: require("@/assets/icons/file_type_vscode.svg") },
+          ],
+          size: 20,
         },
       ],
     };

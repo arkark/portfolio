@@ -2,7 +2,7 @@
   <about-card :title="'興味分野'">
     <p v-for="(item, index) in items" :key="index" class="mb-0">
       <span class="font-weight-bold mr-1">{{ item.key }}:</span>
-      <span>{{ item.value }}</span>
+      {{ item.value }}
     </p>
   </about-card>
 </template>
