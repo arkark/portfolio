@@ -35,8 +35,8 @@ export default {
       const width = document.documentElement.clientWidth;
       const height = document.documentElement.clientHeight;
       const area = width * height;
-      const nodeNum = Math.max(30, Math.ceil(area / 8500));
-      const numAtOnce = Math.ceil(3 * Math.sqrt(nodeNum));
+      const nodeNum = Math.max(30, Math.ceil(area / 12000));
+      const numAtOnce = Math.ceil(2 * Math.sqrt(nodeNum));
       const preCount = Math.ceil((Math.sqrt(nodeNum) * nodeNum) / numAtOnce);
 
       const manager = new Manager(this.ctx);

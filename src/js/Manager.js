@@ -6,8 +6,9 @@ const SHUFFLE_DURATION = 30;
 
 export default class Manager2d {
   constructor(ctx) {
-    this.intervalDelay = 10;
-    this.numAtOnce = 1;
+    this.intervalDelay = 100;
+    this.numAtOnce = 30;
+    this.currentStepIndex = 0;
     this.ctx = ctx;
     this.nodes = [];
     const cursorNode = new CursorNode(this.ctx, this._getRandomPosition());
@@ -16,6 +17,9 @@ export default class Manager2d {
   }
 
   run(preCount) {
+    const move = () => {
+      this.nodes.forEach((node) => node.move());
+    };
     const draw = () => {
       this.ctx.clearRect(
         0,
@@ -27,25 +31,11 @@ export default class Manager2d {
       this.nodes.forEach((node) => node.drawNode());
       this.nodes.forEach((node) => node.drawEdge());
     };
-    setInterval(draw, 50);
 
-    const move = () => {
-      this.nodes.forEach((node) => node.move());
-    };
-    setInterval(move, 50);
-
-    let i = 0;
-    const constructDelaunay = () => {
-      if (this.nodes.length == 0) return;
-      for (let j = 0; j < this.numAtOnce; j++) {
-        this.nodes[i].constructDelaunay();
-        i = (i + 1) % this.nodes.length;
-      }
-    };
     for (let i = 0; i < preCount; i++) {
-      constructDelaunay();
+      this.constructDelaunay();
     }
-    setInterval(constructDelaunay, this.intervalDelay);
+    setInterval(() => this.constructDelaunay(), this.intervalDelay);
 
     const tickShuffle = () => {
       this.restToShuffle--;
@@ -54,7 +44,16 @@ export default class Manager2d {
       }
     };
     setInterval(tickShuffle, 1000);
+
     this.shuffle();
+    for (let i = 0; i < 3; i++) {
+      move();
+    }
+
+    setInterval(() => {
+      move();
+      draw();
+    }, 50);
 
     window.addEventListener("click", (event) => {
       const rect = this.ctx.canvas.getBoundingClientRect();
@@ -74,16 +73,24 @@ export default class Manager2d {
     });
   }
 
+  constructDelaunay() {
+    if (this.nodes.length == 0) return;
+    for (let j = 0; j < this.numAtOnce; j++) {
+      this.nodes[this.currentStepIndex].constructDelaunay();
+      this.currentStepIndex = (this.currentStepIndex + 1) % this.nodes.length;
+    }
+  }
+
   addNode() {
     const node = new Node(this.ctx);
     node.pos = this._getRandomPosition();
     this.nodes.push(node);
 
-    if (this.nodes.length >= 2) {
-      const node1 = this.nodes[this.nodes.length - 2];
-      const node2 = this.nodes[this.nodes.length - 1];
-      node1.receive(node2);
-      node2.receive(node1);
+    for (let i = 0; i < this.nodes.length - 1; i++) {
+      const v1 = this.nodes[i];
+      const v2 = this.nodes[this.nodes.length - 1];
+      v1.receive(v2);
+      v2.receive(v1);
     }
   }
 
