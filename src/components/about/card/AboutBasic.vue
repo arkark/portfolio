@@ -1,29 +1,23 @@
 <template>
   <about-card :title="'プロフィール'">
-    <p v-for="(item, index) in items" :key="index" class="mb-0">
-      <span
-        :style="{
-          width: '6em',
-          display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block',
-        }"
-      >
+    <ul class="fa-ul body-2 ma-0">
+      <li v-for="(item, index) in items" :key="index">
+        <span class="fa-li"><i :class="item.icon"></i></span>
         <span
           :style="{
-            width: '1.8em',
+            width: '5em',
             display: $vuetify.breakpoint.xsOnly ? 'inline' : 'inline-block',
           }"
-          class="text-center"
         >
-          <v-icon small class="mx-1 text--primary">{{ item.icon }}</v-icon>
+          <span>{{ item.key }}</span>
         </span>
-        <span>{{ item.key }}</span>
-      </span>
-      ：
-      <span>{{ item.value }}</span>
-      <span v-if="'url' in item">
-        <link-icon :url="item.url"></link-icon>
-      </span>
-    </p>
+        ：
+        <span>{{ item.value }}</span>
+        <span v-if="'url' in item">
+          <link-icon :url="item.url"></link-icon>
+        </span>
+      </li>
+    </ul>
     <v-divider class="my-1"></v-divider>
     <p class="mb-1">
       Math, CS, Game, Web / CTF
