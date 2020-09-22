@@ -4,7 +4,7 @@
       <v-row
         align="end"
         class="mr-2 caption font-weight-medium text--secondary"
-        style="font-size: 0.2rem !important;"
+        style="font-size: 0.2rem !important"
       >
         <v-spacer></v-spacer>
         <span>

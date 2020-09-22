@@ -13,7 +13,7 @@
         color="rgba(0,0,0,0)"
         absolute
         :elevation="0"
-        style="pointer-events: none;"
+        style="pointer-events: none"
       >
         <v-hover>
           <v-btn
@@ -28,7 +28,7 @@
             right
             fab
             :class="`elevation-${hover ? 4 : 2}`"
-            style="pointer-events: auto;"
+            style="pointer-events: auto"
           >
             <v-icon small>fas fa-external-link-alt</v-icon>
           </v-btn>

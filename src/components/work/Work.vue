@@ -1,9 +1,7 @@
 <template>
   <div>
     <v-card-title primary-title class="px-3 pt-2 pb-0">
-      <p class="display-1 mb-0 pl-4 font-weight-medium">
-        Works
-      </p>
+      <p class="display-1 mb-0 pl-4 font-weight-medium">Works</p>
     </v-card-title>
     <v-card-text class="pt-1 pb-2">
       <v-divider></v-divider>

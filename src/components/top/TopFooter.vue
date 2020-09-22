@@ -1,9 +1,7 @@
 <template>
   <v-footer absolute color="#fff0" class="py-2" dark>
     <div class="flex-grow-1"></div>
-    <v-icon dark :size="fontSize" class="mr-1">
-      far fa-copyright
-    </v-icon>
+    <v-icon dark :size="fontSize" class="mr-1">far fa-copyright</v-icon>
     <span
       :style="{
         'font-size': fontSize,

@@ -37,7 +37,7 @@
       </span>
       <span v-for="badge in badges" :key="badge.key" class="mr-1">
         <a :href="badge.url" target="_blank" rel="noopener noreferrer">
-          <img :src="badge.image" style="vertical-align: middle;" />
+          <img :src="badge.image" style="vertical-align: middle" />
         </a>
       </span>
       <span v-if="$vuetify.breakpoint.width > 780" class="ml-2">
