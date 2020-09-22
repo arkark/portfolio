@@ -7,15 +7,17 @@
       <v-divider></v-divider>
     </v-card-text>
     <v-timeline align-top dense class="mr-8">
-      <about-basic></about-basic>
-      <about-interest></about-interest>
-      <about-skill></about-skill>
-      <about-ctf></about-ctf>
-      <about-compro></about-compro>
-      <about-marathon></about-marathon>
-      <about-article></about-article>
-      <about-activity></about-activity>
-      <about-intern></about-intern>
+      <v-timeline-item
+        v-for="(item, index) in items"
+        :key="index"
+        :color="'grey darken-3'"
+        fill-dot
+      >
+        <template v-slot:icon>
+          <v-icon small dark>{{ item.icon }}</v-icon>
+        </template>
+        <component :is="item.component"></component>
+      </v-timeline-item>
     </v-timeline>
   </div>
 </template>
@@ -32,6 +34,48 @@ import AboutActivity from "@/components/about/card/AboutActivity";
 import AboutIntern from "@/components/about/card/AboutIntern";
 
 export default {
+  data: function () {
+    return {
+      items: [
+        {
+          component: AboutBasic,
+          icon: "fas fa-user",
+        },
+        {
+          component: AboutInterest,
+          icon: "fas fa-cogs",
+        },
+        {
+          component: AboutSkill,
+          icon: "fas fa-code-branch",
+        },
+        {
+          component: AboutCtf,
+          icon: "fas fa-shield-alt",
+        },
+        {
+          component: AboutCompro,
+          icon: "fas fa-code",
+        },
+        {
+          component: AboutMarathon,
+          icon: "fas fa-running",
+        },
+        {
+          component: AboutArticle,
+          icon: "fas fa-pen-nib",
+        },
+        {
+          component: AboutActivity,
+          icon: "fas fa-calendar-day",
+        },
+        {
+          component: AboutIntern,
+          icon: "fas fa-briefcase",
+        },
+      ],
+    };
+  },
   components: {
     AboutBasic,
     AboutInterest,

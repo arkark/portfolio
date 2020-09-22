@@ -1,5 +1,5 @@
 <template>
-  <about-card :title="'インターン等'" :icon="'fas fa-briefcase'">
+  <about-card :title="'インターン等'">
     <template v-for="(item, index) in items">
       <p class="mb-1" :key="index">
         <span>{{ item.label }}</span>

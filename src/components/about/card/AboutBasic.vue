@@ -1,5 +1,5 @@
 <template>
-  <about-card :title="'プロフィール'" :icon="'fas fa-user'">
+  <about-card :title="'プロフィール'">
     <p v-for="(item, index) in items" :key="index" class="mb-0">
       <span
         :style="{

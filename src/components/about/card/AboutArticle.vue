@@ -1,5 +1,5 @@
 <template>
-  <about-card :title="'書いた記事'" :icon="'fas fa-pen-nib'">
+  <about-card :title="'書いた記事'">
     <p v-for="(item, index) in items" :key="index" class="mb-1 body-2">
       <itemize-icon></itemize-icon>
       <span class="caption">

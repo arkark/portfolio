@@ -1,5 +1,5 @@
 <template>
-  <about-card :title="'競技プログラミング'" :icon="'fas fa-code'">
+  <about-card :title="'競技プログラミング'">
     <p class="mb-1">
       <a
         href="https://atcoder.jp/user/arkark"

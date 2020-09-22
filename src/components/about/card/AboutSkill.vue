@@ -1,5 +1,5 @@
 <template>
-  <about-card :title="'プログラミング'" :icon="'fas fa-code-branch'">
+  <about-card :title="'プログラミング'">
     <template v-slot:under-card>
       <v-row
         align="end"
