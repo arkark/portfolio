@@ -10,8 +10,8 @@
       <v-col>
         <v-row align="center" justify="center" class="text-center">
           <v-card :width="480" color="rgba(0, 0, 0, 0)" flat dark>
-            <p class="display-1 font-weight-medium mb-1">Ark's page</p>
-            <p class="body-2 mb-2">
+            <h1 class="mb-1">Ark's page</h1>
+            <p class="body-1 mb-2">
               I <v-icon small>fas fa-heart</v-icon> creating something!
             </p>
             <v-divider
