@@ -90,6 +90,7 @@ export default {
                 "https://github.com/arkark/dotfiles/blob/master/home/.gitconfig",
             },
             { image: require("@/assets/icons/file_type_docker.svg") },
+            { image: require("@/assets/icons/file_type_mysql.svg") },
             { image: require("@/assets/icons/file_type_netlify.svg") },
             { image: require("@/assets/icons/file_type_tex.svg") },
             { image: require("@/assets/icons/file_type_vscode.svg") },

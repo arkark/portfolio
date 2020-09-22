@@ -1,6 +1,6 @@
 <template>
   <about-card :title="'プロフィール'">
-    <ul class="fa-ul body-2 ma-0">
+    <ul class="fa-ul body-1 ma-0">
       <li v-for="(item, index) in items" :key="index">
         <span class="fa-li"><i :class="item.icon"></i></span>
         <span
@@ -20,9 +20,7 @@
     </ul>
     <v-divider class="my-1"></v-divider>
     <p class="mb-1">
-      Math, CS, Game, Web / CTF
-      <a href="https://ctftime.org/team/80092">./Vespiary</a> / 競プロ /
-      DとRustと回転が好きです。
+      Math, CS, Game, Web / CTF / 競プロ / DとRustと回転が好きです。
     </p>
     <p class="mb-1">
       <span v-if="$vuetify.breakpoint.width > 780" class="mr-2">
