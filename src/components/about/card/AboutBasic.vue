@@ -29,9 +29,9 @@
     <p class="mb-1">
       Math, CS, Game, Web / CTF / 競プロ / DとRustと回転が好きです。
     </p>
-    <p v-for="(item, index) in skills" :key="index" class="mb-0">
-      <span class="font-weight-bold mr-1">{{ item.key }}:</span>
-      <span v-for="(value, i) in item.values" :key="index + '-' + i">
+    <p v-for="(skill, index) in skills" :key="index" class="mb-0">
+      <span class="font-weight-bold mr-1">{{ skill.key }}:</span>
+      <span v-for="(value, i) in skill.values" :key="index + '-' + i">
         <a
           v-if="'url' in value"
           :href="value.url"
@@ -40,14 +40,14 @@
         >
           <img
             :src="value.image"
-            :width="item.size + 'px'"
+            :width="skill.size + 'px'"
             class="vertical-middle"
           />
         </a>
         <img
           v-else
           :src="value.image"
-          :width="item.size + 'px'"
+          :width="skill.size + 'px'"
           class="vertical-middle"
         />
       </span>
@@ -162,7 +162,7 @@ export default {
             { image: require("@/assets/icons/file_type_prolog.svg") },
             { image: require("@/assets/icons/file_type_glsl.svg") },
           ],
-          size: 18,
+          size: 20,
         },
         {
           key: "Tools",
@@ -178,7 +178,7 @@ export default {
             { image: require("@/assets/icons/file_type_tex.svg") },
             { image: require("@/assets/icons/file_type_vscode.svg") },
           ],
-          size: 24,
+          size: 20,
         },
       ],
     };
