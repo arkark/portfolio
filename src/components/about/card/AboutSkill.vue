@@ -1,10 +1,10 @@
 <template>
-  <about-card :title="'プログラミング'" :icon="'fas fa-code-branch'">
+  <about-card :title="'プログラミング'">
     <template v-slot:under-card>
       <v-row
         align="end"
         class="mr-2 caption font-weight-medium text--secondary"
-        style="font-size: 0.2rem !important;"
+        style="font-size: 0.2rem !important"
       >
         <v-spacer></v-spacer>
         <span>

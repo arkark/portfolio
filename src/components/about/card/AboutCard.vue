@@ -1,8 +1,5 @@
 <template>
-  <v-timeline-item :color="'grey darken-3'" fill-dot>
-    <template v-slot:icon>
-      <v-icon small dark>{{ icon }}</v-icon>
-    </template>
+  <div>
     <v-card class="elevation-4">
       <v-card-title class="pb-0">
         <span><span class="title-head"></span> {{ title }}</span>
@@ -13,7 +10,7 @@
       </v-card-text>
     </v-card>
     <slot name="under-card"></slot>
-  </v-timeline-item>
+  </div>
 </template>
 
 <style scoped>
@@ -42,10 +39,6 @@
 export default {
   props: {
     title: {
-      type: String,
-      required: true,
-    },
-    icon: {
       type: String,
       required: true,
     },

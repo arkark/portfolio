@@ -1,5 +1,5 @@
 <template>
-  <about-card :title="'活動'" :icon="'fas fa-calendar-day'">
+  <about-card :title="'活動'">
     <p class="mb-1">
       <span>TTPC</span>
     </p>

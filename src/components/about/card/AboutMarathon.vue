@@ -1,5 +1,5 @@
 <template>
-  <about-card :title="'マラソンマッチ'" :icon="'fas fa-running'">
+  <about-card :title="'マラソンマッチ'">
     <p v-for="(item, index) in items" :key="index" class="mb-1 body-2">
       <itemize-icon></itemize-icon>
       <span>{{ item.label }}</span>

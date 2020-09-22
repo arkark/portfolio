@@ -1,5 +1,5 @@
 <template>
-  <about-card :title="'CTF'" :icon="'fas fa-shield-alt'">
+  <about-card :title="'CTF'">
     <p class="mb-1">
       ctftime:
       <a href="https://ctftime.org/team/80092">./Vespiary</a>
