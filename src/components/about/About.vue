@@ -6,7 +6,14 @@
     <v-card-text class="pt-1 pb-2">
       <v-divider></v-divider>
     </v-card-text>
-    <v-timeline align-top dense class="mr-8">
+    <v-container v-if="isNarrow" class="px-8">
+      <v-row v-for="(item, index) in items" :key="index">
+        <v-col class="py-2 px-0">
+          <component :is="item.component"></component>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-timeline v-else align-top dense class="mr-8">
       <v-timeline-item
         v-for="(item, index) in items"
         :key="index"
@@ -75,6 +82,11 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    isNarrow: function () {
+      return this.$vuetify.breakpoint.xsOnly;
+    },
   },
   components: {
     AboutBasic,
