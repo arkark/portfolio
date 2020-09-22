@@ -55,8 +55,8 @@
     <template v-slot:under-card>
       <v-row
         align="end"
-        class="mr-2 caption font-weight-medium text--secondary"
-        style="font-size: 0.2rem !important"
+        class="mr-2 body-2 text--secondary"
+        style="font-size: 0.6rem !important"
       >
         <v-spacer></v-spacer>
         <span>
