@@ -44,11 +44,6 @@ export default {
       genres: ["Game", "Tool", "Design", "PixelArt"],
     };
   },
-  computed: {
-    isNarrow: function () {
-      return this.$vuetify.breakpoint.xsOnly;
-    },
-  },
   components: {
     ResponsiveTimeline,
     ResponsiveTimelineItem,
