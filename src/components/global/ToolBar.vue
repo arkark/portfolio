@@ -22,7 +22,7 @@
 
     <v-toolbar-items v-else>
       <v-menu>
-        <template v-slot:activator="{ on }">
+        <template #activator="{ on }">
           <v-btn dark icon v-on="on">
             <v-icon>fas fa-bars</v-icon>
           </v-btn>

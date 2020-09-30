@@ -20,7 +20,7 @@
         :color="'grey darken-3'"
         fill-dot
       >
-        <template v-slot:icon>
+        <template #icon>
           <v-icon small dark>{{ item.icon }}</v-icon>
         </template>
         <component :is="item.component"></component>

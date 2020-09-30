@@ -43,7 +43,7 @@
       ></v-skeleton-loader>
       <a v-else :href="work.url" target="_blank" rel="noopener noreferrer">
         <v-img :src="work.src" width="100%" :height="imageHeight" eager>
-          <template v-slot:placeholder>
+          <template #placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
               <v-progress-circular
                 indeterminate

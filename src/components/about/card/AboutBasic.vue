@@ -52,7 +52,7 @@
         />
       </span>
     </p>
-    <template v-slot:under-card>
+    <template #under-card>
       <v-row
         align="end"
         class="mr-2 body-2 text--secondary"
