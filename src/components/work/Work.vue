@@ -6,26 +6,8 @@
     <v-card-text class="pt-1 pb-2">
       <v-divider></v-divider>
     </v-card-text>
-    <v-container v-if="isNarrow" class="px-8">
-      <v-row>
-        <v-col cols="12" class="pa-0">
-          <v-row justify="center">
-            <work-node
-              v-for="(work, key) in workList"
-              :key="key"
-              :work="work"
-              :cardWidth="210"
-              :cardHeight="270"
-              :imageHeight="140"
-              class="ma-2"
-            >
-            </work-node>
-          </v-row>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-timeline v-else align-top dense small class="mr-8">
-      <v-timeline-item :color="'grey darken-3'" hide-dot>
+    <responsive-timeline>
+      <responsive-timeline-item hide-dot>
         <v-container class="pa-0">
           <v-row>
             <v-col cols="12" class="pa-0">
@@ -44,12 +26,14 @@
             </v-col>
           </v-row>
         </v-container>
-      </v-timeline-item>
-    </v-timeline>
+      </responsive-timeline-item>
+    </responsive-timeline>
   </div>
 </template>
 
 <script>
+import ResponsiveTimeline from "@/components/global/ResponsiveTimeline";
+import ResponsiveTimelineItem from "@/components/global/ResponsiveTimelineItem";
 import workList from "@/data/work.js";
 import WorkNode from "@/components/work/WorkNode.vue";
 
@@ -66,6 +50,8 @@ export default {
     },
   },
   components: {
+    ResponsiveTimeline,
+    ResponsiveTimelineItem,
     WorkNode,
   },
 };

@@ -6,30 +6,21 @@
     <v-card-text class="pt-1 pb-2">
       <v-divider></v-divider>
     </v-card-text>
-    <v-container v-if="isNarrow" class="px-8">
-      <v-row v-for="(item, index) in items" :key="index">
-        <v-col class="py-2 px-0">
-          <component :is="item.component"></component>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-timeline v-else align-top dense class="mr-8">
-      <v-timeline-item
+    <responsive-timeline>
+      <responsive-timeline-item
         v-for="(item, index) in items"
         :key="index"
-        :color="'grey darken-3'"
-        fill-dot
+        :icon="item.icon"
       >
-        <template #icon>
-          <v-icon small dark>{{ item.icon }}</v-icon>
-        </template>
         <component :is="item.component"></component>
-      </v-timeline-item>
-    </v-timeline>
+      </responsive-timeline-item>
+    </responsive-timeline>
   </div>
 </template>
 
 <script>
+import ResponsiveTimeline from "@/components/global/ResponsiveTimeline";
+import ResponsiveTimelineItem from "@/components/global/ResponsiveTimelineItem";
 import AboutBasic from "@/components/about/card/AboutBasic";
 import AboutInterest from "@/components/about/card/AboutInterest";
 import AboutCtf from "@/components/about/card/AboutCtf";
@@ -84,6 +75,8 @@ export default {
     },
   },
   components: {
+    ResponsiveTimeline,
+    ResponsiveTimelineItem,
     AboutBasic,
     AboutInterest,
     AboutCtf,
