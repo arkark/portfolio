@@ -1,5 +1,9 @@
 export default [
   {
+    label: "DarkCTF : ./Vespiary 10位/808",
+    url: "https://ctftime.org/event/1118",
+  },
+  {
     label: "InterKosenCTF 2020 : ./Vespiary 3位/133",
     blog: "https://ark4rk.hatenablog.com/entry/2020/09/07/004439",
     url: "https://theoremoon.github.io/InterKosenCTF2020-challenges/",

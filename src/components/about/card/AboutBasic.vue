@@ -125,11 +125,6 @@ export default {
           image: require("@/assets/shields/hatenablog_link.svg"),
           url: "https://ark4rk.hatenablog.com",
         },
-        {
-          key: "AtCoder",
-          image: require("@/assets/shields/atcoder_link.svg"),
-          url: "https://atcoder.jp/user/arkark",
-        },
       ],
       skills: [
         {

@@ -1,12 +1,8 @@
 <template>
   <about-card :title="'Capture The Flag'">
     <p class="mb-1">
-      ctftime:
+      Team:
       <a href="https://ctftime.org/team/80092">./Vespiary</a>
-      <br />
-      writeups:
-      <a href="https://github.com/x-vespiary/writeup">GitHub</a>,
-      <a href="https://ark4rk.hatenablog.com/archive/category/CTF">Blog</a>
     </p>
     <ul class="fa-ul body-2 ma-0">
       <li v-for="(item, index) in items" :key="index" class="mb-1">
