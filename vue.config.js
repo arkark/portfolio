@@ -4,7 +4,6 @@ const PurgecssPlugin = require("purgecss-webpack-plugin");
 module.exports = {
   productionSourceMap: false,
   publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
-
   configureWebpack: {
     plugins: [
       new PurgecssPlugin({
@@ -14,14 +13,15 @@ module.exports = {
           "./src/**/*.js",
           "./node_modules/vuetify/src/**/*.ts",
         ]),
-        whitelistPatterns: [
+        safelist: [
           /-(leave|enter|appear)(|-(to|from|active))$/,
           /^(?!(|.*?:)cursor-move).+-move$/,
           /^router-link(|-exact)-active$/,
           /data-v-.*/,
+          // workaround
+          "align-center",
+          "justify-center",
         ],
-        // workaround
-        whitelist: ["align-center", "justify-center"],
       }),
     ],
     devServer: {
