@@ -4,7 +4,7 @@
     <v-icon dark x-small class="mr-1">far fa-copyright</v-icon>
     <span>2015-2020 Ark</span>
     <v-btn
-      href="https://github.com/arkark/arkark.github.io"
+      href="https://github.com/arkark/portfolio"
       target="_blank"
       rel="noopener noreferrer"
       icon
