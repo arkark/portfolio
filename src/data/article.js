@@ -16,7 +16,7 @@ export default [
   },
   {
     date: "2018/01/08",
-    label: "Kadane’s Algorithm | 最大部分配列 問題",
+    label: "Kadane's Algorithm | 最大部分配列 問題",
     blog: "https://ark4rk.hatenablog.com/entry/2018/01/08/002508",
   },
   {
