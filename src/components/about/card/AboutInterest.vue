@@ -1,9 +1,11 @@
 <template>
   <about-card :title="'興味分野'">
-    <p v-for="(item, index) in items" :key="index" class="mb-0">
-      <span class="font-weight-bold mr-1">{{ item.key }}:</span>
-      {{ item.value }}
-    </p>
+    <ul class="fa-ul body-2 ma-0">
+      <li v-for="(item, index) in items" :key="index" class="mb-1">
+        <span class="fa-li"><i class="fas fa-hashtag"></i></span>
+        <span>{{ item }}</span>
+      </li>
+    </ul>
   </about-card>
 </template>
 
@@ -14,22 +16,10 @@ export default {
   data: function () {
     return {
       items: [
-        {
-          key: "Algorithm",
-          value: "アルゴリズム、データ構造、組合せ最適化",
-        },
-        {
-          key: "Mathematics",
-          value: "代数、圏論、グラフ理論",
-        },
-        {
-          key: "Distributed",
-          value: "分散システム、ネットワーク",
-        },
-        {
-          key: "Design",
-          value: "シェーダ、ジェネラティブデザイン",
-        },
+        "Algorithms and Data Structures",
+        "Distributed Systems",
+        "Cyber Security",
+        "Generative Design",
       ],
     };
   },
