@@ -18,7 +18,7 @@
         >
           <span>{{ info.key }}</span>
         </span>
-        ：
+        <span> : </span>
         <span>{{ info.value }}</span>
         <span v-if="'url' in info">
           <link-icon :url="info.url"></link-icon>
