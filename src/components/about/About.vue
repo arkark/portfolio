@@ -24,6 +24,7 @@ import ResponsiveTimelineItem from "@/components/global/ResponsiveTimelineItem";
 import AboutBasic from "@/components/about/card/AboutBasic";
 import AboutInterest from "@/components/about/card/AboutInterest";
 import AboutCtf from "@/components/about/card/AboutCtf";
+import AboutIsucon from "@/components/about/card/AboutIsucon";
 import AboutCompro from "@/components/about/card/AboutCompro";
 import AboutMarathon from "@/components/about/card/AboutMarathon";
 import AboutArticle from "@/components/about/card/AboutArticle";
@@ -45,6 +46,10 @@ export default {
         {
           component: AboutCtf,
           icon: "fas fa-shield-alt",
+        },
+        {
+          component: AboutIsucon,
+          icon: "fas fa-bolt",
         },
         {
           component: AboutCompro,
@@ -75,6 +80,7 @@ export default {
     AboutBasic,
     AboutInterest,
     AboutCtf,
+    AboutIsucon,
     AboutCompro,
     AboutMarathon,
     AboutArticle,
