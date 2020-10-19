@@ -1,6 +1,6 @@
 <template>
   <v-row v-if="isNarrow">
-    <v-col class="py-2 px-0">
+    <v-col class="py-3 px-0">
       <slot></slot>
     </v-col>
   </v-row>

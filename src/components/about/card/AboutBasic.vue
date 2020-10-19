@@ -56,15 +56,18 @@
       <v-row
         align="end"
         class="mr-2 body-2 text--secondary"
-        style="font-size: 0.6rem !important"
+        :style="{
+          fontSize: '0.6rem !important',
+          height: 0,
+        }"
       >
         <v-spacer></v-spacer>
         <span>
-          <span>Resource:&copy;</span>
-          <a href="https://github.com/vscode-icons/vscode-icons">
-            vscode-icons
-          </a>
-          <span>contributors</span>
+          <span>Resource: &copy;</span>
+          <a href="https://github.com/vscode-icons/vscode-icons"
+            >vscode-icons</a
+          >
+          <span> contributors</span>
         </span>
       </v-row>
     </template>
