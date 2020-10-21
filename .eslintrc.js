@@ -17,6 +17,6 @@ module.exports = {
     "vue/no-unused-components": LEVEL,
   },
   parserOptions: {
-    parser: "babel-eslint",
+    parser: "@babel/eslint-parser",
   },
 };
