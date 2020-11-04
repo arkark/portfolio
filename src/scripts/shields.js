@@ -18,8 +18,8 @@ items.push({
 });
 items.push({
   url:
-    "https://img.shields.io/static/v1?style=flat&label=HatenaBlog&message=ark4rk&color=orange",
-  filename: "hatenablog_link.svg",
+    "https://img.shields.io/static/v1?style=flat&label=Blog&message=Ark&color=orange",
+  filename: "blog_link.svg",
 });
 items.push({
   url: `https://img.shields.io/static/v1?style=flat&label=AtCoder&message=arkark&color=${encodeURIComponent(

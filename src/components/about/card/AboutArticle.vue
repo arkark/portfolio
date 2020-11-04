@@ -19,7 +19,9 @@
     <p class="mb-1">
       <span>その他の記事</span>
       <v-icon x-small class="mx-2">fas fa-arrow-right</v-icon>
-      <a href="https://ark4rk.hatenablog.com">はてなブログ</a>
+      <a href="https://blog.arkark.dev">ブログ</a>
+      /
+      <a href="https://ark4rk.hatenablog.com">旧ブログ</a>
       /
       <a href="https://trap.jp/author/ark/">traP</a>
     </p>

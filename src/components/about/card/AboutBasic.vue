@@ -124,9 +124,9 @@ export default {
           url: "https://twitter.com/arkark_",
         },
         {
-          key: "Hatena Blog",
-          image: require("@/assets/shields/hatenablog_link.svg"),
-          url: "https://ark4rk.hatenablog.com",
+          key: "Blog",
+          image: require("@/assets/shields/blog_link.svg"),
+          url: "https://blog.arkark.dev",
         },
       ],
       skills: [

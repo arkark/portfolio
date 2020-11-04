@@ -58,7 +58,7 @@ export default {
           iconName: "fab fa-twitter",
         },
         {
-          url: "https://ark4rk.hatenablog.com",
+          url: "https://blog.arkark.dev",
           iconName: "fas fa-pen-nib",
         },
       ],
