@@ -5,7 +5,7 @@
     <top ref="top"></top>
     <v-container>
       <v-row align="center" justify="center">
-        <v-card flat :max-width="980">
+        <v-card flat :max-width="800">
           <about id="about" ref="about"></about>
           <work id="work" ref="work"></work>
         </v-card>

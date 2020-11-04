@@ -16,7 +16,7 @@
         </span>
       </li>
     </ul>
-    <p class="mb-1">
+    <p class="body-2 mb-1">
       <span>その他の記事</span>
       <v-icon x-small class="mx-2">fas fa-arrow-right</v-icon>
       <a href="https://blog.arkark.dev">ブログ</a>

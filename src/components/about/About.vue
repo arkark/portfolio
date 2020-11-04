@@ -22,6 +22,7 @@
 import ResponsiveTimeline from "@/components/global/ResponsiveTimeline";
 import ResponsiveTimelineItem from "@/components/global/ResponsiveTimelineItem";
 import AboutBasic from "@/components/about/card/AboutBasic";
+import AboutSkill from "@/components/about/card/AboutSkill";
 import AboutInterest from "@/components/about/card/AboutInterest";
 import AboutCtf from "@/components/about/card/AboutCtf";
 import AboutIsucon from "@/components/about/card/AboutIsucon";
@@ -38,6 +39,10 @@ export default {
         {
           component: AboutBasic,
           icon: "fas fa-user",
+        },
+        {
+          component: AboutSkill,
+          icon: "fas fa-code-branch",
         },
         {
           component: AboutInterest,

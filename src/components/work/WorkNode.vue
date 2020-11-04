@@ -4,7 +4,7 @@
       :width="cardWidth"
       :height="cardHeight"
       slot-scope="{ hover }"
-      :class="`elevation-${hover ? 5 : 3}`"
+      :class="{ 'elevation-3': hover }"
     >
       <v-toolbar
         text
@@ -17,7 +17,6 @@
       >
         <v-hover>
           <v-btn
-            slot-scope="{ hover }"
             :href="work.url"
             target="_blank"
             rel="noopener noreferrer"
@@ -27,7 +26,6 @@
             bottom
             right
             fab
-            :class="`elevation-${hover ? 4 : 2}`"
             style="pointer-events: auto"
           >
             <v-icon small>fas fa-external-link-alt</v-icon>

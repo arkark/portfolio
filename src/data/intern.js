@@ -41,7 +41,7 @@ export default [
       },
       {
         label:
-          "株式会社ディー・エヌ・エー : 2017 SUMMER INTERNSHIP ゲームエンジニアリングコース (3 days)",
+          "株式会社ディー・エヌ・エー : SUMMER INTERNSHIP ゲームエンジニアリングコース (3 days)",
       },
     ],
   },

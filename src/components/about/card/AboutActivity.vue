@@ -6,7 +6,7 @@
     <ul class="fa-ul body-2 ma-0">
       <li class="ml-1 mb-1">
         <span class="fa-li"><i class="fas fa-hashtag"></i></span>
-        <span>東京工業大学プログラミングコンテスト2019 : 運営・作問</span>
+        <span>東京工業大学プログラミングコンテスト2019 : 運営</span>
         <span>
           <link-icon :url="'https://atcoder.jp/contests/ttpc2019'"></link-icon>
         </span>

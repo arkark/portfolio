@@ -1,15 +1,13 @@
 <template>
   <div>
-    <v-card class="elevation-4">
-      <v-card-title class="pb-0">
+    <v-card flat>
+      <v-card-title class="pt-2 pb-1 px-1">
         <span><span class="title-head"></span> {{ title }}</span>
       </v-card-title>
-      <v-divider class="py-0 mx-3"></v-divider>
-      <v-card-text class="pt-3 subtitle-1 text--primary">
+      <v-card-text class="pb-0 px-1 body-1 text--primary">
         <slot></slot>
       </v-card-text>
     </v-card>
-    <slot name="under-card"></slot>
   </div>
 </template>
 
@@ -19,7 +17,7 @@
   background: #aaa;
   width: 0.65em;
   height: 0.65em;
-  margin: 0.25em 0.25em 0 0.25em;
+  margin: 0.5em 0.25em 0 0.25em;
   box-sizing: border-box;
   vertical-align: top;
 }

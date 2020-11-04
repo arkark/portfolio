@@ -11,3 +11,8 @@ My Portfolio Website
 [![Twitter](src/assets/shields/twitter_link.svg)](https://twitter.com/arkark_)
 [![Blog](src/assets/shields/blog_link.svg)](https://blog.arkark.dev)
 [![AtCoder](src/assets/shields/atcoder_link.svg)](https://atcoder.jp/user/arkark)
+
+
+## Resource
+
+- Icons: [vscode-icons](https://github.com/vscode-icons/vscode-icons)
