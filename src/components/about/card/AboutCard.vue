@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-card flat>
-      <v-card-title class="pt-2 pb-1 px-1">
+      <v-card-title class="py-1 px-1">
         <span><span class="title-head"></span> {{ title }}</span>
       </v-card-title>
-      <v-card-text class="pb-0 px-1 body-1 text--primary">
+      <v-card-text class="pb-1 px-1 body-1 text--primary">
         <slot></slot>
       </v-card-text>
     </v-card>
