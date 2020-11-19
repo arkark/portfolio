@@ -4,7 +4,7 @@
       <p class="mb-1" :key="'label-' + index">
         <span>{{ item.label }}</span>
       </p>
-      <ul :key="index" class="fa-ul body-2 ma-0">
+      <ul :key="index" class="fa-ul ma-0">
         <li
           v-for="(subItem, subIndex) in item.children"
           :key="index + '-' + subIndex"

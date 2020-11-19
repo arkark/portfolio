@@ -1,6 +1,6 @@
 <template>
   <about-card :title="'興味分野'">
-    <ul class="fa-ul body-2 ma-0">
+    <ul class="fa-ul ma-0">
       <li v-for="(item, index) in items" :key="index" class="mb-1">
         <span class="fa-li"><i class="fas fa-hashtag"></i></span>
         <span>{{ item }}</span>

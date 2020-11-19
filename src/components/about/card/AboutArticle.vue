@@ -1,6 +1,6 @@
 <template>
   <about-card :title="'書いた記事'">
-    <ul class="fa-ul body-2 ma-0">
+    <ul class="fa-ul ma-0">
       <li v-for="(item, index) in items" :key="index" class="mb-1">
         <span class="fa-li"><i class="fas fa-hashtag"></i></span>
         <span>
@@ -16,7 +16,7 @@
         </span>
       </li>
     </ul>
-    <p class="body-2 mb-1">
+    <p class="mb-1">
       <span>その他の記事</span>
       <v-icon x-small class="mx-2">fas fa-arrow-right</v-icon>
       <a href="https://blog.arkark.dev">ブログ</a>
