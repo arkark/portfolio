@@ -1,5 +1,10 @@
 export default [
   {
+    label: "ハル研究所 プログラミングコンテスト2020 : 9位",
+    url: "https://www.hallab.co.jp/progcon/2020/",
+    blog: "https://blog.arkark.dev/2020/12/12/halcon2020/",
+  },
+  {
     label: "ハル研究所 プログラミングコンテスト2019 : 9位",
     url: "https://www.hallab.co.jp/progcon/2019/",
     blog: "https://ark4rk.hatenablog.com/entry/2019/10/17/170907",

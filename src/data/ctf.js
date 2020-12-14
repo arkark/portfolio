@@ -1,5 +1,9 @@
 export default [
   {
+    label: "pbctf 2020 : 10位/457",
+    url: "https://ctftime.org/event/1121",
+  },
+  {
     label: "SECCON 2020 Online CTF : 7位/579",
     url: "https://ctftime.org/event/1119",
   },
