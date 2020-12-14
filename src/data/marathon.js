@@ -19,7 +19,7 @@ export default [
     blog: "https://ark4rk.hatenablog.com/entry/2018/03/11/184523",
   },
   {
-    label: "ハル研究所プログラミングコンテスト2017 : 7位",
+    label: "ハル研究所 プログラミングコンテスト2017 : 7位",
     url: "https://www.hallab.co.jp/progcon/2017/",
     blog: "https://ark4rk.hatenablog.com/entry/2017/11/21/182044",
   },
