@@ -1,5 +1,13 @@
 export default [
   {
+    title: "git-hist",
+    url: "https://github.com/arkark/git-hist",
+    src: require("@/assets/screenshots/tool/git_hist.png"),
+    genre: "Tool",
+    description: "gitの編集履歴をターミナル上でいい感じに閲覧するツール",
+    date: "2021/3/29",
+  },
+  {
     title: "DistortionCamera",
     url: "https://github.com/arkark/DistortionCamera",
     src: require("@/assets/screenshots/tool/distortion_camera.png"),
