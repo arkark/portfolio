@@ -1,0 +1,43 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "run-s lint:typecheck lint:eslint lint:prettier",
+    "lint:typecheck": "tsc",
+    "lint:eslint": "eslint '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --max-warnings=0",
+    "lint:prettier": "prettier '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --check",
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "eslint '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --fix",
+    "fix:prettier": "prettier '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --write"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.7",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "dayjs": "^1.11.0",
+    "framer-motion": "^6.2.8",
+    "next": "^12.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-scroll": "^1.8.6"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-scroll": "^1.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-next": "^12.1.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  }
+}
