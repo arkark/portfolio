@@ -15,14 +15,14 @@ const AboutEducation: React.VFC = () => {
       <List>
         <ListItemWithIcon>
           <LabelWithInfo
-            label="Bachelor of Science: Information Science, Tokyo Institute of Technology"
-            info={`${formatDate("2015/04")} - ${formatDate("2019/03")}`}
+            label="Master of Science, Dept. of Mathematical and Computing Science, Graduate School of Computing, Tokyo Institute of Technology"
+            info={`${formatDate("2019/04")} - ${formatDate("2021/03")}`}
           ></LabelWithInfo>
         </ListItemWithIcon>
         <ListItemWithIcon>
           <LabelWithInfo
-            label="Master of Science: Mathematical and Computing Science, Tokyo Institute of Technology"
-            info={`${formatDate("2019/04")} - ${formatDate("2021/03")}`}
+            label="Bachelor of Science, Dept. of Information Science, School of Science, Tokyo Institute of Technology"
+            info={`${formatDate("2015/04")} - ${formatDate("2019/03")}`}
           ></LabelWithInfo>
         </ListItemWithIcon>
       </List>
