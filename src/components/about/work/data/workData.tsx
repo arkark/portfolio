@@ -1,5 +1,5 @@
-import Link from "@/components/utils/Link";
 import type WorkType from "@/components/about/work/data/WorkType";
+import Link from "@/components/utils/Link";
 
 const workData: WorkType[] = [
   {
