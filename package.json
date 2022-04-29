@@ -6,11 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "run-s lint:typecheck lint:eslint lint:prettier",
+    "lint": "npm run lint:typecheck && npm run lint:eslint && npm run lint:prettier",
     "lint:typecheck": "tsc",
     "lint:eslint": "eslint '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --max-warnings=0",
     "lint:prettier": "prettier '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --check",
-    "fix": "run-s fix:eslint fix:prettier",
+    "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --fix",
     "fix:prettier": "prettier '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --write"
   },
@@ -36,7 +36,6 @@
     "eslint-config-next": "^12.1.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
     "typescript": "^4.6.4"
   }
