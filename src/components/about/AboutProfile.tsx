@@ -1,15 +1,16 @@
-import { Box, HStack, Heading, Icon, List, chakra } from "@chakra-ui/react";
 import {
-  FaCode,
-  FaGithub,
-  FaHashtag,
-  FaPenNib,
-  FaTwitter,
-  FaUser,
-  FaUserTag,
-} from "react-icons/fa";
+  Box,
+  HStack,
+  Heading,
+  Icon,
+  List,
+  chakra,
+  Text,
+} from "@chakra-ui/react";
+import { FaHashtag, FaUser, FaUserTag } from "react-icons/fa";
 
-import Link from "@/components/utils/Link";
+import Twemoji from "../utils/Twemoji";
+
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
 const AboutProfile: React.VFC = () => {
@@ -19,6 +20,11 @@ const AboutProfile: React.VFC = () => {
         <Icon as={FaHashtag} color="gray.600" mr={1}></Icon>
         Profile
       </Heading>
+      <Box>
+        <Text fontWeight="bold">
+          Hi there <Twemoji emoji="👋" size={16}></Twemoji>
+        </Text>
+      </Box>
       <List>
         <ListItemWithIcon iconAs={FaUser}>
           <HStack wrap="wrap" spacing={1}>
@@ -32,54 +38,11 @@ const AboutProfile: React.VFC = () => {
             <chakra.span>Ark / アーク</chakra.span>
           </HStack>
         </ListItemWithIcon>
-        <ListItemWithIcon iconAs={FaGithub}>
-          <HStack wrap="wrap" spacing={1}>
-            <chakra.span>GitHub:</chakra.span>
-            <Link
-              fontWeight="bold"
-              color="blue.500"
-              href="https://github.com/arkark"
-              isExternal
-            >
-              arkark
-            </Link>
-          </HStack>
-        </ListItemWithIcon>
-        <ListItemWithIcon iconAs={FaTwitter}>
-          <HStack wrap="wrap" spacing={1}>
-            <chakra.span>Twitter:</chakra.span>
-            <Link
-              fontWeight="bold"
-              color="blue.500"
-              href="https://twitter.com/arkark_"
-              isExternal
-            >
-              @arkark_
-            </Link>
-          </HStack>
-        </ListItemWithIcon>
-        <ListItemWithIcon iconAs={FaPenNib}>
-          <HStack wrap="wrap" spacing={1}>
-            <chakra.span>Blog:</chakra.span>
-            <Link
-              fontWeight="bold"
-              color="blue.500"
-              href="https://blog.arkark.dev/"
-              isExternal
-            >
-              XS-Spin Blog
-            </Link>
-          </HStack>
-        </ListItemWithIcon>
-        <ListItemWithIcon iconAs={FaCode}>
-          <HStack wrap="wrap" spacing={1}>
-            <chakra.span>Fav:</chakra.span>
-            <chakra.span>D, Rust, and JavaScript</chakra.span>
-          </HStack>
-        </ListItemWithIcon>
       </List>
       <Box>
-        Currently working as a data engineer and a security engineer in Japan.
+        <Text>
+          Currently working as a data engineer and a security engineer in Japan.
+        </Text>
       </Box>
     </>
   );

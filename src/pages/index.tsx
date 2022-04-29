@@ -5,6 +5,7 @@ import { FaHashtag } from "react-icons/fa";
 import * as Scroll from "react-scroll";
 
 import Scroller from "@/components/Scroller";
+import AboutAccount from "@/components/about/AboutAccount";
 import AboutEvent from "@/components/about/AboutActivity";
 import AboutArticle from "@/components/about/AboutArticle";
 import AboutEducation from "@/components/about/AboutEducation";
@@ -19,6 +20,7 @@ import WorkList from "@/components/work/WorkList";
 const Home: NextPage = () => {
   const components = [
     AboutProfile,
+    AboutAccount,
     AboutInterest,
     AboutContest,
     AboutEvent,
