@@ -5,6 +5,10 @@ const ctfData: { year: string; contests: ContestType[] }[] = [
     year: "2022",
     contests: [
       {
+        label: "CrewCTF 2022",
+        place: "5th",
+      },
+      {
         label: "zer0pts CTF 2022",
         place: "6th",
       },
