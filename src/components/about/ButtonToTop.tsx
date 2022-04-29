@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import * as Scroll from "react-scroll";
 
-const Scroller: React.VFC = () => {
+const ButtonToTop: React.VFC = () => {
   const [isBottom, setIsBottom] = useState<boolean>(false);
   const onScroll = () => {
     setIsBottom(
@@ -49,4 +49,4 @@ const Scroller: React.VFC = () => {
   );
 };
 
-export default Scroller;
+export default ButtonToTop;

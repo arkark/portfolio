@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import * as Scroll from "react-scroll";
 
-import Scroller from "@/components/Scroller";
 import About from "@/components/about/About";
 import Top from "@/components/top/Top";
 
@@ -15,7 +14,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Ark's portfolio website :)" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Scroller></Scroller>
       <Scroll.Element name="top">
         <Top></Top>
       </Scroll.Element>
