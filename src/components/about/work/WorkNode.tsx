@@ -14,9 +14,9 @@ import {
 import Image from "next/image";
 import { FaAngleRight, FaExternalLinkAlt } from "react-icons/fa";
 
+import type WorkType from "@/components/about/work/data/WorkType";
 import Link from "@/components/utils/Link";
 import formatDate from "@/components/utils/formatDate";
-import type WorkType from "@/components/work/data/WorkType";
 
 export interface WorkNodeProps {
   work: WorkType;

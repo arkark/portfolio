@@ -1,7 +1,7 @@
 import { Wrap, WrapItem } from "@chakra-ui/react";
 
-import WorkNode from "@/components/work/WorkNode";
-import workData from "@/components/work/data/workData";
+import WorkNode from "@/components/about/work/WorkNode";
+import workData from "@/components/about/work/data/workData";
 
 const WorkList: React.VFC = () => {
   const cardWidth = 220;
