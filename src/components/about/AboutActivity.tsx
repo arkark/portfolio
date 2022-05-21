@@ -1,4 +1,4 @@
-import { HStack, Heading, Icon, List, Text, chakra } from "@chakra-ui/react";
+import { HStack, Heading, Icon, List, chakra } from "@chakra-ui/react";
 import { FaAngleRight, FaHashtag } from "react-icons/fa";
 
 import Link from "@/components/utils/Link";
@@ -14,7 +14,12 @@ const AboutActivity: React.VFC = () => {
       <List>
         <ListItemWithIcon>
           <HStack wrap="wrap" spacing={1}>
-            <Text>SECCON CTF 2021</Text>
+            <Link
+              href="https://github.com/SECCON/SECCON2021_online_CTF"
+              isExternal
+            >
+              SECCON CTF 2021
+            </Link>
             <Icon as={FaAngleRight}></Icon>
             <Link
               href="https://blog.arkark.dev/2021/12/22/seccon/"

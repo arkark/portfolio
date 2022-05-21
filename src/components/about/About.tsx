@@ -2,7 +2,7 @@ import { Box, Heading, Icon, Container, Stack } from "@chakra-ui/react";
 import { FaHashtag } from "react-icons/fa";
 
 import AboutAccount from "@/components/about/AboutAccount";
-import AboutEvent from "@/components/about/AboutActivity";
+import AboutActivity from "@/components/about/AboutActivity";
 import AboutArticle from "@/components/about/AboutArticle";
 import AboutEducation from "@/components/about/AboutEducation";
 import AboutInterest from "@/components/about/AboutInterest";
@@ -18,8 +18,8 @@ const About: React.VFC = () => {
     AboutProfile,
     AboutAccount,
     AboutInterest,
+    AboutActivity,
     AboutContest,
-    AboutEvent,
     AboutEducation,
     AboutWorkExperience,
     AboutPublication,
