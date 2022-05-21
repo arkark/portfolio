@@ -1,6 +1,6 @@
-import { Heading, Icon, List } from "@chakra-ui/react";
-import { FaHashtag } from "react-icons/fa";
+import { List } from "@chakra-ui/react";
 
+import H3 from "@/components/utils/H3";
 import LabelWithInfo from "@/components/utils/LabelWithInfo";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 import formatDate from "@/components/utils/formatDate";
@@ -8,10 +8,7 @@ import formatDate from "@/components/utils/formatDate";
 const AboutEducation: React.VFC = () => {
   return (
     <>
-      <Heading as="h3" size="md" my={2}>
-        <Icon as={FaHashtag} color="gray.600" mr={1}></Icon>
-        Education
-      </Heading>
+      <H3>Education</H3>
       <List>
         <ListItemWithIcon>
           <LabelWithInfo

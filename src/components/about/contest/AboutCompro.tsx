@@ -1,7 +1,8 @@
-import { Heading, List, Text, chakra } from "@chakra-ui/react";
+import { List, Text, chakra } from "@chakra-ui/react";
 
 import ContestListItem from "@/components/about/contest/ContestListItem";
 import comproData from "@/components/about/contest/data/comproData";
+import H4 from "@/components/utils/H4";
 import Link from "@/components/utils/Link";
 
 const AboutCompro: React.VFC = () => {
@@ -9,9 +10,7 @@ const AboutCompro: React.VFC = () => {
 
   return (
     <>
-      <Heading as="h3" size="sm" my={2}>
-        Competitive Programming
-      </Heading>
+      <H4>Competitive Programming</H4>
       <Text>
         {"AtCoder: "}
         <Link

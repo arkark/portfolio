@@ -1,5 +1,6 @@
-import { Heading, List, ListItem, Text } from "@chakra-ui/react";
+import { List, ListItem, Text } from "@chakra-ui/react";
 
+import H4 from "@/components/utils/H4";
 import LabelWithInfo from "@/components/utils/LabelWithInfo";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
@@ -58,9 +59,7 @@ const AboutInternship: React.VFC = () => {
   ];
   return (
     <>
-      <Heading as="h4" size="sm" my={2}>
-        Short Internships
-      </Heading>
+      <H4>Short Internships</H4>
       <List>
         {data.map(({ year, jobs }, index) => (
           <ListItem key={index}>

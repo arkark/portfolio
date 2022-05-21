@@ -1,5 +1,4 @@
-import { Box, Heading, Icon, Container, Stack } from "@chakra-ui/react";
-import { FaHashtag } from "react-icons/fa";
+import { Box, Container, Stack } from "@chakra-ui/react";
 
 import AboutAccount from "@/components/about/AboutAccount";
 import AboutActivity from "@/components/about/AboutActivity";
@@ -12,6 +11,7 @@ import ButtonToTop from "@/components/about/ButtonToTop";
 import AboutContest from "@/components/about/contest/AboutContest";
 import WorkList from "@/components/about/work/WorkList";
 import AboutWorkExperience from "@/components/about/workExperience/AboutWorkExperience";
+import H3 from "@/components/utils/H3";
 
 const About: React.VFC = () => {
   const components = [
@@ -36,10 +36,7 @@ const About: React.VFC = () => {
               </Box>
             ))}
             <Box>
-              <Heading as="h3" size="md" my={2}>
-                <Icon as={FaHashtag} color="gray.600" mr={1}></Icon>
-                Works
-              </Heading>
+              <H3>Works</H3>
               <WorkList></WorkList>
             </Box>
           </Stack>

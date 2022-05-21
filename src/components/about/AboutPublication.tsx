@@ -1,15 +1,12 @@
-import { Box, Heading, Icon, List, Stack, chakra } from "@chakra-ui/react";
-import { FaHashtag } from "react-icons/fa";
+import { Box, Heading, List, Stack, chakra } from "@chakra-ui/react";
 
+import H3 from "@/components/utils/H3";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
 const AboutPublication: React.VFC = () => {
   return (
     <>
-      <Heading as="h3" size="md" my={2}>
-        <Icon as={FaHashtag} color="gray.600" mr={1}></Icon>
-        Publication
-      </Heading>
+      <H3>Publication</H3>
       <Stack spacing={4}>
         <Box>
           <Heading as="h4" size="sm" my={2}>

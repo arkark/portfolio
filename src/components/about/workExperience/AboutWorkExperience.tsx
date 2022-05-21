@@ -1,7 +1,8 @@
-import { Box, Heading, Icon, List, Stack } from "@chakra-ui/react";
-import { FaHashtag } from "react-icons/fa";
+import { Box, List, Stack } from "@chakra-ui/react";
 
 import AboutInternship from "@/components/about/workExperience/AboutInternship";
+import H3 from "@/components/utils/H3";
+import H4 from "@/components/utils/H4";
 import LabelWithInfo from "@/components/utils/LabelWithInfo";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 import formatDate from "@/components/utils/formatDate";
@@ -9,15 +10,10 @@ import formatDate from "@/components/utils/formatDate";
 const AboutWorkExperience: React.VFC = () => {
   return (
     <>
-      <Heading as="h3" size="md" my={2}>
-        <Icon as={FaHashtag} color="gray.600" mr={1}></Icon>
-        Work Experience
-      </Heading>
+      <H3>Work Experience</H3>
       <Stack spacing={4}>
         <Box>
-          <Heading as="h4" size="sm" my={2}>
-            Working
-          </Heading>
+          <H4>Working</H4>
           <List>
             <ListItemWithIcon>
               <LabelWithInfo
@@ -34,9 +30,7 @@ const AboutWorkExperience: React.VFC = () => {
           </List>
         </Box>
         <Box>
-          <Heading as="h4" size="sm" my={2}>
-            Student Part-Time Jobs
-          </Heading>
+          <H4>Student Part-Time Jobs</H4>
           <List>
             <ListItemWithIcon>
               <LabelWithInfo

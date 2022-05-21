@@ -1,6 +1,7 @@
-import { HStack, Heading, Icon, List, chakra } from "@chakra-ui/react";
-import { FaExternalLinkAlt, FaHashtag } from "react-icons/fa";
+import { HStack, Icon, List, chakra } from "@chakra-ui/react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
+import H3 from "@/components/utils/H3";
 import LabelWithInfo from "@/components/utils/LabelWithInfo";
 import Link from "@/components/utils/Link";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
@@ -47,10 +48,7 @@ const AboutArticle: React.VFC = () => {
 
   return (
     <>
-      <Heading as="h3" size="md" my={2}>
-        <Icon as={FaHashtag} color="gray.600" mr={1}></Icon>
-        Articles
-      </Heading>
+      <H3>Articles</H3>
       <List>
         {articles.map((article, index) => (
           <ListItemWithIcon key={index}>

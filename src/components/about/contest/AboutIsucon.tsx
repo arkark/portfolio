@@ -1,14 +1,13 @@
-import { Heading, List, Text, chakra } from "@chakra-ui/react";
+import { List, Text, chakra } from "@chakra-ui/react";
 
+import H4 from "@/components/utils/H4";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 import Twemoji from "@/components/utils/Twemoji";
 
 const AboutIsucon: React.VFC = () => {
   return (
     <>
-      <Heading as="h3" size="sm" my={2}>
-        Web Tuning Contests
-      </Heading>
+      <H4>Web Tuning Contests</H4>
       <Text>Team: shallowverse</Text>
       <List>
         <ListItemWithIcon>

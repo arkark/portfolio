@@ -1,15 +1,14 @@
-import { Heading, List, ListItem, Text } from "@chakra-ui/react";
+import { List, ListItem, Text } from "@chakra-ui/react";
 
 import ContestListItem from "@/components/about/contest/ContestListItem";
 import ctfData from "@/components/about/contest/data/ctfData";
+import H4 from "@/components/utils/H4";
 import Link from "@/components/utils/Link";
 
 const AboutCtf: React.VFC = () => {
   return (
     <>
-      <Heading as="h4" size="sm" my={2}>
-        Capture The Flag
-      </Heading>
+      <H4>Capture The Flag</H4>
       <Text>
         {"Team: "}
         <Link

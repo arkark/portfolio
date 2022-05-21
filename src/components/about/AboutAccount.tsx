@@ -1,23 +1,20 @@
-import { HStack, Heading, Icon, List, chakra } from "@chakra-ui/react";
+import { HStack, List, chakra } from "@chakra-ui/react";
 import {
   FaDotCircle,
   FaGithub,
-  FaHashtag,
   FaLinkedin,
   FaPenNib,
   FaTwitter,
 } from "react-icons/fa";
 
+import H3 from "@/components/utils/H3";
 import Link from "@/components/utils/Link";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
 const AboutAccount: React.VFC = () => {
   return (
     <>
-      <Heading as="h4" size="md" my={2}>
-        <Icon as={FaHashtag} color="gray.600" mr={1}></Icon>
-        Accounts
-      </Heading>
+      <H3>Accounts</H3>
       <List>
         <ListItemWithIcon iconAs={FaGithub}>
           <HStack wrap="wrap" spacing={1}>

@@ -1,16 +1,15 @@
-import { Heading, List } from "@chakra-ui/react";
+import { List } from "@chakra-ui/react";
 
 import ContestListItem from "@/components/about/contest/ContestListItem";
 import marathonData from "@/components/about/contest/data/marathonData";
+import H4 from "@/components/utils/H4";
 
 const AboutMarathon: React.VFC = () => {
   const contests = marathonData;
 
   return (
     <>
-      <Heading as="h3" size="sm" my={2}>
-        Heuristic Contests
-      </Heading>
+      <H4>Heuristic Contests</H4>
       <List>
         {contests.map((contest, index) => (
           <ContestListItem key={index} contest={contest}></ContestListItem>
