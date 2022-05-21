@@ -9,9 +9,8 @@ import AboutProfile from "@/components/about/AboutProfile";
 import AboutPublication from "@/components/about/AboutPublication";
 import ButtonToTop from "@/components/about/ButtonToTop";
 import AboutContest from "@/components/about/contest/AboutContest";
-import WorkList from "@/components/about/work/WorkList";
+import AboutWork from "@/components/about/work/AboutWork";
 import AboutWorkExperience from "@/components/about/workExperience/AboutWorkExperience";
-import H3 from "@/components/utils/H3";
 
 const About: React.VFC = () => {
   const components = [
@@ -24,6 +23,7 @@ const About: React.VFC = () => {
     AboutWorkExperience,
     AboutPublication,
     AboutArticle,
+    AboutWork,
   ];
   return (
     <>
@@ -35,10 +35,6 @@ const About: React.VFC = () => {
                 <Component></Component>
               </Box>
             ))}
-            <Box>
-              <H3>Works</H3>
-              <WorkList></WorkList>
-            </Box>
           </Stack>
         </Box>
       </Container>
