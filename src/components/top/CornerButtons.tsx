@@ -31,7 +31,10 @@ const CornerButtons: React.VFC = () => {
           position="fixed"
           pointerEvents={isTop ? "auto" : "none"}
         >
-          <Link href="https://github.com/arkark/portfolio" isExternal>
+          <Link
+            href="https://github.com/arkark/portfolio/blob/main/src/webgl/glsl/main.frag"
+            isExternal
+          >
             <IconButton
               aria-label="link to source code"
               colorScheme="blackAlpha"
