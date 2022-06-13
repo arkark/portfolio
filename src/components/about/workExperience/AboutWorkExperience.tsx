@@ -18,7 +18,9 @@ const AboutWorkExperience: React.VFC = () => {
             <ListItemWithIcon>
               <LabelWithInfo
                 label="Yahoo Japan Corporation"
-                info={`Data Engineer (${formatDate("2021/04")} - present)`}
+                info={`Data Platform Engineer (${formatDate(
+                  "2021/04"
+                )} - present)`}
               ></LabelWithInfo>
             </ListItemWithIcon>
             <ListItemWithIcon>

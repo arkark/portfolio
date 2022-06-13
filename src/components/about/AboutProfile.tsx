@@ -30,7 +30,8 @@ const AboutProfile: React.VFC = () => {
       </List>
       <Box>
         <Text>
-          Currently working as a data engineer and a security engineer in Japan.
+          Currently working as a data platform engineer and a security engineer
+          in Japan.
         </Text>
       </Box>
     </>
