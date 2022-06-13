@@ -5,6 +5,12 @@ const ctfData: { year: string; contests: ContestType[] }[] = [
     year: "2022",
     contests: [
       {
+        label: "WeCTF 2022",
+        place: "2nd",
+        emoji: "🥈",
+        team: "hogehogeErs",
+      },
+      {
         label: "CrewCTF 2022",
         place: "5th",
       },

@@ -17,6 +17,7 @@ const ContestListItem: React.VFC<ContestListItemProps> = ({ contest }) => {
         {contest.place}{" "}
         {contest.emoji && <Twemoji emoji={contest.emoji} size={16}></Twemoji>}
       </chakra.span>
+      {contest.team && ` (Team: ${contest.team})`}
     </ListItemWithIcon>
   );
 };
