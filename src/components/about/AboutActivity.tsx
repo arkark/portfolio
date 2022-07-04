@@ -35,13 +35,13 @@ const AboutActivity: React.VFC = () => {
           </Link>
         </ListItemWithIcon>
         <ListItemWithIcon>
-          第4回ゲーム製作者交流会
+          第4回ゲーム制作者交流イベント
           <Link href="https://game3.trap.jp/" isExternal>
             GAME<chakra.sup>3</chakra.sup>
           </Link>
         </ListItemWithIcon>
         <ListItemWithIcon>
-          第3回ゲーム製作者交流会
+          第3回ゲーム制作者交流イベント
           <Link href="https://game3.trap.jp/" isExternal>
             GAME<chakra.sup>3</chakra.sup>
           </Link>
