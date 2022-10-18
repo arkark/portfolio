@@ -1,11 +1,5 @@
 import { HStack, List, chakra } from "@chakra-ui/react";
-import {
-  FaDotCircle,
-  FaGithub,
-  FaLinkedin,
-  FaPenNib,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPenNib, FaTwitter } from "react-icons/fa";
 
 import H3 from "@/components/utils/H3";
 import Link from "@/components/utils/Link";
