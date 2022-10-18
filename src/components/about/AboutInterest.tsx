@@ -8,11 +8,14 @@ const AboutInterest: React.VFC = () => {
     <>
       <H3>Interests</H3>
       <List>
-        <ListItemWithIcon>Algorithms / Data Structures</ListItemWithIcon>
-        <ListItemWithIcon>Distributed Systems</ListItemWithIcon>
         <ListItemWithIcon>Web Security / Web Exploitation</ListItemWithIcon>
+        <ListItemWithIcon>
+          Algorithms / Data Structures / Distributed Systems
+        </ListItemWithIcon>
         <ListItemWithIcon>Creative Coding / Generative Design</ListItemWithIcon>
-        <ListItemWithIcon>Algebra for Computer Science</ListItemWithIcon>
+        <ListItemWithIcon>
+          Mathematics / Algebra for Computer Science
+        </ListItemWithIcon>
       </List>
     </>
   );

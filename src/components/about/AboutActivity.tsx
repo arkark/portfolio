@@ -10,6 +10,7 @@ const AboutActivity: React.VFC = () => {
     <>
       <H3>Activities</H3>
       <List>
+        <ListItemWithIcon>SECCON CTF 2022</ListItemWithIcon>
         <ListItemWithIcon>
           <HStack wrap="wrap" spacing={1}>
             <Link

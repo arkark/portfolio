@@ -17,16 +17,24 @@ const AboutWorkExperience: React.VFC = () => {
           <List>
             <ListItemWithIcon>
               <LabelWithInfo
-                label="Yahoo Japan Corporation"
-                info={`Data Platform Engineer (${formatDate(
-                  "2021/04"
-                )} - present)`}
+                label="???"
+                info={`??? (NaN - NaN)`}
               ></LabelWithInfo>
             </ListItemWithIcon>
             <ListItemWithIcon>
               <LabelWithInfo
                 label="Ricerca Security, Inc."
-                info={`Security Engineer (${formatDate("2021/10")} - present)`}
+                info={`Security Engineer (${formatDate(
+                  "2021/10"
+                )} - ${formatDate("2022/9")})`}
+              ></LabelWithInfo>
+            </ListItemWithIcon>
+            <ListItemWithIcon>
+              <LabelWithInfo
+                label="Yahoo Japan Corporation"
+                info={`Data Platform Engineer (${formatDate(
+                  "2021/04"
+                )} - ${formatDate("2022/10")})`}
               ></LabelWithInfo>
             </ListItemWithIcon>
           </List>

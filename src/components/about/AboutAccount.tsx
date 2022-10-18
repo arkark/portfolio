@@ -68,19 +68,6 @@ const AboutAccount: React.VFC = () => {
             </Link>
           </HStack>
         </ListItemWithIcon>
-        <ListItemWithIcon iconAs={FaDotCircle}>
-          <HStack wrap="wrap" spacing={1}>
-            <chakra.span>Wantedly:</chakra.span>
-            <Link
-              fontWeight="bold"
-              color="blue.500"
-              href="https://www.wantedly.com/id/arkark"
-              isExternal
-            >
-              link
-            </Link>
-          </HStack>
-        </ListItemWithIcon>
       </List>
     </>
   );
