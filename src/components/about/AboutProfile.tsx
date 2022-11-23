@@ -29,10 +29,7 @@ const AboutProfile: React.VFC = () => {
         </ListItemWithIcon>
       </List>
       <Box>
-        <Text>
-          Currently working as a data platform engineer and a security engineer
-          in Japan.
-        </Text>
+        <Text>Currently working as a security engineer in Japan.</Text>
       </Box>
     </>
   );
