@@ -20,8 +20,13 @@ export default class GContext {
   }
 
   fitSize(): void {
-    const width = Math.round(this.gl.canvas.clientWidth * this.ratio) | 0;
-    const height = Math.round(this.gl.canvas.clientHeight * this.ratio) | 0;
+    // TODO: workaround
+    //   error TS2339: Property 'clientWidth' does not exist on type 'HTMLCanvasElement | OffscreenCanvas'. Property 'clientWidth' does not exist on type 'OffscreenCanvas'.
+    //   ref. https://developer.mozilla.org/ja/docs/Web/API/OffscreenCanvas
+    const canvas = this.gl.canvas as HTMLCanvasElement;
+    const width = Math.round(canvas.clientWidth * this.ratio) | 0;
+    const height = Math.round(canvas.clientHeight * this.ratio) | 0;
+
     this.gl.canvas.width = width;
     this.gl.canvas.height = height;
     this.gl.viewport(0, 0, width, height);
