@@ -4,14 +4,17 @@ export default class GContext {
   // private gl: WebGLRenderingContext;
   gl: WebGLRenderingContext; // TODO: add `private`
 
-  private constructor(gl: WebGLRenderingContext) {
+  private canvas: HTMLCanvasElement;
+
+  private constructor(gl: WebGLRenderingContext, canvas: HTMLCanvasElement) {
     this.gl = gl;
+    this.canvas = canvas;
   }
 
   static gen = (canvas: HTMLCanvasElement): GContext | null => {
     const gl = canvas.getContext("webgl");
     if (gl == null) return null;
-    return new GContext(gl);
+    return new GContext(gl, canvas);
   };
 
   clear(): void {
@@ -20,15 +23,11 @@ export default class GContext {
   }
 
   fitSize(): void {
-    // TODO: workaround
-    //   error TS2339: Property 'clientWidth' does not exist on type 'HTMLCanvasElement | OffscreenCanvas'. Property 'clientWidth' does not exist on type 'OffscreenCanvas'.
-    //   ref. https://developer.mozilla.org/ja/docs/Web/API/OffscreenCanvas
-    const canvas = this.gl.canvas as HTMLCanvasElement;
-    const width = Math.round(canvas.clientWidth * this.ratio) | 0;
-    const height = Math.round(canvas.clientHeight * this.ratio) | 0;
+    const width = Math.round(this.canvas.clientWidth * this.ratio) | 0;
+    const height = Math.round(this.canvas.clientHeight * this.ratio) | 0;
 
-    this.gl.canvas.width = width;
-    this.gl.canvas.height = height;
+    this.canvas.width = width;
+    this.canvas.height = height;
     this.gl.viewport(0, 0, width, height);
   }
 
