@@ -24,7 +24,7 @@ export interface BioIconProps {
   position?: PositionProps["position"];
 }
 
-const BioIcon: React.VFC<BioIconProps> = (props) => {
+const BioIcon: React.FC<BioIconProps> = (props) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {

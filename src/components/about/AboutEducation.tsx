@@ -5,7 +5,7 @@ import LabelWithInfo from "@/components/utils/LabelWithInfo";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 import formatDate from "@/components/utils/formatDate";
 
-const AboutEducation: React.VFC = () => {
+const AboutEducation: React.FC = () => {
   return (
     <>
       <H3>Education</H3>

@@ -5,7 +5,7 @@ import ctfData from "@/components/about/contest/data/ctfData";
 import H4 from "@/components/utils/H4";
 import Link from "@/components/utils/Link";
 
-const AboutCtf: React.VFC = () => {
+const AboutCtf: React.FC = () => {
   return (
     <>
       <H4>Capture The Flag</H4>

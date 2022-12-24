@@ -8,7 +8,7 @@ export interface LinkProps extends ChakraLinkProps {
   href: string;
 }
 
-const Link: React.VFC<LinkProps> = (props) => {
+const Link: React.FC<LinkProps> = (props) => {
   const { href, ...restProps } = props;
   return (
     <NextLink href={href} passHref>

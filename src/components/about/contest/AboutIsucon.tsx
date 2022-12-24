@@ -4,7 +4,7 @@ import H4 from "@/components/utils/H4";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 import Twemoji from "@/components/utils/Twemoji";
 
-const AboutIsucon: React.VFC = () => {
+const AboutIsucon: React.FC = () => {
   return (
     <>
       <H4>Web Tuning Contests</H4>

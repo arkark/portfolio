@@ -20,7 +20,7 @@ interface ListItemWithIconProps extends ListItemProps {
   iconColor?: string;
 }
 
-const ListItemWithIcon: React.VFC<ListItemWithIconProps> = forwardRef<
+const ListItemWithIcon: React.FC<ListItemWithIconProps> = forwardRef<
   ListItemWithIconProps,
   "li"
 >((props, ref) => {

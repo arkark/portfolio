@@ -5,7 +5,7 @@ import comproData from "@/components/about/contest/data/comproData";
 import H4 from "@/components/utils/H4";
 import Link from "@/components/utils/Link";
 
-const AboutCompro: React.VFC = () => {
+const AboutCompro: React.FC = () => {
   const contests = comproData;
 
   return (

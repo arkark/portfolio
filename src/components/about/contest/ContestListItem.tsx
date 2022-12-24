@@ -8,7 +8,7 @@ export interface ContestListItemProps {
   contest: ContestType;
 }
 
-const ContestListItem: React.VFC<ContestListItemProps> = ({ contest }) => {
+const ContestListItem: React.FC<ContestListItemProps> = ({ contest }) => {
   return (
     <ListItemWithIcon>
       {contest.label}

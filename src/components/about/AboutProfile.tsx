@@ -5,7 +5,7 @@ import H3 from "@/components/utils/H3";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 import Twemoji from "@/components/utils/Twemoji";
 
-const AboutProfile: React.VFC = () => {
+const AboutProfile: React.FC = () => {
   return (
     <>
       <H3>Profile</H3>

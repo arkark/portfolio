@@ -5,7 +5,7 @@ export interface LabelWithInfoProps {
   info: React.ReactNode;
 }
 
-const LabelWithInfo: React.VFC<LabelWithInfoProps> = ({ label, info }) => {
+const LabelWithInfo: React.FC<LabelWithInfoProps> = ({ label, info }) => {
   return (
     <HStack wrap="wrap" spacing={2}>
       <chakra.span>{label}</chakra.span>

@@ -11,7 +11,7 @@ import AboutContest from "@/components/about/contest/AboutContest";
 import AboutWork from "@/components/about/work/AboutWork";
 import AboutWorkExperience from "@/components/about/workExperience/AboutWorkExperience";
 
-const About: React.VFC = () => {
+const About: React.FC = () => {
   const components = [
     AboutProfile,
     AboutAccount,

@@ -5,7 +5,7 @@ import H3 from "@/components/utils/H3";
 import Link from "@/components/utils/Link";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
-const AboutAccount: React.VFC = () => {
+const AboutAccount: React.FC = () => {
   return (
     <>
       <H3>Accounts</H3>

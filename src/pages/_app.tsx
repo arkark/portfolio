@@ -17,7 +17,7 @@ const theme = extendTheme({
   },
 });
 
-const MyApp: React.VFC<AppProps> = ({ Component, pageProps }) => {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />

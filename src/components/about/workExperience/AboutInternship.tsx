@@ -4,7 +4,7 @@ import H4 from "@/components/utils/H4";
 import LabelWithInfo from "@/components/utils/LabelWithInfo";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
-const AboutInternship: React.VFC = () => {
+const AboutInternship: React.FC = () => {
   const data = [
     {
       year: "2019",

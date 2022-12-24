@@ -25,7 +25,7 @@ export interface WorkNodeProps {
   imageHeight: number;
 }
 
-const WorkNode: React.VFC<WorkNodeProps> = ({
+const WorkNode: React.FC<WorkNodeProps> = ({
   work,
   cardWidth,
   cardHeight,

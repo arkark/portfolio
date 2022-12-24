@@ -4,7 +4,7 @@ import ContestListItem from "@/components/about/contest/ContestListItem";
 import marathonData from "@/components/about/contest/data/marathonData";
 import H4 from "@/components/utils/H4";
 
-const AboutMarathon: React.VFC = () => {
+const AboutMarathon: React.FC = () => {
   const contests = marathonData;
 
   return (

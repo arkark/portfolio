@@ -7,7 +7,7 @@ import LabelWithInfo from "@/components/utils/LabelWithInfo";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 import formatDate from "@/components/utils/formatDate";
 
-const AboutWorkExperience: React.VFC = () => {
+const AboutWorkExperience: React.FC = () => {
   return (
     <>
       <H3>Work Experience</H3>

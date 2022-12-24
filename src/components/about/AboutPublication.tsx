@@ -3,7 +3,7 @@ import { Box, Heading, List, Stack, chakra } from "@chakra-ui/react";
 import H3 from "@/components/utils/H3";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
-const AboutPublication: React.VFC = () => {
+const AboutPublication: React.FC = () => {
   return (
     <>
       <H3>Publication</H3>

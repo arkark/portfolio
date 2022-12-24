@@ -6,7 +6,7 @@ import AboutIsucon from "@/components/about/contest/AboutIsucon";
 import AboutMarathon from "@/components/about/contest/AboutMarathon";
 import H3 from "@/components/utils/H3";
 
-const AboutContest: React.VFC = () => {
+const AboutContest: React.FC = () => {
   const components = [AboutCtf, AboutIsucon, AboutCompro, AboutMarathon];
   return (
     <>

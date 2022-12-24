@@ -5,7 +5,7 @@ import * as Scroll from "react-scroll";
 
 import Link from "@/components/utils/Link";
 
-const CornerButtons: React.VFC = () => {
+const CornerButtons: React.FC = () => {
   const [isTop, setIsTop] = useState<boolean>(true);
   const onScroll = () => {
     setIsTop(window.scrollY === 0);

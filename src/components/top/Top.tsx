@@ -15,7 +15,7 @@ import CornerButtons from "./CornerButtons";
 import BioIcon from "@/components/top/BioIcon";
 import Link from "@/components/utils/Link";
 
-const Top: React.VFC = () => {
+const Top: React.FC = () => {
   const bioIconSize = 128;
   const linkIconSize = 8;
 

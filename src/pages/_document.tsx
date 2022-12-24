@@ -1,7 +1,7 @@
 import type { DocumentProps } from "next/document";
 import { Head, Html, Main, NextScript } from "next/document";
 
-const MyDocument: React.VFC<DocumentProps> = () => {
+const MyDocument: React.FC<DocumentProps> = () => {
   return (
     <Html>
       <Head>

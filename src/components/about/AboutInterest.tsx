@@ -3,7 +3,7 @@ import { List } from "@chakra-ui/react";
 import H3 from "@/components/utils/H3";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
-const AboutInterest: React.VFC = () => {
+const AboutInterest: React.FC = () => {
   return (
     <>
       <H3>Interests</H3>

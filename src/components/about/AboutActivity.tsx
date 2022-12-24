@@ -5,7 +5,7 @@ import H3 from "@/components/utils/H3";
 import Link from "@/components/utils/Link";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 
-const AboutActivity: React.VFC = () => {
+const AboutActivity: React.FC = () => {
   return (
     <>
       <H3>Activities</H3>

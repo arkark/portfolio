@@ -3,7 +3,7 @@ import { Wrap, WrapItem } from "@chakra-ui/react";
 import WorkNode from "@/components/about/work/WorkNode";
 import workData from "@/components/about/work/data/workData";
 
-const WorkList: React.VFC = () => {
+const WorkList: React.FC = () => {
   const cardWidth = 220;
   const cardHeight = 270;
   const imageHeight = 140;
