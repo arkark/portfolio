@@ -10,7 +10,7 @@ const float PI_2 = PI*2.;
 
 // [0, 1] -> [0, 1]
 float easeIn(float t) {
-  return t*t*t;
+  return t*t*t*t;
 }
 
 // [0, 1] -> [0, 1]
@@ -45,12 +45,12 @@ float hexLength(vec3 pHex) {
   vec2 q = toCartesian(pHex) * rot(PI/6.);
   vec3 qHex = toHex(q);
   vec3 t = abs(qHex);
-  return max(t.x, max(t.y, t.z)) * (3./2.);
+  return max(t.x, max(t.y, t.z)) * sqrt(3.);
 }
 
 float hexagon(vec2 p, float r) {
   float len = hexLength(toHex(p));
-  return r - len;
+  return len - r;
 }
 
 float arcHexagon(vec2 p, float r, float theta1, float theta2) {
@@ -96,7 +96,11 @@ vec4 blend(vec4 base, vec4 target) {
 }
 
 vec3 palette(float t) {
-  return .5 + .5*cos(PI_2*(t + vec3(0./3., 1./3., 2./3.)));
+  vec3 a = vec3(.2, .7, .8);
+  vec3 b = vec3(.1, .3, .2);
+  vec3 c = vec3(1., 1., 1.);
+  vec3 d = vec3(2./3., 0./3., 1./3.);
+  return a + b*cos(PI_2*(c*t + d));
 }
 
 vec4 ark(vec2 p, float r, float power) {
@@ -126,8 +130,8 @@ vec3 background(vec2 p, vec3 power) {
   vec2 q2 = (p - vec2(0, 1))*rot(PI_2/3.*1.);
   vec2 q3 = (p - vec2(0, 2))*rot(PI_2/3.*2.);
 
-  float r = 1.;
   float alpha = PI_2*(t/N) + PI/6.;
+  float r = 1.1;
 
   float d1 = gridHexagon(q1, r, alpha);
   float d2 = gridHexagon(q2, r, alpha);
@@ -149,10 +153,10 @@ vec3 background(vec2 p, vec3 power) {
 void main(void) {
   vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / contentResolution;
 
-  const vec4 baseColor = vec4(0.05, .05, .1, 1.);
+  const vec4 baseColor = vec4(0.08, .10, .14, 1.);
   vec4 color = baseColor;
 
-  vec3 power = palette(timeSecs/48. + .4)*.05;
+  vec3 power = palette(timeSecs/24. + .4)*.1;
   color.rgb += background(p*.7, power);
 
   color = blend(color, ark(p, .9, 6.));
