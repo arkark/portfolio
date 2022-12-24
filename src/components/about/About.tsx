@@ -2,7 +2,6 @@ import { Box, Container, Stack } from "@chakra-ui/react";
 
 import AboutAccount from "@/components/about/AboutAccount";
 import AboutActivity from "@/components/about/AboutActivity";
-import AboutArticle from "@/components/about/AboutArticle";
 import AboutEducation from "@/components/about/AboutEducation";
 import AboutInterest from "@/components/about/AboutInterest";
 import AboutProfile from "@/components/about/AboutProfile";
@@ -22,7 +21,6 @@ const About: React.VFC = () => {
     AboutEducation,
     AboutWorkExperience,
     AboutPublication,
-    AboutArticle,
     AboutWork,
   ];
   return (
