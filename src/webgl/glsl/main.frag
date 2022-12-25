@@ -22,7 +22,7 @@ float easeInOut(float t) {
   }
 }
 
-mat2 rot(float theta){
+mat2 rot(float theta) {
   return mat2(cos(theta), sin(theta), -sin(theta), cos(theta));
 }
 
