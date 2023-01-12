@@ -8,7 +8,11 @@ export interface TwemojiProps {
 const Twemoji: React.FC<TwemojiProps> = ({ emoji, size }) => {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const codePoint = (emoji.codePointAt(0) ?? 0).toString(16);
-  const src = `https://twemoji.maxcdn.com/v/latest/svg/${codePoint}.svg`;
+
+  // ref. https://github.com/twitter/twemoji/issues/580
+  // const src = `https://twemoji.maxcdn.com/v/latest/svg/${codePoint}.svg`;
+  const src = `https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/${codePoint}.svg`;
+
   return <Image src={src} alt={emoji} width={size} height={size}></Image>;
 };
 

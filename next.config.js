@@ -3,7 +3,7 @@ module.exports = {
   images: {
     domains: [
       // Used by @/components/utils/Twemoji
-      "twemoji.maxcdn.com",
+      "cdnjs.cloudflare.com",
     ],
   },
   webpack: (config) => {
