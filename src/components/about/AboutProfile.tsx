@@ -1,5 +1,5 @@
 import { Box, HStack, List, chakra, Text } from "@chakra-ui/react";
-import { FaUser, FaUserTag } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 import H3 from "@/components/utils/H3";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
@@ -21,15 +21,9 @@ const AboutProfile: React.FC = () => {
             <chakra.span>Takeshi Kaneko</chakra.span>
           </HStack>
         </ListItemWithIcon>
-        <ListItemWithIcon iconAs={FaUserTag}>
-          <HStack wrap="wrap" spacing={1}>
-            <chakra.span>HN:</chakra.span>
-            <chakra.span>Ark / アーク</chakra.span>
-          </HStack>
-        </ListItemWithIcon>
       </List>
       <Box>
-        <Text>Currently working as a security engineer in Japan.</Text>
+        <Text>Currently working as a web security engineer in Japan.</Text>
       </Box>
     </>
   );
