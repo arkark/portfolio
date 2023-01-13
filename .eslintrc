@@ -17,7 +17,8 @@
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": false
-        }
+        },
+        "groups": ["builtin", "external", ["parent", "sibling"], "index"]
       }
     ],
     "import/newline-after-import": "error",
