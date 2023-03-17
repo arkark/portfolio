@@ -15,28 +15,28 @@
     "fix:prettier": "prettier '**/*.{js,ts,jsx,tsx,json}' --ignore-path=.gitignore --write"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.4.8",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "dayjs": "^1.11.7",
-    "framer-motion": "^8.4.3",
-    "next": "^12.1.5",
+    "framer-motion": "^10.6.0",
+    "next": "^12.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
+    "react-icons": "^4.8.0",
     "react-scroll": "^1.8.9"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.26",
+    "@types/node": "^18.15.3",
+    "@types/react": "^18.0.28",
     "@types/react-scroll": "^1.8.6",
-    "@typescript-eslint/eslint-plugin": "^5.48.1",
-    "eslint": "^8.31.0",
-    "eslint-config-next": "^12.1.5",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-import": "^2.27.4",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "^13.2.4",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "prettier": "^2.8.2",
-    "typescript": "^4.9.4"
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
   }
 }
