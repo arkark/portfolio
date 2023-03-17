@@ -2,12 +2,17 @@ import type ContestType from "@/components/about/contest/data/ContestType";
 
 const ctfData: { year: string; contests: ContestType[] }[] = [
   {
-    year: "2022",
+    year: "2023",
     contests: [
       {
-        label: "CyberSecurityRumble CTF",
-        place: "8th",
+        label: "hxp CTF 2022",
+        place: "5th",
       },
+    ],
+  },
+  {
+    year: "2022",
+    contests: [
       {
         label: "WeCTF 2022",
         place: "2nd",
@@ -28,10 +33,6 @@ const ctfData: { year: string; contests: ContestType[] }[] = [
     year: "2021",
     contests: [
       {
-        label: "N1CTF 2021",
-        place: "7th",
-      },
-      {
         label: "BSides Ahmedabad CTF 2021",
         place: "1st",
         emoji: "🥇",
@@ -47,10 +48,6 @@ const ctfData: { year: string; contests: ContestType[] }[] = [
         emoji: "🥈",
       },
       {
-        label: "ALLES! CTF 2021",
-        place: "7th",
-      },
-      {
         label: "CakeCTF 2021",
         place: "2nd",
         emoji: "🥈",
@@ -63,10 +60,6 @@ const ctfData: { year: string; contests: ContestType[] }[] = [
         label: "Circle City Con CTF 2021",
         place: "2nd",
         emoji: "🥈",
-      },
-      {
-        label: "LINE CTF 2021",
-        place: "8th",
       },
       {
         label: "Union CTF 2021",

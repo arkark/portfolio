@@ -22,10 +22,6 @@ const AboutCompro: React.FC = () => {
           <chakra.span color="#C0C000"> (highest: 2028) </chakra.span>
         </Link>
       </Text>
-      <Text>
-        Project Euler{": "}
-        <chakra.span fontWeight="bold">Level 6 / Solved 170+</chakra.span>
-      </Text>
       <List>
         {contests.map((contest, index) => (
           <ContestListItem key={index} contest={contest}></ContestListItem>
