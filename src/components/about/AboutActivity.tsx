@@ -12,7 +12,12 @@ const AboutActivity: React.FC = () => {
       <List>
         <ListItemWithIcon>
           <HStack wrap="wrap" spacing={1}>
-            <span>SECCON CTF 2022 Finals</span>
+            <Link
+              href="https://github.com/SECCON/SECCON2022_final_CTF"
+              isExternal
+            >
+              SECCON CTF 2022 Finals
+            </Link>
             <Icon as={FaAngleRight}></Icon>
             <Link
               href="https://blog.arkark.dev/2023/02/17/seccon-finals/"

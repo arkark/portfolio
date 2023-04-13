@@ -19,7 +19,6 @@ const AboutCompro: React.FC = () => {
           isExternal
         >
           <chakra.span color="#0000FF">1900+</chakra.span>
-          <chakra.span color="#C0C000"> (highest: 2028) </chakra.span>
         </Link>
       </Text>
       <List>

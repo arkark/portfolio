@@ -5,10 +5,8 @@ import AboutActivity from "@/components/about/AboutActivity";
 import AboutEducation from "@/components/about/AboutEducation";
 import AboutInterest from "@/components/about/AboutInterest";
 import AboutProfile from "@/components/about/AboutProfile";
-import AboutPublication from "@/components/about/AboutPublication";
 import ButtonToTop from "@/components/about/ButtonToTop";
 import AboutContest from "@/components/about/contest/AboutContest";
-import AboutWork from "@/components/about/work/AboutWork";
 import AboutWorkExperience from "@/components/about/workExperience/AboutWorkExperience";
 
 const About: React.FC = () => {
@@ -20,14 +18,12 @@ const About: React.FC = () => {
     AboutContest,
     AboutEducation,
     AboutWorkExperience,
-    AboutPublication,
-    AboutWork,
   ];
   return (
     <>
-      <Container maxW="3xl" centerContent mt={5} mb={20}>
+      <Container maxW="3xl" centerContent mt={8} mb={16}>
         <Box w="100%">
-          <Stack spacing={6}>
+          <Stack spacing={8}>
             {components.map((Component, index) => (
               <Box key={index}>
                 <Component></Component>
