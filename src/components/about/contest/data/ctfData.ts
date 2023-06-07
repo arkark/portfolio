@@ -5,6 +5,16 @@ const ctfData: { year: string; contests: ContestType[] }[] = [
     year: "2023",
     contests: [
       {
+        label: "TJCTF 2023",
+        place: "1st",
+        emoji: "🥇",
+      },
+      {
+        label: "BSides Algiers 2023",
+        place: "3rd",
+        emoji: "🥉",
+      },
+      {
         label: "hxp CTF 2022",
         place: "5th",
       },

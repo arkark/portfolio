@@ -13,7 +13,7 @@ const AboutWorkExperience: React.FC = () => {
       <H3>Work Experience</H3>
       <Stack spacing={4}>
         <Box>
-          <H4>Working</H4>
+          <H4>Present</H4>
           <List>
             <ListItemWithIcon>
               <LabelWithInfo
@@ -21,6 +21,11 @@ const AboutWorkExperience: React.FC = () => {
                 info={`Security Engineer (${formatDate("2022/11")} - present)`}
               ></LabelWithInfo>
             </ListItemWithIcon>
+          </List>
+        </Box>
+        <Box>
+          <H4>Past</H4>
+          <List>
             <ListItemWithIcon>
               <LabelWithInfo
                 label="Ricerca Security, Inc."
