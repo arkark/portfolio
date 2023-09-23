@@ -2,6 +2,7 @@ import { Box, Container, Stack } from "@chakra-ui/react";
 
 import AboutAccount from "@/components/about/AboutAccount";
 import AboutActivity from "@/components/about/AboutActivity";
+import AboutCve from "@/components/about/AboutCve";
 import AboutEducation from "@/components/about/AboutEducation";
 import AboutInterest from "@/components/about/AboutInterest";
 import AboutProfile from "@/components/about/AboutProfile";
@@ -15,6 +16,7 @@ const About: React.FC = () => {
     AboutAccount,
     AboutInterest,
     AboutActivity,
+    AboutCve,
     AboutContest,
     AboutEducation,
     AboutWorkExperience,

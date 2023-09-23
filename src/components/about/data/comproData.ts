@@ -1,4 +1,4 @@
-import type ContestType from "@/components/about/contest/data/ContestType";
+import type ContestType from "@/components/about/data/ContestType";
 
 const comproData: ContestType[] = [
   {

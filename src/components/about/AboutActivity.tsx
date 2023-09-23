@@ -12,6 +12,25 @@ const AboutActivity: React.FC = () => {
       <List>
         <ListItemWithIcon>
           <HStack wrap="wrap" spacing={1}>
+            <chakra.span>SECCON CTF 2023 Finals</chakra.span>
+          </HStack>
+        </ListItemWithIcon>
+        <ListItemWithIcon>
+          <HStack wrap="wrap" spacing={1}>
+            <chakra.span>SECCON CTF 2023 Quals</chakra.span>
+            <Icon as={FaAngleRight}></Icon>
+            <Link
+              href="https://blog.arkark.dev/2023/09/21/seccon-quals/"
+              fontWeight="bold"
+              color="blue.500"
+              isExternal
+            >
+              author writeup
+            </Link>
+          </HStack>
+        </ListItemWithIcon>
+        <ListItemWithIcon>
+          <HStack wrap="wrap" spacing={1}>
             <Link
               href="https://github.com/SECCON/SECCON2022_final_CTF"
               isExternal

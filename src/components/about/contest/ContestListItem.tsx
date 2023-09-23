@@ -1,6 +1,6 @@
 import { chakra } from "@chakra-ui/react";
 
-import type ContestType from "@/components/about/contest/data/ContestType";
+import type ContestType from "@/components/about/data/ContestType";
 import ListItemWithIcon from "@/components/utils/ListItemWithIcon";
 import Twemoji from "@/components/utils/Twemoji";
 

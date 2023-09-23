@@ -1,7 +1,7 @@
 import { List, ListItem, Text } from "@chakra-ui/react";
 
 import ContestListItem from "@/components/about/contest/ContestListItem";
-import ctfData from "@/components/about/contest/data/ctfData";
+import ctfData from "@/components/about/data/ctfData";
 import H4 from "@/components/utils/H4";
 import Link from "@/components/utils/Link";
 
