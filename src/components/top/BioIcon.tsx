@@ -84,7 +84,7 @@ const BioIcon: React.FC<BioIconProps> = (props) => {
       gl.FLOAT,
       false,
       0,
-      0
+      0,
     );
     gl.bindBuffer(gl.ARRAY_BUFFER, null);
 

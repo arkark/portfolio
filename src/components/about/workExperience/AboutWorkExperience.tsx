@@ -30,7 +30,7 @@ const AboutWorkExperience: React.FC = () => {
               <LabelWithInfo
                 label="Ricerca Security, Inc."
                 info={`Security Engineer (${formatDate(
-                  "2021/10"
+                  "2021/10",
                 )} - ${formatDate("2022/9")})`}
               ></LabelWithInfo>
             </ListItemWithIcon>
@@ -38,7 +38,7 @@ const AboutWorkExperience: React.FC = () => {
               <LabelWithInfo
                 label="Yahoo Japan Corporation"
                 info={`Data Platform Engineer (${formatDate(
-                  "2021/04"
+                  "2021/04",
                 )} - ${formatDate("2022/10")})`}
               ></LabelWithInfo>
             </ListItemWithIcon>
@@ -51,7 +51,7 @@ const AboutWorkExperience: React.FC = () => {
               <LabelWithInfo
                 label="MC Digital, Inc."
                 info={`Software Engineer (${formatDate(
-                  "2020/04"
+                  "2020/04",
                 )} - ${formatDate("2020/10")})`}
               ></LabelWithInfo>
             </ListItemWithIcon>
@@ -59,7 +59,7 @@ const AboutWorkExperience: React.FC = () => {
               <LabelWithInfo
                 label="Toyokumo, Inc."
                 info={`Software Engineer (${formatDate(
-                  "2018/08"
+                  "2018/08",
                 )} - ${formatDate("2019/09")})`}
               ></LabelWithInfo>
             </ListItemWithIcon>
@@ -67,7 +67,7 @@ const AboutWorkExperience: React.FC = () => {
               <LabelWithInfo
                 label="OCTEC Inc."
                 info={`Software Engineer (${formatDate(
-                  "2017/11"
+                  "2017/11",
                 )} - ${formatDate("2018/07")})`}
               ></LabelWithInfo>
             </ListItemWithIcon>

@@ -81,7 +81,7 @@ export default class GContext {
     this.gl.bufferData(
       this.gl.ARRAY_BUFFER,
       new Float32Array(data),
-      this.gl.STATIC_DRAW
+      this.gl.STATIC_DRAW,
     );
     this.gl.bindBuffer(this.gl.ARRAY_BUFFER, null);
     return vbo;
@@ -91,22 +91,22 @@ export default class GContext {
     this.gl.texParameteri(
       this.gl.TEXTURE_2D,
       this.gl.TEXTURE_MAG_FILTER,
-      conf.magFilter
+      conf.magFilter,
     );
     this.gl.texParameteri(
       this.gl.TEXTURE_2D,
       this.gl.TEXTURE_MIN_FILTER,
-      conf.minFilter
+      conf.minFilter,
     );
     this.gl.texParameteri(
       this.gl.TEXTURE_2D,
       this.gl.TEXTURE_WRAP_S,
-      conf.wrap
+      conf.wrap,
     );
     this.gl.texParameteri(
       this.gl.TEXTURE_2D,
       this.gl.TEXTURE_WRAP_T,
-      conf.wrap
+      conf.wrap,
     );
     if (conf.useMipmap) {
       this.gl.generateMipmap(this.gl.TEXTURE_2D);
@@ -126,7 +126,7 @@ export default class GContext {
           this.gl.RGBA,
           this.gl.RGBA,
           this.gl.UNSIGNED_BYTE,
-          image
+          image,
         );
         this.enableTextureConf(conf);
         this.gl.bindTexture(this.gl.TEXTURE_2D, null);
@@ -140,7 +140,7 @@ export default class GContext {
   createFrameBuffer(
     width: number,
     height: number,
-    textureConf: TextureConf
+    textureConf: TextureConf,
   ): { buffer: WebGLFramebuffer | null; texture: WebGLTexture | null } {
     const frameBuffer = this.gl.createFramebuffer();
     this.gl.bindFramebuffer(this.gl.FRAMEBUFFER, frameBuffer);
@@ -156,7 +156,7 @@ export default class GContext {
       0,
       this.gl.RGBA,
       this.gl.UNSIGNED_BYTE,
-      null
+      null,
     );
     this.enableTextureConf(textureConf);
 
@@ -165,7 +165,7 @@ export default class GContext {
       this.gl.COLOR_ATTACHMENT0,
       this.gl.TEXTURE_2D,
       texture,
-      0
+      0,
     );
 
     this.gl.bindTexture(this.gl.TEXTURE_2D, null);

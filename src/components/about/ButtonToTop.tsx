@@ -7,7 +7,7 @@ const ButtonToTop: React.FC = () => {
   const [isBottom, setIsBottom] = useState<boolean>(false);
   const onScroll = () => {
     setIsBottom(
-      window.innerHeight + window.scrollY >= document.body.offsetHeight
+      window.innerHeight + window.scrollY >= document.body.offsetHeight,
     );
   };
   useEffect(() => {
