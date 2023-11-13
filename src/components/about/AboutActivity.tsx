@@ -1,5 +1,4 @@
-import { HStack, Icon, List, chakra } from "@chakra-ui/react";
-import { FaAngleRight } from "react-icons/fa";
+import { HStack, List, chakra } from "@chakra-ui/react";
 
 import H3 from "@/components/utils/H3";
 import Link from "@/components/utils/Link";
@@ -16,75 +15,36 @@ const AboutActivity: React.FC = () => {
           </HStack>
         </ListItemWithIcon>
         <ListItemWithIcon>
-          <HStack wrap="wrap" spacing={1}>
-            <chakra.span>SECCON CTF 2023 Quals</chakra.span>
-            <Icon as={FaAngleRight}></Icon>
-            <Link
-              href="https://blog.arkark.dev/2023/09/21/seccon-quals/"
-              fontWeight="bold"
-              color="blue.500"
-              isExternal
-            >
-              author writeup
-            </Link>
-          </HStack>
+          <Link
+            href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2023-quals"
+            isExternal
+          >
+            SECCON CTF 2023 Quals
+          </Link>
         </ListItemWithIcon>
         <ListItemWithIcon>
-          <HStack wrap="wrap" spacing={1}>
-            <Link
-              href="https://github.com/SECCON/SECCON2022_final_CTF"
-              isExternal
-            >
-              SECCON CTF 2022 Finals
-            </Link>
-            <Icon as={FaAngleRight}></Icon>
-            <Link
-              href="https://blog.arkark.dev/2023/02/17/seccon-finals/"
-              fontWeight="bold"
-              color="blue.500"
-              isExternal
-            >
-              author writeup
-            </Link>
-          </HStack>
+          <Link
+            href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2022-finals"
+            isExternal
+          >
+            SECCON CTF 2022 Finals
+          </Link>
         </ListItemWithIcon>
         <ListItemWithIcon>
-          <HStack wrap="wrap" spacing={1}>
-            <Link
-              href="https://github.com/SECCON/SECCON2022_online_CTF"
-              isExternal
-            >
-              SECCON CTF 2022 Quals
-            </Link>
-            <Icon as={FaAngleRight}></Icon>
-            <Link
-              href="https://blog.arkark.dev/2022/11/18/seccon-en/"
-              fontWeight="bold"
-              color="blue.500"
-              isExternal
-            >
-              author writeup
-            </Link>
-          </HStack>
+          <Link
+            href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2022-quals"
+            isExternal
+          >
+            SECCON CTF 2022 Quals
+          </Link>
         </ListItemWithIcon>
         <ListItemWithIcon>
-          <HStack wrap="wrap" spacing={1}>
-            <Link
-              href="https://github.com/SECCON/SECCON2021_online_CTF"
-              isExternal
-            >
-              SECCON CTF 2021
-            </Link>
-            <Icon as={FaAngleRight}></Icon>
-            <Link
-              href="https://blog.arkark.dev/2021/12/22/seccon/"
-              fontWeight="bold"
-              color="blue.500"
-              isExternal
-            >
-              author writeup
-            </Link>
-          </HStack>
+          <Link
+            href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2021"
+            isExternal
+          >
+            SECCON CTF 2021
+          </Link>
         </ListItemWithIcon>
         <ListItemWithIcon>
           <Link href="https://atcoder.jp/contests/ttpc2019" isExternal>

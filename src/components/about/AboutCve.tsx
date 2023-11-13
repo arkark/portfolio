@@ -12,11 +12,7 @@ const AboutCsv: React.FC = () => {
       <List>
         {cveData.map((cve, index) => (
           <ListItemWithIcon key={index}>
-            <LabelWithInfo
-              label={cve.label}
-              info={cve.info}
-              link={cve.link}
-            ></LabelWithInfo>
+            <LabelWithInfo label={cve.label} info={cve.info}></LabelWithInfo>
           </ListItemWithIcon>
         ))}
       </List>
