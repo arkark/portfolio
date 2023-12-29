@@ -1,4 +1,4 @@
-import { HStack, List, chakra } from "@chakra-ui/react";
+import { List, chakra } from "@chakra-ui/react";
 
 import H3 from "@/components/utils/H3";
 import Link from "@/components/utils/Link";
@@ -10,32 +10,35 @@ const AboutActivity: React.FC = () => {
       <H3>Activities</H3>
       <List>
         <ListItemWithIcon>
-          <HStack wrap="wrap" spacing={1}>
-            <chakra.span>SECCON CTF 2023 Finals</chakra.span>
-          </HStack>
-        </ListItemWithIcon>
-        <ListItemWithIcon>
+          {"SECCON CTF 2023 "}
           <Link
             href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2023-quals"
             isExternal
           >
-            SECCON CTF 2023 Quals
+            Quals
           </Link>
-        </ListItemWithIcon>
-        <ListItemWithIcon>
+          {" / "}
           <Link
-            href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2022-finals"
+            href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2023-finals"
             isExternal
           >
-            SECCON CTF 2022 Finals
+            Finals
           </Link>
         </ListItemWithIcon>
         <ListItemWithIcon>
+          {"SECCON CTF 2022 "}
           <Link
             href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2022-quals"
             isExternal
           >
-            SECCON CTF 2022 Quals
+            Quals
+          </Link>
+          {" / "}
+          <Link
+            href="https://github.com/arkark/my-ctf-challenges#seccon-ctf-2022-finals"
+            isExternal
+          >
+            Finals
           </Link>
         </ListItemWithIcon>
         <ListItemWithIcon>

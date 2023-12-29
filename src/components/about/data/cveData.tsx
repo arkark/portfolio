@@ -3,6 +3,18 @@ import Link from "@/components/utils/Link";
 const cveData: { label: React.ReactNode; info: React.ReactNode }[] = [
   {
     label: (
+      <Link href="https://nvd.nist.gov/vuln/detail/CVE-2023-51651" isExternal>
+        CVE-2023-51651
+      </Link>
+    ),
+    info: (
+      <Link href="https://github.com/aws/aws-sdk-php" isExternal>
+        aws/aws-sdk-php
+      </Link>
+    ),
+  },
+  {
+    label: (
       <Link href="https://nvd.nist.gov/vuln/detail/CVE-2023-39319" isExternal>
         CVE-2023-39319
       </Link>
