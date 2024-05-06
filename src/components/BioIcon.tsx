@@ -28,6 +28,7 @@ const BioIcon: React.FC<BioIconProps> = ({ ...restProps }) => {
 
     const context = GContext.gen(canvas);
     if (context == null) return;
+    context.fitSize();
 
     const gl = context.gl; // TODO: Unuse WebGL APIs directly in this component
 
@@ -75,15 +76,14 @@ const BioIcon: React.FC<BioIconProps> = ({ ...restProps }) => {
     );
     gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
-    const startTime = Date.now();
+    const startTime = performance.now();
 
     const mainStep = () => {
-      const timeSecs = (Date.now() - startTime) * 0.001;
+      const timeSecs = (performance.now() - startTime) * 0.001;
 
       gl.useProgram(program);
       gl.bindFramebuffer(gl.FRAMEBUFFER, null);
       context.clear();
-      context.fitSize();
 
       gl.uniform1f(location.uniform.timeSecs, timeSecs);
       gl.uniform2fv(location.uniform.resolution, [canvas.width, canvas.height]);

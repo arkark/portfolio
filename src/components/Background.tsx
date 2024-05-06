@@ -67,10 +67,10 @@ const Background: React.FC<BackgroundProps> = ({ ...restProps }) => {
     );
     gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
-    const startTime = Date.now();
+    const startTime = performance.now();
 
     const mainStep = () => {
-      const timeSecs = (Date.now() - startTime) * 0.001;
+      const timeSecs = (performance.now() - startTime) * 0.001;
 
       gl.useProgram(program);
       gl.bindFramebuffer(gl.FRAMEBUFFER, null);
