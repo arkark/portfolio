@@ -11,33 +11,31 @@ const Profile: React.FC = () => {
       <h1 className="my-4 text-center">Ark's page</h1>
       <div className="flex justify-center">
         <div className="flex flex-col sm:flex-row">
-          <div className="flex flex-col justify-center">
-            <BioIcon className="w-36 h-36 bg-transparent ml-2 mt-4"></BioIcon>
+          <div className="flex flex-row justify-center">
+            <BioIcon className="w-36 h-36 bg-transparent mx-2 mt-4"></BioIcon>
           </div>
-          <div className="flex flex-col justify-center">
-            <ul className="list-none my-2 pl-0">
-              <li>
-                <FaGithub className="size-4 inline mr-2"></FaGithub>
-                {"GitHub: "}
-                <Link href="https://github.com/arkark">arkark</Link>
-              </li>
-              <li className="sm:ml-[.8rem]">
-                <FaXTwitter className="size-4 inline mr-2"></FaXTwitter>
-                {"X (Twitter): "}
-                <Link href="https://twitter.com/arkark_">@arkark_</Link>
-              </li>
-              <li className="sm:ml-[.8rem]">
-                <FaPenNib className="size-4 inline mr-2"></FaPenNib>
-                {"Blog: "}
-                <Link href="https://blog.arkark.dev/">XS-Spin Blog</Link>
-              </li>
-              <li>
-                <FaLinkedin className="size-4 inline mr-2"></FaLinkedin>
-                {"LinkedIn: "}
-                <Link href="https://www.linkedin.com/in/4rk">link</Link>
-              </li>
-            </ul>
-          </div>
+          <ul className="list-none my-2 pl-0">
+            <li>
+              <FaGithub className="size-4 inline mr-2"></FaGithub>
+              {"GitHub: "}
+              <Link href="https://github.com/arkark">arkark</Link>
+            </li>
+            <li className="sm:ml-[.8rem]">
+              <FaXTwitter className="size-4 inline mr-2"></FaXTwitter>
+              {"X (Twitter): "}
+              <Link href="https://twitter.com/arkark_">@arkark_</Link>
+            </li>
+            <li className="sm:ml-[.8rem]">
+              <FaPenNib className="size-4 inline mr-2"></FaPenNib>
+              {"Blog: "}
+              <Link href="https://blog.arkark.dev/">XS-Spin Blog</Link>
+            </li>
+            <li>
+              <FaLinkedin className="size-4 inline mr-2"></FaLinkedin>
+              {"LinkedIn: "}
+              <Link href="https://www.linkedin.com/in/4rk">link</Link>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="flex justify-center">
