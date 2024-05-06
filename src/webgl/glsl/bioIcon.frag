@@ -45,8 +45,9 @@ void main(void) {
   float t = timeSecs*.5;
   float r = .8;
 
-  float delay = pow(min(1., length(p)/r), .5);
-  p *= rot(-(floor(t) + easeInOut(mod(t, 1.))*(1. - delay*(1. - mod(t, 1.))))*PI_2/3.);
+  float delay = pow(min(1., length(p)/r), 6.);
+  float t2 = easeInOut(mod(t, 1.));
+  p *= rot(-(floor(t) + t2*(1. - delay*(1. - t2)))*PI_2/3.);
 
   gl_FragColor = ark(p, r, 25.);
 }
