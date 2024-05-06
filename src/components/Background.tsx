@@ -15,14 +15,9 @@ const setAnimation = (step: () => void): (() => void) => {
   return () => (shouldStop = true);
 };
 
-export interface BackgroundProps extends React.ComponentProps<"canvas"> {
-  contentSize: number;
-}
+export interface BackgroundProps extends React.ComponentProps<"canvas"> {}
 
-const Background: React.FC<BackgroundProps> = ({
-  contentSize,
-  ...restProps
-}) => {
+const Background: React.FC<BackgroundProps> = ({ ...restProps }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -46,7 +41,6 @@ const Background: React.FC<BackgroundProps> = ({
       uniform: {
         timeSecs: gl.getUniformLocation(program, "timeSecs"),
         resolution: gl.getUniformLocation(program, "resolution"),
-        contentResolution: gl.getUniformLocation(program, "contentResolution"),
       },
     };
 
@@ -85,10 +79,6 @@ const Background: React.FC<BackgroundProps> = ({
 
       gl.uniform1f(location.uniform.timeSecs, timeSecs);
       gl.uniform2fv(location.uniform.resolution, [canvas.width, canvas.height]);
-      gl.uniform2fv(location.uniform.contentResolution, [
-        contentSize * context.ratio,
-        contentSize * context.ratio,
-      ]);
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
 
       gl.flush();

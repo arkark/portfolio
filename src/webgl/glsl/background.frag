@@ -2,7 +2,6 @@ precision mediump float;
 
 uniform float timeSecs;
 uniform vec2 resolution;
-uniform vec2 contentResolution;
 
 const float PI = 3.141592653589793;
 const float PI_2 = PI*2.;
@@ -27,10 +26,8 @@ vec3 palette(vec3 t) {
 }
 
 void main(void) {
-  // vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / contentResolution;
   vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
 
   vec3 col = palette(2.*distort(p, timeSecs*.2) + vec3(2./3., 0./3., 1./3.)*PI_2 + timeSecs);
-
   gl_FragColor = vec4(col, 1.);
 }
