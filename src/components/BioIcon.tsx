@@ -45,17 +45,12 @@ const BioIcon: React.FC<BioIconProps> = ({ ...restProps }) => {
       },
     };
 
-    let arkTexture: WebGLTexture | null = null;
-    context
-      .createTexture("/ark_128x128.png", {
-        magFilter: gl.LINEAR,
-        minFilter: gl.LINEAR_MIPMAP_LINEAR,
-        wrap: gl.CLAMP_TO_EDGE,
-        useMipmap: true,
-      })
-      .then((texture) => {
-        arkTexture = texture;
-      });
+    const arkTexture = context.createTexture("/ark_128x128.png", {
+      magFilter: gl.LINEAR,
+      minFilter: gl.LINEAR_MIPMAP_LINEAR,
+      wrap: gl.CLAMP_TO_EDGE,
+      useMipmap: true,
+    });
 
     // prettier-ignore
     const positions = [

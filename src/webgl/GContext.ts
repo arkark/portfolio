@@ -113,28 +113,41 @@ export default class GContext {
     }
   }
 
-  createTexture(src: string, conf: TextureConf): Promise<WebGLTexture> {
+  createTexture(src: string, conf: TextureConf): WebGLTexture | null {
+    const texture = this.gl.createTexture();
+    if (texture == null) return null;
+
+    // Set a transparent pixel before loading the image
+    this.gl.bindTexture(this.gl.TEXTURE_2D, texture);
+    this.gl.texImage2D(
+      this.gl.TEXTURE_2D,
+      0,
+      this.gl.RGBA,
+      1,
+      1,
+      0,
+      this.gl.RGBA,
+      this.gl.UNSIGNED_BYTE,
+      new Uint8Array([0, 0, 0, 0]),
+    );
+
     const image = new Image();
-    return new Promise((resolve, reject) => {
-      image.onload = () => {
-        const texture = this.gl.createTexture();
-        if (texture == null) return;
-        this.gl.bindTexture(this.gl.TEXTURE_2D, texture);
-        this.gl.texImage2D(
-          this.gl.TEXTURE_2D,
-          0,
-          this.gl.RGBA,
-          this.gl.RGBA,
-          this.gl.UNSIGNED_BYTE,
-          image,
-        );
-        this.enableTextureConf(conf);
-        this.gl.bindTexture(this.gl.TEXTURE_2D, null);
-        resolve(texture);
-      };
-      image.onerror = reject;
-      image.src = src;
-    });
+    image.onload = () => {
+      this.gl.bindTexture(this.gl.TEXTURE_2D, texture);
+      this.gl.texImage2D(
+        this.gl.TEXTURE_2D,
+        0,
+        this.gl.RGBA,
+        this.gl.RGBA,
+        this.gl.UNSIGNED_BYTE,
+        image,
+      );
+      this.enableTextureConf(conf);
+      this.gl.bindTexture(this.gl.TEXTURE_2D, null);
+    };
+    image.src = src;
+
+    return texture;
   }
 
   createFrameBuffer(
