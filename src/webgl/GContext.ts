@@ -12,7 +12,7 @@ export default class GContext {
   }
 
   static gen = (canvas: HTMLCanvasElement): GContext | null => {
-    const gl = canvas.getContext("webgl");
+    const gl = canvas.getContext("webgl", { premultipliedAlpha: false });
     if (gl == null) return null;
     return new GContext(gl, canvas);
   };
