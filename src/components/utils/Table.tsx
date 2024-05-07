@@ -10,8 +10,10 @@ const Table: React.FC<TableProps> = ({ topN = 4, columns, items }) => {
 
   return (
     <>
-      <div className={`overflow-y-hidden ${isHidden ? "h-[13em]" : ""}`}>
-        <table className="table my-1">
+      <div
+        className={`mt-4 overflow-auto ${isHidden ? "h-[13em] bg-gradient-to-b from-transparent from-85% to-[#0001]" : ""}`}
+      >
+        <table className="table my-0">
           {columns && (
             <thead>
               <tr>
@@ -43,10 +45,10 @@ const Table: React.FC<TableProps> = ({ topN = 4, columns, items }) => {
               type="checkbox"
               onClick={() => setIsHidden((prev) => !prev)}
             ></input>
-            <div className="swap-off">
+            <div className="swap-off btn btn-sm glass">
               <FaAngleDown className="size-8 inline"></FaAngleDown>
             </div>
-            <div className="swap-on">
+            <div className="swap-on btn btn-sm glass">
               <FaAngleUp className="size-8 inline"></FaAngleUp>
             </div>
           </label>

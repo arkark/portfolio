@@ -4,11 +4,11 @@ import GContext from "@/webgl/GContext";
 import vCode from "@/webgl/glsl/id.vert?raw";
 import fCode from "@/webgl/glsl/bioIcon.frag?raw";
 
-const setAnimation = (step: () => void): (() => void) => {
+const setAnimation = (step: (timestamp: number) => void): (() => void) => {
   let shouldStop = false;
-  const f = () => {
+  const f = (timestamp: number) => {
     if (shouldStop) return;
-    step();
+    step(timestamp);
     requestAnimationFrame(f);
   };
   requestAnimationFrame(f);
@@ -76,10 +76,10 @@ const BioIcon: React.FC<BioIconProps> = ({ ...restProps }) => {
     );
     gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
-    const startTime = performance.now();
+    const startTimestamp = performance.now();
 
-    const mainStep = () => {
-      const timeSecs = (performance.now() - startTime) * 0.001;
+    const mainStep = (timestamp: number) => {
+      const timeSecs = (timestamp - startTimestamp) * 0.001;
 
       gl.useProgram(program);
       gl.bindFramebuffer(gl.FRAMEBUFFER, null);
