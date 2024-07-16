@@ -8,6 +8,12 @@ const cves: {
   targetUrl: string;
 }[] = [
   {
+    cve: "CVE-2024-27306",
+    cveUrl: "https://nvd.nist.gov/vuln/detail/CVE-2024-27306",
+    target: "aio-libs/aiohttp",
+    targetUrl: "https://github.com/aio-libs/aiohttp",
+  },
+  {
     cve: "CVE-2023-51651",
     cveUrl: "https://nvd.nist.gov/vuln/detail/CVE-2023-51651",
     target: "aws/aws-sdk-php",
