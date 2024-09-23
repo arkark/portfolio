@@ -8,6 +8,18 @@ const cves: {
   targetUrl: string;
 }[] = [
   {
+    cve: "CVE-2024-45047",
+    cveUrl: "https://nvd.nist.gov/vuln/detail/CVE-2024-45047",
+    target: "sveltejs/svelte",
+    targetUrl: "https://github.com/sveltejs/svelte",
+  },
+  {
+    cve: "CVE-2024-41677",
+    cveUrl: "https://nvd.nist.gov/vuln/detail/CVE-2024-41677",
+    target: "QwikDev/qwik",
+    targetUrl: "https://github.com/QwikDev/qwik",
+  },
+  {
     cve: "CVE-2024-27306",
     cveUrl: "https://nvd.nist.gov/vuln/detail/CVE-2024-27306",
     target: "aio-libs/aiohttp",

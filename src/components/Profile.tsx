@@ -57,7 +57,7 @@ const Profile: React.FC = () => {
         <li>Mathematics / Algebra for Computer Science</li>
       </ul>
 
-      <h2>Activities</h2>
+      <h2>Event Activities</h2>
       <Tree {...data.activity}></Tree>
 
       <h2>CVE</h2>

@@ -6,6 +6,26 @@ const tree: TreeType = {
     {
       content: (
         <>
+          <b>SECCON CTF 2024</b>: 運営・作問
+        </>
+      ),
+      items: [
+        // TODO
+      ],
+    },
+    {
+      content: (
+        <>
+          <b>IERAE CTF 2024</b>: 運営・作問
+        </>
+      ),
+      items: [
+        // TODO
+      ],
+    },
+    {
+      content: (
+        <>
           <b>SECCON CTF 2023</b>: 運営・作問
         </>
       ),
@@ -102,26 +122,6 @@ const tree: TreeType = {
             <>
               {"Contest page: "}
               <Link href="https://atcoder.jp/contests/ttpc2019">link</Link>
-            </>
-          ),
-        },
-      ],
-    },
-    {
-      content: (
-        <>
-          <b>
-            ゲーム制作者交流イベント GAME<sup>3</sup>
-          </b>
-          （第3回, 第4回）: 運営
-        </>
-      ),
-      items: [
-        {
-          content: (
-            <>
-              {"Event page: "}
-              <Link href="https://game3.trap.games/">link</Link>
             </>
           ),
         },
