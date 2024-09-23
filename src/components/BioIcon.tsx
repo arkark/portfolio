@@ -15,7 +15,7 @@ const setAnimation = (step: (timestamp: number) => void): (() => void) => {
   return () => (shouldStop = true);
 };
 
-export interface BioIconProps extends React.ComponentProps<"canvas"> {}
+export type BioIconProps = React.ComponentProps<"canvas">;
 
 const BioIcon: React.FC<BioIconProps> = ({ ...restProps }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);

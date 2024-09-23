@@ -15,7 +15,7 @@ const setAnimation = (step: (timestamp: number) => void): (() => void) => {
   return () => (shouldStop = true);
 };
 
-export interface BackgroundProps extends React.ComponentProps<"canvas"> {}
+export type BackgroundProps = React.ComponentProps<"canvas">;
 
 const Background: React.FC<BackgroundProps> = ({ ...restProps }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
