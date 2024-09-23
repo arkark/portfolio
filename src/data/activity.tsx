@@ -26,6 +26,16 @@ const tree: TreeType = {
     {
       content: (
         <>
+          <b>AlpacaHack Round 2 (Web)</b>: 作問
+        </>
+      ),
+      items: [
+        // TODO
+      ],
+    },
+    {
+      content: (
+        <>
           <b>SECCON CTF 2023</b>: 運営・作問
         </>
       ),
