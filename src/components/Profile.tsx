@@ -63,25 +63,15 @@ const Profile: React.FC = () => {
       <h2>CVE</h2>
       <Table {...data.cve}></Table>
 
-      <h2>Contests</h2>
-      <h3>Capture The Flag</h3>
+      <h2>Capture The Flag</h2>
       <p className="mb-0">
         {"Main team: "}
         <Link href="https://ctftime.org/team/80092">./Vespiary</Link>
       </p>
       <Table {...data.ctf}></Table>
-      <h3>Web Tuning Contests</h3>
+
+      <h2>Web Tuning Contests</h2>
       <Table {...data.isucon}></Table>
-      <h3>Competitive Programming</h3>
-      <p className="mb-0">
-        {"AtCoder: "}
-        <Link href="https://atcoder.jp/users/arkark">
-          <span className="text-blue-700 hover:text-blue-900">1900+</span>
-        </Link>
-      </p>
-      <Table {...data.compro}></Table>
-      <h3>Heuristic Contests</h3>
-      <Table {...data.marathon}></Table>
 
       <h2>Education</h2>
       <Tree {...data.education}></Tree>
