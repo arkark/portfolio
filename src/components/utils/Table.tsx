@@ -13,7 +13,7 @@ const Table: React.FC<TableProps> = ({ topN = 4, columns, items }) => {
       <div
         className={`mt-4 overflow-auto ${isHidden ? "h-[13em] bg-gradient-to-b from-transparent from-85% to-[#0001]" : ""}`}
       >
-        <table className="table my-0">
+        <table className="table my-0 text-nowrap">
           {columns && (
             <thead>
               <tr>

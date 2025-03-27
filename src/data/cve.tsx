@@ -136,7 +136,7 @@ const cves: {
 ];
 
 const items = cves.map(({ cve, target, info }) => [
-  <b>{cve}</b>,
+  cve,
   <Link href={target.url}>{target.label}</Link>,
   info ? <Link href={info.url}>{info.label}</Link> : "",
 ]);
