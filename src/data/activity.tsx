@@ -99,34 +99,34 @@ const tree: TreeType = {
         },
       ],
     },
-    {
-      content: <>Competitive Programming</>,
-      items: [
-        {
-          content: (
-            <>
-              <b>東京工業大学プログラミングコンテスト2019</b>
-            </>
-          ),
-        },
-      ],
-    },
-    {
-      content: <>Presentations</>,
-      items: [
-        {
-          content: (
-            <>
-              <b>IERAE NIGHT 2024</b>
-              {": 「業務で役に立ったCTFテク」"}
-              <Link href="https://www.docswell.com/s/ierae/51RY4E-ierae-night-2024-web">
-                link
-              </Link>
-            </>
-          ),
-        },
-      ],
-    },
+    // {
+    //   content: <>Competitive Programming</>,
+    //   items: [
+    //     {
+    //       content: (
+    //         <>
+    //           <b>東京工業大学プログラミングコンテスト2019</b>
+    //         </>
+    //       ),
+    //     },
+    //   ],
+    // },
+    // {
+    //   content: <>Presentations</>,
+    //   items: [
+    //     {
+    //       content: (
+    //         <>
+    //           <b>IERAE NIGHT 2024</b>
+    //           {": 「業務で役に立ったCTFテク」"}
+    //           <Link href="https://www.docswell.com/s/ierae/51RY4E-ierae-night-2024-web">
+    //             link
+    //           </Link>
+    //         </>
+    //       ),
+    //     },
+    //   ],
+    // },
   ],
 };
 
