@@ -13,6 +13,39 @@ const cves: {
   };
 }[] = [
   {
+    cve: "CVE-2025-53626",
+    target: {
+      label: "pdfme/pdfme",
+      url: "https://github.com/pdfme/pdfme",
+    },
+    info: {
+      label: "GHSA-54xv-94qv-2gfg",
+      url: "https://github.com/pdfme/pdfme/security/advisories/GHSA-54xv-94qv-2gfg",
+    },
+  },
+  {
+    cve: "CVE-2025-4673",
+    target: {
+      label: "golang/go",
+      url: "https://github.com/golang/go",
+    },
+    info: {
+      label: "GO-2025-3751",
+      url: "https://pkg.go.dev/vuln/GO-2025-3751",
+    },
+  },
+  {
+    cve: "CVE-2025-48054",
+    target: {
+      label: "radashi-org/radashi",
+      url: "https://github.com/radashi-org/radashi",
+    },
+    info: {
+      label: "GHSA-2xv9-ghh9-xc69",
+      url: "https://github.com/radashi-org/radashi/security/advisories/GHSA-2xv9-ghh9-xc69",
+    },
+  },
+  {
     cve: "CVE-2025-24959",
     target: {
       label: "google/zx",
