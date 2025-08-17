@@ -23,7 +23,7 @@ const tree: TreeType = {
         {
           content: (
             <>
-              <b>AlpacaHack Round 11 (Web)</b>
+              <b>AlpacaHack Round 11</b>
             </>
           ),
         },
@@ -44,7 +44,7 @@ const tree: TreeType = {
         {
           content: (
             <>
-              <b>AlpacaHack Round 7 (Web)</b>
+              <b>AlpacaHack Round 7</b>
             </>
           ),
         },
@@ -65,7 +65,7 @@ const tree: TreeType = {
         {
           content: (
             <>
-              <b>AlpacaHack Round 2 (Web)</b>
+              <b>AlpacaHack Round 2</b>
             </>
           ),
         },
