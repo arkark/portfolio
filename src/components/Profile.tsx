@@ -13,7 +13,7 @@ const Profile: React.FC = () => {
           <div className="flex flex-row justify-center">
             <img
               className="w-36 h-36 bg-transparent mx-2 mt-4 p-5 spinner"
-              src={"/ark_128x128.png"}
+              src={"/ark_256x256.png"}
               alt="Ark's logo"
             />
           </div>
