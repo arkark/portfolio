@@ -3,7 +3,6 @@ import data from "@/data/index";
 import Link from "@/components/utils/Link";
 import Tree from "@/components/utils/Tree";
 import { FaGithub, FaXTwitter, FaPenNib, FaLinkedin } from "react-icons/fa6";
-import BioIcon from "@/components/BioIcon";
 
 const Profile: React.FC = () => {
   return (
@@ -12,7 +11,11 @@ const Profile: React.FC = () => {
       <div className="flex justify-center">
         <div className="flex flex-col sm:flex-row">
           <div className="flex flex-row justify-center">
-            <BioIcon className="w-36 h-36 bg-transparent mx-2 mt-4"></BioIcon>
+            <img
+              className="w-36 h-36 bg-transparent mx-2 mt-4 p-5 spinner"
+              src={"/ark_128x128.png"}
+              alt="Ark's logo"
+            />
           </div>
           <ul className="list-none my-2 pl-0">
             <li>

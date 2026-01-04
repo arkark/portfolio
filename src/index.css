@@ -7,3 +7,35 @@
     font-family: "Inter", "BIZ UDGothic", sans-serif;
   }
 }
+
+.spinner {
+  transform-origin: 50% 50%;
+  animation: turn120 9s infinite;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.4, 1.2);
+}
+
+@keyframes turn120 {
+  0%,
+  12.5% {
+    transform: rotate(0deg);
+  }
+  33.333% {
+    transform: rotate(120deg);
+  }
+
+  33.333%,
+  45.833% {
+    transform: rotate(120deg);
+  }
+  66.666% {
+    transform: rotate(240deg);
+  }
+
+  66.666%,
+  79.166% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
