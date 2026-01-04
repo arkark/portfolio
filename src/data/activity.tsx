@@ -16,6 +16,27 @@ const tree: TreeType = {
         {
           content: (
             <>
+              <b>SECCON CTF 14 Quals</b>
+            </>
+          ),
+        },
+        {
+          content: (
+            <>
+              <b>ICC TOKYO 2025</b>
+            </>
+          ),
+        },
+        {
+          content: (
+            <>
+              <b>ASIS CTF Quals 2025</b>
+            </>
+          ),
+        },
+        {
+          content: (
+            <>
               <b>IERAE CTF 2025</b>
             </>
           ),

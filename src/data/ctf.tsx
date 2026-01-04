@@ -6,6 +6,16 @@ const columns = ["Contest", "Place", "Team"];
 
 const contests: ContestType[] = [
   {
+    label: "LINE CTF 2025",
+    place: "2nd",
+    team: "ierae",
+  },
+  {
+    label: "jailCTF 2025",
+    place: "3rd",
+    team: "./Vespiary",
+  },
+  {
     label: "jailCTF 2024",
     place: "3rd",
     team: "./Vespiary",
