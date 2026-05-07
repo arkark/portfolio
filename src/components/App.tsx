@@ -8,10 +8,10 @@ import TabContent from "./TabContent";
 function App() {
   return (
     <>
-      <div className="mx-auto max-w-4xl p-6 ">
+      <div className="mx-auto max-w-3xl p-3 sm:p-6">
         <div className="tabs tabs-border justify-end items-center">
           <TabContent name="root_tab" label="About" defaultChecked>
-            <h1>Ark's page</h1>
+            <h2>Ark's page</h2>
             <div className="flex flex-col sm:flex-row sm:gap-3">
               <div className="flex flex-col justify-center">
                 <img
@@ -29,7 +29,7 @@ function App() {
                 <li>
                   <FaXTwitter className="size-4 inline mr-2"></FaXTwitter>
                   {"X (Twitter): "}
-                  <Link href="https://twitter.com/arkark_">@arkark_</Link>
+                  <Link href="https://x.com/arkark_">@arkark_</Link>
                 </li>
                 <li>
                   <FaPenNib className="size-4 inline mr-2"></FaPenNib>
@@ -38,7 +38,7 @@ function App() {
                 </li>
               </ul>
             </div>
-            <h2>About</h2>
+            <h3>About</h3>
             <ul>
               <li>
                 Name: <b>Takeshi Kaneko</b> / <b>Ark</b>
@@ -75,7 +75,7 @@ function App() {
           </TabContent>
 
           <TabContent name="root_tab" label="CTF Events">
-            <h2>CTF Events</h2>
+            <h3>CTF Events</h3>
             <p className="mb-0">
               {"Repository: "}
               <Link href="https://github.com/arkark/my-ctf-challenges">
@@ -86,42 +86,42 @@ function App() {
           </TabContent>
 
           <TabContent name="root_tab" label="Competitions">
-            <h2>Capture The Flag</h2>
+            <h3>Capture The Flag</h3>
             <p className="mb-0">
               {"Main team: "}
               <Link href="https://ctftime.org/team/80092">./Vespiary</Link>
             </p>
             <Table {...data.ctf}></Table>
 
-            <h2>Web Tuning Contests</h2>
+            <h3>Web Tuning Contests</h3>
             <Table {...data.isucon}></Table>
           </TabContent>
 
           <TabContent name="root_tab" label="Research">
-            <h2>Articles</h2>
+            <h3>Articles</h3>
             <Tree {...data.article}></Tree>
             <p>
               <Link href="https://blog.arkark.dev/">and more...</Link>
             </p>
-            <h2>Slides</h2>
+            <h3>Slides</h3>
             <Tree {...data.slide}></Tree>
           </TabContent>
 
           <TabContent name="root_tab" label="CVEs">
-            <h2>CVEs</h2>
+            <h3>CVEs</h3>
             <Table {...data.cve}></Table>
           </TabContent>
 
           <TabContent name="root_tab" label="Career">
-            <h2>Work Experience</h2>
-            <h3>Present</h3>
+            <h3>Work Experience</h3>
+            <h4>Present</h4>
             <Tree {...data.career.present}></Tree>
-            <h3>Past</h3>
+            <h4>Past</h4>
             <Tree {...data.career.past}></Tree>
-            <h3>Student Part-Time Jobs</h3>
+            <h4>Student Part-Time Jobs</h4>
             <Tree {...data.career.partTime}></Tree>
 
-            <h2>Education</h2>
+            <h3>Education</h3>
             <Tree {...data.education}></Tree>
           </TabContent>
         </div>

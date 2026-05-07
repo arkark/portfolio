@@ -7,19 +7,19 @@ const tree: TreeType = {
       items: [
         {
           content: (
-            <p>
+            <>
               2021, 2022 Quals/Finals, 2023 Quals/Finals, 13 Quals/Finals, 14
               Quals/Finals
-            </p>
+            </>
           ),
         },
         {
           content: (
-            <p>
+            <>
               {
                 "Awards: サイバーセキュリティに関する総務大臣奨励賞（SECCON CTF運営チーム）"
               }
-            </p>
+            </>
           ),
         },
       ],
@@ -28,7 +28,7 @@ const tree: TreeType = {
       content: <b>IERAE CTF</b>,
       items: [
         {
-          content: <p>2024, 2025</p>,
+          content: <>2024, 2025</>,
         },
       ],
     },
@@ -36,7 +36,7 @@ const tree: TreeType = {
       content: <b>ASIS CTF</b>,
       items: [
         {
-          content: <p>2024 Finals, 2025 Quals</p>,
+          content: <>2024 Finals, 2025 Quals</>,
         },
       ],
     },
@@ -44,10 +44,10 @@ const tree: TreeType = {
       content: <b>AlpacaHack</b>,
       items: [
         {
-          content: <p>Round 2, Round 7, Round 11</p>,
+          content: <>Round 2, Round 7, Round 11</>,
         },
         {
-          content: <p>Daily AlpacaHack</p>,
+          content: <>Daily AlpacaHack</>,
         },
       ],
     },

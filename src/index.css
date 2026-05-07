@@ -5,6 +5,11 @@
 @layer base {
   html {
     font-family: "Inter", "BIZ UDGothic", sans-serif;
+
+    font-size: 0.8em;
+    @variant sm {
+      font-size: 1em;
+    }
   }
 }
 
@@ -21,6 +26,19 @@
   body {
     @apply bg-zinc-100;
     min-height: 100vh;
+  }
+
+  .prose {
+    ul {
+      padding-inline-start: 1.3em !important;
+      li {
+        padding-left: 0.1em;
+        ul {
+          margin-top: 0.1em;
+          margin-bottom: 0.1em;
+        }
+      }
+    }
   }
 }
 
