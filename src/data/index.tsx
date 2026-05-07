@@ -1,17 +1,21 @@
 import activity from "@/data/activity";
-import cve from "@/data/cve";
 import ctf from "@/data/ctf";
 import isucon from "@/data/isucon";
-import education from "@/data/education";
+import article from "@/data/article";
+import slide from "@/data/slide";
+import cve from "@/data/cve";
 import career from "@/data/career";
+import education from "@/data/education";
 
 const data = {
   activity,
-  cve,
   ctf,
   isucon,
-  education,
+  article,
+  slide,
+  cve,
   career,
+  education,
 };
 
 export default data;
