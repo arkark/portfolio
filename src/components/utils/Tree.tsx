@@ -1,4 +1,4 @@
-import TreeType, { type NodeType } from "@/types/TreeType";
+import { type default as TreeType, type NodeType } from "@/types/TreeType";
 
 export type NodeProps = NodeType;
 export type TreeProps = TreeType;

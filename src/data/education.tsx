@@ -1,4 +1,4 @@
-import TreeType from "@/types/TreeType";
+import type TreeType from "@/types/TreeType";
 
 const tree: TreeType = {
   items: [

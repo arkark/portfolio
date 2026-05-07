@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui";
 
 @layer base {
   html {
@@ -8,34 +8,52 @@
   }
 }
 
-.spinner {
-  transform-origin: 50% 50%;
-  animation: turn120 9s infinite;
-  animation-timing-function: cubic-bezier(0.8, 0, 0.4, 1.2);
+@layer utilities {
+  * {
+    --color-base-content: var(--color-zinc-700);
+    --color-base-100: var(--color-zinc-50);
+    --color-base-200: var(--color-zinc-100);
+    --color-base-300: var(--color-zinc-200);
+
+    --tw-prose-headings: var(--color-zinc-700);
+    --tw-prose-links: var(--color-zinc-800);
+  }
+  body {
+    @apply bg-zinc-100;
+    min-height: 100vh;
+  }
 }
 
-@keyframes turn120 {
-  0%,
-  12.5% {
-    transform: rotate(0deg);
-  }
-  33.333% {
-    transform: rotate(120deg);
+@layer components {
+  .spinner {
+    transform-origin: 50% 50%;
+    animation: turn120 9s infinite;
+    animation-timing-function: cubic-bezier(0.8, 0, 0.4, 1.2);
   }
 
-  33.333%,
-  45.833% {
-    transform: rotate(120deg);
-  }
-  66.666% {
-    transform: rotate(240deg);
-  }
+  @keyframes turn120 {
+    0%,
+    12.5% {
+      transform: rotate(0deg);
+    }
+    33.333% {
+      transform: rotate(120deg);
+    }
 
-  66.666%,
-  79.166% {
-    transform: rotate(240deg);
-  }
-  100% {
-    transform: rotate(360deg);
+    33.333%,
+    45.833% {
+      transform: rotate(120deg);
+    }
+    66.666% {
+      transform: rotate(240deg);
+    }
+
+    66.666%,
+    79.166% {
+      transform: rotate(240deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
