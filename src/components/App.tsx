@@ -12,15 +12,15 @@ function App() {
         <div className="tabs tabs-border justify-end items-center">
           <TabContent name="root_tab" label="About" defaultChecked>
             <h2>Ark's page</h2>
-            <div className="flex flex-col sm:flex-row sm:gap-3">
-              <div className="flex flex-col justify-center mx-4 mb-2">
+            <div className="flex flex-col sm:flex-row sm:gap-3 mb-3">
+              <div className="flex flex-col justify-center mx-4">
                 <img
                   className="w-28 h-28 bg-transparent spinner"
                   src={"/ark_256x256.png"}
                   alt="Ark's logo"
                 />
               </div>
-              <div className="flex flex-col justify-center gap-0.5 my-3">
+              <div className="flex flex-col justify-center gap-0.5 my-4">
                 <div>
                   <FaGithub className="size-4 inline mr-2"></FaGithub>
                   {"GitHub: "}
