@@ -13,30 +13,30 @@ function App() {
           <TabContent name="root_tab" label="About" defaultChecked>
             <h2>Ark's page</h2>
             <div className="flex flex-col sm:flex-row sm:gap-3">
-              <div className="flex flex-col justify-center">
+              <div className="flex flex-col justify-center mx-4 mb-2">
                 <img
-                  className="w-28 h-28 mx-3 bg-transparent spinner"
+                  className="w-28 h-28 bg-transparent spinner"
                   src={"/ark_256x256.png"}
                   alt="Ark's logo"
                 />
               </div>
-              <ul className="list-none pl-0">
-                <li>
+              <div className="flex flex-col justify-center gap-0.5 my-3">
+                <div>
                   <FaGithub className="size-4 inline mr-2"></FaGithub>
                   {"GitHub: "}
                   <Link href="https://github.com/arkark">arkark</Link>
-                </li>
-                <li>
+                </div>
+                <div>
                   <FaXTwitter className="size-4 inline mr-2"></FaXTwitter>
                   {"X (Twitter): "}
                   <Link href="https://x.com/arkark_">@arkark_</Link>
-                </li>
-                <li>
+                </div>
+                <div>
                   <FaPenNib className="size-4 inline mr-2"></FaPenNib>
                   {"Blog: "}
                   <Link href="https://blog.arkark.dev/">XS-Spin Blog</Link>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
             <h3>About</h3>
             <ul>
