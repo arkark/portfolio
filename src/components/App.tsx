@@ -12,7 +12,7 @@ function App() {
         <div className="tabs tabs-border justify-end items-center">
           <TabContent name="root_tab" label="About" defaultChecked>
             <h2>Ark's page</h2>
-            <div className="flex flex-col sm:flex-row sm:gap-3 mb-3">
+            <div className="flex flex-col min-[24rem]:flex-row gap-3 mb-3">
               <div className="flex flex-col justify-center mx-4">
                 <img
                   className="w-28 h-28 bg-transparent spinner"
